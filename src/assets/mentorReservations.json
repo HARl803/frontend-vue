@@ -1,0 +1,464 @@
+{
+  "mentorReservations": [
+    {
+      "reserveTime": "2024-08-01T08:00:00",
+      "status": "일정선택",
+      "menteeData": {
+        "id": "1",
+        "nickname": "멘티 A",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": ["2024-08-10T19:00:00", "2024-08-11T20:00:00", "2024-08-12T21:00:00"],
+        "pc": "PC 1",
+        "symptom": "컴퓨터가 부팅되지 않습니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-02T08:00:00",
+      "status": "일정선택",
+      "menteeData": {
+        "id": "2",
+        "nickname": "멘티 B",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": ["2024-08-11T19:00:00", "2024-08-12T20:00:00", "2024-08-13T21:00:00"],
+        "pc": "PC 2",
+        "symptom": "게임 중 화면이 멈춥니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-03T08:00:00",
+      "status": "일정선택",
+      "menteeData": {
+        "id": "3",
+        "nickname": "멘티 C",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": ["2024-08-12T19:00:00", "2024-08-13T20:00:00", "2024-08-14T21:00:00"],
+        "pc": "PC 3",
+        "symptom": "시스템이 자주 재부팅됩니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-04T08:00:00",
+      "status": "일정선택",
+      "menteeData": {
+        "id": "4",
+        "nickname": "멘티 D",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": ["2024-08-13T19:00:00", "2024-08-14T20:00:00", "2024-08-15T21:00:00"],
+        "pc": "PC 4",
+        "symptom": "네트워크 연결이 불안정합니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-05T08:00:00",
+      "status": "일정선택",
+      "menteeData": {
+        "id": "5",
+        "nickname": "멘티 E",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": ["2024-08-14T19:00:00", "2024-08-15T20:00:00", "2024-08-16T21:00:00"],
+        "pc": "PC 5",
+        "symptom": "리눅스 설치 중 오류가 발생합니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-06T08:00:00",
+      "status": "채팅대기",
+      "menteeData": {
+        "id": "6",
+        "nickname": "멘티 F",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 6",
+        "symptom": "컴퓨터가 느려집니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-10T19:00:00",
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-07T08:00:00",
+      "status": "채팅대기",
+      "menteeData": {
+        "id": "7",
+        "nickname": "멘티 G",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 7",
+        "symptom": "게임 중 컴퓨터가 꺼집니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-11T19:00:00",
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-08T08:00:00",
+      "status": "채팅입장",
+      "menteeData": {
+        "id": "8",
+        "nickname": "멘티 H",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 8",
+        "symptom": "인터넷 연결이 불안정합니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-12T19:00:00",
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-09T08:00:00",
+      "status": "채팅입장",
+      "menteeData": {
+        "id": "9",
+        "nickname": "멘티 I",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 9",
+        "symptom": "화면이 깨집니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-13T19:00:00",
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-10T08:00:00",
+      "status": "매칭실패",
+      "menteeData": {
+        "id": "10",
+        "nickname": "멘티 J",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 10",
+        "symptom": "컴퓨터가 켜지지 않습니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "chatLink": null,
+        "message": "멘토가 예약을 취소했습니다.",
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-11T08:00:00",
+      "status": "매칭완료",
+      "menteeData": {
+        "id": "11",
+        "nickname": "멘티 K",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 11",
+        "symptom": "소음이 심합니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-14T19:00:00",
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": 5,
+          "content": "멘토가 매우 친절하고 도움이 되었습니다!"
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-12T08:00:00",
+      "status": "채팅대기",
+      "menteeData": {
+        "id": "12",
+        "nickname": "멘티 L",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 12",
+        "symptom": "부팅이 느립니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-15T19:00:00",
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-13T08:00:00",
+      "status": "채팅대기",
+      "menteeData": {
+        "id": "13",
+        "nickname": "멘티 M",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 13",
+        "symptom": "프린터가 작동하지 않습니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-16T19:00:00",
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-14T08:00:00",
+      "status": "채팅입장",
+      "menteeData": {
+        "id": "14",
+        "nickname": "멘티 N",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 14",
+        "symptom": "인터넷이 끊깁니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-17T19:00:00",
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-15T08:00:00",
+      "status": "매칭완료",
+      "menteeData": {
+        "id": "15",
+        "nickname": "멘티 O",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 15",
+        "symptom": "프로그램 설치가 안됩니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-18T19:00:00",
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": 4,
+          "content": "멘토의 도움이 좋았습니다."
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-16T08:00:00",
+      "status": "채팅입장",
+      "menteeData": {
+        "id": "16",
+        "nickname": "멘티 P",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 16",
+        "symptom": "소프트웨어 충돌이 발생합니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-19T19:00:00",
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-17T08:00:00",
+      "status": "매칭완료",
+      "menteeData": {
+        "id": "17",
+        "nickname": "멘티 Q",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 17",
+        "symptom": "드라이버 설치가 안됩니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-20T19:00:00",
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": 3,
+          "content": "문제 해결이 잘 되었습니다."
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-18T08:00:00",
+      "status": "매칭완료",
+      "menteeData": {
+        "id": "18",
+        "nickname": "멘티 R",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 18",
+        "symptom": "바이러스가 감염되었습니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-21T19:00:00",
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": 5,
+          "content": "아주 좋은 상담이었습니다."
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-19T08:00:00",
+      "status": "매칭완료",
+      "menteeData": {
+        "id": "19",
+        "nickname": "멘티 S",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 19",
+        "symptom": "화면에 이상한 선이 보입니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-22T19:00:00",
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": 2,
+          "content": "상담은 좋았으나, 문제 해결이 어려웠습니다."
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-20T08:00:00",
+      "status": "매칭완료",
+      "menteeData": {
+        "id": "20",
+        "nickname": "멘티 T",
+        "profilePicture": "https://via.placeholder.com/150"
+      },
+      "reserveData": {
+        "availableTime": null,
+        "pc": "PC 20",
+        "symptom": "소프트웨어 업데이트가 필요합니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-08-23T19:00:00",
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": 4,
+          "content": "유용한 상담이었습니다."
+        }
+      }
+    }
+  ]
+}

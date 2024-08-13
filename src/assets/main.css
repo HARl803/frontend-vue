@@ -1,0 +1,36 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+.navbar-brand span.text-primary {
+  color: #ff00ff !important;
+}
+.navbar-brand span.text-success {
+  color: #00ff00 !important;
+}
+.btn-primary {
+  background-color: #1c1c1c;
+  border-color: #1c1c1c;
+}
+.btn-primary:hover {
+  background-color: #333;
+  border-color: #333;
+}
+.card {
+  background-color: #1c1c1c;
+  border: none;
+}
+.card-title, .card-text {
+  color: #ffffff;
+}
+.card-footer, .card-header {
+  background-color: #1c1c1c;
+}
+.btn-outline-primary {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-outline-primary:hover {
+  color: #1c1c1c;
+  background-color: #ffffff;
+}

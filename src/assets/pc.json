@@ -1,0 +1,5180 @@
+{
+  "PC1": {
+    "cpu": {
+      "id": "10001",
+      "manufacturer": "인텔",
+      "cpuType": "코어i9-14세대",
+      "socketType": "인텔(소켓1700)",
+      "coreCount": "16코어",
+      "threadCount": "32스레드",
+      "baseClock": "3.5 ~ 3.99 GHz",
+      "boostClock": "5.0 ~ 5.99 GHz",
+      "l3Cache": "30MB",
+      "tdp": "125 W",
+      "pcieVersion": "PCIe5.0",
+      "maxPcieLanes": "16레인",
+      "maxMemorySize": "128GB",
+      "memoryType": "DDR5",
+      "memorySpeed": "4800MHz",
+      "integratedGraphics": "인텔 UHD 770",
+      "supportedTechnologies": {
+        "1": "하이퍼스레딩/SMT",
+        "2": "인텔 XTU"
+      },
+      "codeName": "랩터레이크 (2022)",
+      "packageType": "정품",
+      "coolerType": "인텔 기본쿨러 포함"
+    },
+    "cooler": {
+      "id": "20001",
+      "manufacturer": "쿨러마스터",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "5년",
+      "intelSocket": {
+        "1": "LGA1700",
+        "2": "LGA1200"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "AM5"
+      },
+      "height": 155,
+      "radiator": "2열",
+      "fanSize": "120mm",
+      "bearingType": "FDB(유체)",
+      "maxFanSpeed": 2000,
+      "maxAirFlow": 75,
+      "minFanNoise": 18,
+      "maxFanNoise": 28,
+      "ledSystem": "AURA SYNC",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "PWM 지원"
+      },
+      "thermalType": "주사기형"
+    },
+    "motherboard": {
+      "id": "30001",
+      "manufacturer": "ASUS",
+      "productType": "인텔 CPU용",
+      "cpuSocket": "인텔(소켓1700)",
+      "chipset": "인텔 Z790",
+      "formFactor": "ATX (30.5x24.4cm)",
+      "powerPhase": 16,
+      "vcoreOutput": 1500,
+      "memoryType": "DDR5",
+      "memorySpeed": "6400MHz (PC5-51200)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 128GB",
+      "vgaConnection": "PCIe5.0 x16",
+      "pcieVersion": "PCIe5.0",
+      "sata": 6,
+      "m2": 4,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 20Gbps",
+        "2": "USB3.x 10Gbps",
+        "3": "USB4 40Gbps",
+        "4": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 2,
+      "rearUsb2_0": 4,
+      "wiredLanChipset": "Intel",
+      "wirelessLanType": "무선랜(Wi-Fi)",
+      "audioChipset": "Realtek",
+      "ledSystem": "AURA SYNC"
+    },
+    "memory": {
+      "id": "40001",
+      "manufacturer": "삼성전자",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR5",
+      "memoryCapacity": "32GB",
+      "operatingClock": "5200MHz (PC5-41600)",
+      "ramTiming": "CL40",
+      "operatingVoltage": "1.25V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP",
+        "2": "온다이ECC"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "블랙",
+      "ledColor": "RGB",
+      "ledSystem": "AURA SYNC"
+    },
+    "gpu": {
+      "id": "50001",
+      "manufacturer": "MSI",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 RTX 40",
+      "gpuManufacturingProcess": "4 nm",
+      "nvidiaChipset": "RTX 4090",
+      "baseClock": 2230,
+      "boostClock": 2520,
+      "streamProcessors": "16384 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6X(DDR6X)",
+      "memoryCapacity": "24GB",
+      "memoryBus": "384-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP1.4"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 350,
+      "recommendedPower": "정격파워 850W 이상",
+      "powerPorts": "8핀 x3",
+      "widthLength": "336mm",
+      "thickness": "60mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "Dual BIOS"
+      },
+      "ledSystem": "RGB FUSION",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60001",
+      "manufacturer": "삼성전자",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe4.0x4 (64GT/s)",
+      "protocol": "NVMe 1.4",
+      "capacity": "1TB",
+      "memoryType": "TLC(토글)",
+      "nandStructure": "3D낸드",
+      "process": "14 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 1GB",
+      "controller": "삼성",
+      "sequentialRead": "7,000 MB/s",
+      "sequentialWrite": "5,100 MB/s",
+      "readIOPS": "1,000K",
+      "writeIOPS": "800K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "S.M.A.R.T"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "RGB/LED"
+      },
+      "mtbf": "150만 시간",
+      "tbw": "600 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70001",
+      "manufacturer": "Seagate",
+      "productType": "HDD (PC용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "8TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 256MB",
+      "transferSpeed": "250MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 4장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "100만 시간",
+      "warranty": "5년"
+    },
+    "case": {
+      "id": "80001",
+      "manufacturer": "앱코",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "3개",
+      "bay89cm": "4개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "5개",
+      "ledFans": "2개",
+      "frontPanel": "메쉬",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm LED",
+      "top": "120mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "350mm",
+      "cpuCoolerHeight": "160mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "상태표시 창"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90001",
+      "manufacturer": "시소닉",
+      "productType": "ATX 파워",
+      "ratedOutput": "750W",
+      "certification80Plus": "80 PLUS 골드",
+      "certificationETA": "PLATINUM",
+      "certificationLAMBDA": "A+",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "135mm 팬",
+      "warrantyPeriod": "무상 10년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "플랫케이블",
+        "2": "대기전력 1W 미만"
+      },
+      "ledSystem": {
+        "1": "AURA SYNC"
+      }
+    }
+  },
+  "PC2": {
+    "cpu": {
+      "id": "10002",
+      "manufacturer": "AMD",
+      "cpuType": "라이젠9-5세대",
+      "socketType": "AMD(소켓AM5)",
+      "coreCount": "12코어",
+      "threadCount": "24스레드",
+      "baseClock": "3.0 ~ 3.49 GHz",
+      "boostClock": "4.5 ~ 4.99 GHz",
+      "l3Cache": "64MB",
+      "tdp": "105 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "20레인",
+      "maxMemorySize": "128GB",
+      "memoryType": "DDR5",
+      "memorySpeed": "5200MHz",
+      "integratedGraphics": "미탑재",
+      "supportedTechnologies": {
+        "1": "AMD 3D V캐시",
+        "2": "SenseMI"
+      },
+      "codeName": "피닉스 (2024)",
+      "packageType": "정품",
+      "coolerType": "미포함"
+    },
+    "cooler": {
+      "id": "20002",
+      "manufacturer": "NZXT",
+      "productType": "CPU 쿨러",
+      "coolingType": "수랭",
+      "warranty": "6년+누수보상",
+      "intelSocket": {
+        "1": "LGA1700",
+        "2": "LGA2066"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "TR4"
+      },
+      "height": 65,
+      "radiator": "3열",
+      "fanSize": "140mm",
+      "bearingType": "Hydro(유체)",
+      "maxFanSpeed": 2800,
+      "maxAirFlow": 85,
+      "minFanNoise": 12,
+      "maxFanNoise": 33,
+      "ledSystem": "MYSTIC LIGHT",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "PWM 지원",
+        "3": "RGB 컨트롤러"
+      },
+      "thermalType": "튜브형"
+    },
+    "motherboard": {
+      "id": "30002",
+      "manufacturer": "MSI",
+      "productType": "AMD CPU용",
+      "cpuSocket": "AMD(소켓AM5)",
+      "chipset": "AMD X670",
+      "formFactor": "ATX (30.5x24.4cm)",
+      "powerPhase": 14,
+      "vcoreOutput": 1300,
+      "memoryType": "DDR5",
+      "memorySpeed": "6200MHz (PC5-49600)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 128GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 6,
+      "m2": 3,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 1,
+      "rearUsb2_0": 6,
+      "wiredLanChipset": "Realtek",
+      "wirelessLanType": "무선랜(Wi-Fi)",
+      "audioChipset": "SupremeFX",
+      "ledSystem": "MYSTIC LIGHT"
+    },
+    "memory": {
+      "id": "40003",
+      "manufacturer": "Corsair",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR5",
+      "memoryCapacity": "64GB",
+      "operatingClock": "6000MHz (PC5-48000)",
+      "ramTiming": "CL36",
+      "operatingVoltage": "1.30V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP3.0"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "화이트",
+      "ledColor": "RGB",
+      "ledSystem": "CORSAIR iCUE"
+    },
+    "gpu": {
+      "id": "50005",
+      "manufacturer": "SAPPHIRE",
+      "chipsetManufacturer": "AMD",
+      "productSeries": "라데온 RX 7000",
+      "gpuManufacturingProcess": "7 nm",
+      "amdChipset": "RX 7900 XTX",
+      "baseClock": 1900,
+      "boostClock": 2500,
+      "streamProcessors": "6144 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "24GB",
+      "memoryBus": "384-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP2.1"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 355,
+      "recommendedPower": "정격파워 850W 이상",
+      "powerPorts": "8핀 x2 + 6핀 x1",
+      "widthLength": "320mm",
+      "thickness": "55mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "오버클럭 물리키"
+      },
+      "ledSystem": "AURA SYNC",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60002",
+      "manufacturer": "Western Digital",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe4.0x4 (64GT/s)",
+      "protocol": "NVMe 1.4",
+      "capacity": "2TB",
+      "memoryType": "TLC(기타)",
+      "nandStructure": "3D낸드",
+      "process": "16 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 2GB",
+      "controller": "파이슨",
+      "sequentialRead": "6,500 MB/s",
+      "sequentialWrite": "4,800 MB/s",
+      "readIOPS": "950K",
+      "writeIOPS": "750K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "GC"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "전용 S/W"
+      },
+      "mtbf": "140만 시간",
+      "tbw": "700 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70002",
+      "manufacturer": "Western Digital",
+      "productType": "HDD (PC용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "4TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "5,400 RPM",
+      "bufferSize": "메모리 128MB",
+      "transferSpeed": "190MB/s",
+      "recordingMethod": "SMR(PMR)",
+      "diskCount": "플래터 2장",
+      "additionalFeatures": {
+        "1": "S.M.A.R.T 지원"
+      },
+      "mtbf": "80만 시간",
+      "warranty": "3년"
+    },
+    "case": {
+      "id": "80002",
+      "manufacturer": "darkFlash",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "4개",
+      "bay89cm": "6개",
+      "storageMount": "4개",
+      "verticalPCI": "슬롯변경형",
+      "coolingFans": "7개",
+      "ledFans": "4개",
+      "frontPanel": "강화유리",
+      "sideOpening": "버튼",
+      "side": "아크릴",
+      "rear": "140mm",
+      "front": "200mm LED",
+      "top": "140mm LED",
+      "dustFilter": "부분",
+      "vgaMountLength": "400mm",
+      "cpuCoolerHeight": "200mm",
+      "liquidCoolerSupport": "최대 3열 지원",
+      "radiatorTop": "최대 480mm",
+      "radiatorFront": "최대 600mm",
+      "radiatorRear": "최대 240mm",
+      "additionalFeatures": {
+        "1": "방음패드 내장",
+        "2": "수랭쿨링홀"
+      },
+      "ledTuning": {
+        "1": "외부 LED"
+      },
+      "controllerSupport": {
+        "1": "RGB 컨트롤"
+      },
+      "caseColor": "화이트 계열"
+    },
+    "power": {
+      "id": "90003",
+      "manufacturer": "MSI",
+      "productType": "ATX 파워",
+      "ratedOutput": "850W",
+      "certification80Plus": "80 PLUS 플래티넘",
+      "certificationETA": "TITANIUM",
+      "certificationLAMBDA": "A++",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "140mm 팬",
+      "warrantyPeriod": "무상 10년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 2개",
+      "additionalFeatures": {
+        "1": "디지털제어",
+        "2": "자동 팬 조절"
+      },
+      "ledSystem": {
+        "1": "RGB FUSION"
+      }
+    }
+  },
+  "PC3": {
+    "cpu": {
+      "id": "10003",
+      "manufacturer": "인텔",
+      "cpuType": "코어i7-14세대",
+      "socketType": "인텔(소켓1700)",
+      "coreCount": "8코어",
+      "threadCount": "16스레드",
+      "baseClock": "3.5 ~ 3.99 GHz",
+      "boostClock": "5.0 ~ 5.99 GHz",
+      "l3Cache": "20MB",
+      "tdp": "65 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "16레인",
+      "maxMemorySize": "64GB",
+      "memoryType": "DDR4",
+      "memorySpeed": "3200MHz",
+      "integratedGraphics": "인텔 UHD 730",
+      "supportedTechnologies": {
+        "1": "하이퍼스레딩/SMT",
+        "2": "인텔 퀵싱크"
+      },
+      "codeName": "엘더레이크 (2021)",
+      "packageType": "정품",
+      "coolerType": "인텔 기본쿨러 포함"
+    },
+    "cooler": {
+      "id": "20003",
+      "manufacturer": "Thermaltake",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "3년",
+      "intelSocket": {
+        "1": "LGA1151",
+        "2": "LGA1150"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "AM3+"
+      },
+      "height": 110,
+      "radiator": "1열",
+      "fanSize": "120mm",
+      "bearingType": "Rifle(유체)",
+      "maxFanSpeed": 2200,
+      "maxAirFlow": 65,
+      "minFanNoise": 17,
+      "maxFanNoise": 29,
+      "ledSystem": "RGB FUSION",
+      "additionalFeatures": {
+        "1": "PWM 지원",
+        "2": "팬허브(컨트롤러)"
+      },
+      "thermalType": "브러시형"
+    },
+    "motherboard": {
+      "id": "30003",
+      "manufacturer": "GIGABYTE",
+      "productType": "인텔 CPU용",
+      "cpuSocket": "인텔(소켓1200)",
+      "chipset": "인텔 Z590",
+      "formFactor": "M-ATX (24.4x24.4cm)",
+      "powerPhase": 12,
+      "vcoreOutput": 1000,
+      "memoryType": "DDR4",
+      "memorySpeed": "5000MHz (PC4-40000)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 64GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 4,
+      "m2": 2,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 1,
+      "rearUsb2_0": 4,
+      "wiredLanChipset": "Killer",
+      "wirelessLanType": "블루투스",
+      "audioChipset": "Realtek",
+      "ledSystem": "RGB FUSION"
+    },
+    "memory": {
+      "id": "40002",
+      "manufacturer": "G.SKILL",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR4",
+      "memoryCapacity": "16GB",
+      "operatingClock": "3200MHz (PC4-25600)",
+      "ramTiming": "CL16",
+      "operatingVoltage": "1.35V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "레드",
+      "ledColor": "RGB",
+      "ledSystem": "RGB FUSION"
+    },
+    "gpu": {
+      "id": "50004",
+      "manufacturer": "ZOTAC",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 16",
+      "gpuManufacturingProcess": "12 nm",
+      "nvidiaChipset": "GTX 1660 SUPER",
+      "baseClock": 1530,
+      "boostClock": 1785,
+      "streamProcessors": "1408 개",
+      "interface": "PCIe3.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "6GB",
+      "memoryBus": "192-bit",
+      "outputPort": {
+        "1": "HDMI2.0",
+        "2": "DP1.4"
+      },
+      "dvi": "1",
+      "hdmi": "1",
+      "displayPort": "1",
+      "monitorSupport": "최대 모니터 3개",
+      "supportFeatures": {
+        "1": "4K 지원",
+        "2": "HDCP 2.2"
+      },
+      "powerConsumption": 125,
+      "recommendedPower": "정격파워 450W 이상",
+      "powerPorts": "8핀 x1",
+      "widthLength": "209mm",
+      "thickness": "41mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "수냉 장착 지원"
+      },
+      "ledSystem": "SPECTRA",
+      "warrantyPeriod": "A/S 2년"
+    },
+    "ssd": {
+      "id": "60003",
+      "manufacturer": "SK하이닉스",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe3.0x4 (32GT/s)",
+      "protocol": "NVMe 1.3",
+      "capacity": "512GB",
+      "memoryType": "MLC(토글)",
+      "nandStructure": "3D낸드",
+      "process": "20 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR3 512MB",
+      "controller": "SK하이닉스",
+      "sequentialRead": "3,500 MB/s",
+      "sequentialWrite": "2,100 MB/s",
+      "readIOPS": "600K",
+      "writeIOPS": "450K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "SLC캐싱"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화"
+      },
+      "mtbf": "130만 시간",
+      "tbw": "300 TB",
+      "warranty": "3년"
+    },
+    "hdd": {
+      "id": "70003",
+      "manufacturer": "도시바",
+      "productType": "HDD (PC용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "6TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 256MB",
+      "transferSpeed": "210MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 3장",
+      "additionalFeatures": {
+        "1": "헬륨충전"
+      },
+      "mtbf": "100만 시간",
+      "warranty": "3년"
+    },
+    "case": {
+      "id": "80003",
+      "manufacturer": "마이크로닉스",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "3개",
+      "bay89cm": "5개",
+      "storageMount": "3개",
+      "verticalPCI": "기본형",
+      "coolingFans": "6개",
+      "ledFans": "3개",
+      "frontPanel": "일반(솔리드)",
+      "sideOpening": "스윙도어",
+      "side": "통풍구",
+      "rear": "120mm",
+      "front": "200mm",
+      "top": "140mm",
+      "dustFilter": "전체",
+      "vgaMountLength": "360mm",
+      "cpuCoolerHeight": "180mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 280mm",
+      "radiatorFront": "최대 480mm",
+      "radiatorRear": "최대 120mm",
+      "additionalFeatures": {
+        "1": "그래픽카드 지지대",
+        "2": "수랭쿨링홀"
+      },
+      "ledTuning": {
+        "1": "측면 LED 투과"
+      },
+      "controllerSupport": {
+        "1": "리모컨"
+      },
+      "caseColor": "레드 계열"
+    },
+    "power": {
+      "id": "90006",
+      "manufacturer": "잘만",
+      "productType": "ATX 파워",
+      "ratedOutput": "600W",
+      "certification80Plus": "80 PLUS 브론즈",
+      "certificationETA": "SILVER",
+      "certificationLAMBDA": "STANDARD",
+      "outputType12V": "+12V 다중레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "120mm 팬",
+      "warrantyPeriod": "무상 5년",
+      "cableConnection": "케이블일체형",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 1개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "플랫케이블",
+        "2": "자동 팬 조절"
+      },
+      "ledSystem": {
+        "1": "TT RGB PLUS"
+      }
+    }
+  },
+  "PC4": {
+    "cpu": {
+      "id": "10004",
+      "manufacturer": "AMD",
+      "cpuType": "라이젠7-5세대",
+      "socketType": "AMD(소켓AM5)",
+      "coreCount": "8코어",
+      "threadCount": "16스레드",
+      "baseClock": "3.0 ~ 3.49 GHz",
+      "boostClock": "4.0 ~ 4.49 GHz",
+      "l3Cache": "32MB",
+      "tdp": "95 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "24레인",
+      "maxMemorySize": "128GB",
+      "memoryType": "DDR4",
+      "memorySpeed": "3600MHz",
+      "integratedGraphics": "미탑재",
+      "supportedTechnologies": {
+        "1": "SenseMI",
+        "2": "StoreMI"
+      },
+      "codeName": "라파엘 (2022)",
+      "packageType": "정품",
+      "coolerType": "미포함"
+    },
+    "cooler": {
+      "id": "20005",
+      "manufacturer": "Corsair",
+      "productType": "CPU 쿨러",
+      "coolingType": "수랭",
+      "warranty": "5년",
+      "intelSocket": {
+        "1": "LGA1700",
+        "2": "LGA2066"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "TR4"
+      },
+      "height": 70,
+      "radiator": "3열",
+      "fanSize": "140mm",
+      "bearingType": "Hydro(유체)",
+      "maxFanSpeed": 2800,
+      "maxAirFlow": 85,
+      "minFanNoise": 13,
+      "maxFanNoise": 33,
+      "ledSystem": "MYSTIC LIGHT",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "PWM 지원",
+        "3": "RGB 컨트롤러"
+      },
+      "thermalType": "튜브형"
+    },
+    "motherboard": {
+      "id": "30004",
+      "manufacturer": "ASRock",
+      "productType": "AMD CPU용",
+      "cpuSocket": "AMD(소켓AM4)",
+      "chipset": "AMD B550",
+      "formFactor": "ATX (30.5x24.4cm)",
+      "powerPhase": 10,
+      "vcoreOutput": 900,
+      "memoryType": "DDR4",
+      "memorySpeed": "4400MHz (PC4-35200)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 128GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 6,
+      "m2": 2,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 2,
+      "rearUsb2_0": 6,
+      "wiredLanChipset": "Realtek",
+      "wirelessLanType": "무선랜(Wi-Fi)",
+      "audioChipset": "Realtek",
+      "ledSystem": "POLYCHROME"
+    },
+    "memory": {
+      "id": "40007",
+      "manufacturer": "Micron",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR4",
+      "memoryCapacity": "32GB",
+      "operatingClock": "3200MHz (PC4-25600)",
+      "ramTiming": "CL16",
+      "operatingVoltage": "1.35V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "블랙",
+      "ledColor": "RGB",
+      "ledSystem": "POLYCHROME"
+    },
+    "gpu": {
+      "id": "50006",
+      "manufacturer": "ASRock",
+      "chipsetManufacturer": "AMD",
+      "productSeries": "라데온 RX 6000",
+      "gpuManufacturingProcess": "7 nm",
+      "amdChipset": "RX 6800 XT",
+      "baseClock": 1825,
+      "boostClock": 2250,
+      "streamProcessors": "4608 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "16GB",
+      "memoryBus": "256-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP1.4"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "2",
+      "monitorSupport": "최대 모니터 3개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 300,
+      "recommendedPower": "정격파워 750W 이상",
+      "powerPorts": "8핀 x2",
+      "widthLength": "305mm",
+      "thickness": "54mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "Dual BIOS"
+      },
+      "ledSystem": "POLYCHROME",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60006",
+      "manufacturer": "ADATA",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe3.0x4 (32GT/s)",
+      "protocol": "NVMe 1.3",
+      "capacity": "1TB",
+      "memoryType": "TLC(기타)",
+      "nandStructure": "3D낸드",
+      "process": "16 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR3 1GB",
+      "controller": "리얼텍",
+      "sequentialRead": "3,300 MB/s",
+      "sequentialWrite": "2,800 MB/s",
+      "readIOPS": "600K",
+      "writeIOPS": "500K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "S.M.A.R.T"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화"
+      },
+      "mtbf": "130만 시간",
+      "tbw": "500 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70004",
+      "manufacturer": "HGST",
+      "productType": "HDD (기업용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "12TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 256MB",
+      "transferSpeed": "250MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 4장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "200만 시간",
+      "warranty": "5년"
+    },
+    "case": {
+      "id": "80004",
+      "manufacturer": "아이구주",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "빅타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "E-ATX"
+      },
+      "bay13cm": "4개",
+      "bay89cm": "8개",
+      "storageMount": "4개",
+      "verticalPCI": "슬롯변경형",
+      "coolingFans": "9개",
+      "ledFans": "8개",
+      "frontPanel": "메쉬",
+      "sideOpening": "버튼",
+      "side": "강화유리",
+      "rear": "140mm LED",
+      "front": "200mm LED",
+      "top": "140mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "350mm",
+      "cpuCoolerHeight": "190mm",
+      "liquidCoolerSupport": "최대 4열 지원",
+      "radiatorTop": "최대 480mm",
+      "radiatorFront": "최대 600mm",
+      "radiatorRear": "최대 240mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "상태표시 창",
+        "3": "방음패드 내장"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바",
+        "2": "외부 LED"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤",
+        "2": "RGB 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90009",
+      "manufacturer": "쿨러마스터",
+      "productType": "ATX 파워",
+      "ratedOutput": "1000W",
+      "certification80Plus": "80 PLUS 티타늄",
+      "certificationETA": "TITANIUM",
+      "certificationLAMBDA": "A++",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "140mm 팬",
+      "warrantyPeriod": "무상 12년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 4개",
+      "pcie16pin": "12VHPWR 2개",
+      "additionalFeatures": {
+        "1": "디지털제어",
+        "2": "자동 팬 조절"
+      },
+      "ledSystem": {
+        "1": "RGB FUSION"
+      }
+    }
+  },
+  "PC5": {
+    "cpu": {
+      "id": "10006",
+      "manufacturer": "AMD",
+      "cpuType": "라이젠5-5세대",
+      "socketType": "AMD(소켓AM5)",
+      "coreCount": "6코어",
+      "threadCount": "12스레드",
+      "baseClock": "2.5 ~ 2.99 GHz",
+      "boostClock": "4.0 ~ 4.49 GHz",
+      "l3Cache": "32MB",
+      "tdp": "65 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "24레인",
+      "maxMemorySize": "128GB",
+      "memoryType": "DDR4",
+      "memorySpeed": "3600MHz",
+      "integratedGraphics": "미탑재",
+      "supportedTechnologies": {
+        "1": "SenseMI",
+        "2": "StoreMI"
+      },
+      "codeName": "라파엘 (2022)",
+      "packageType": "정품",
+      "coolerType": "미포함"
+    },
+    "cooler": {
+      "id": "20006",
+      "manufacturer": "MSI",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "3년",
+      "intelSocket": {
+        "1": "LGA1151",
+        "2": "LGA1150"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "AM3+"
+      },
+      "height": 110,
+      "radiator": "1열",
+      "fanSize": "120mm",
+      "bearingType": "Rifle(유체)",
+      "maxFanSpeed": 2500,
+      "maxAirFlow": 60,
+      "minFanNoise": 18,
+      "maxFanNoise": 29,
+      "ledSystem": "RGB FUSION",
+      "additionalFeatures": {
+        "1": "PWM 지원",
+        "2": "팬허브(컨트롤러)"
+      },
+      "thermalType": "브러시형"
+    },
+    "motherboard": {
+      "id": "30006",
+      "manufacturer": "ECS",
+      "productType": "AMD CPU용",
+      "cpuSocket": "AMD(소켓AM4)",
+      "chipset": "AMD B450",
+      "formFactor": "M-ATX (24.4x24.4cm)",
+      "powerPhase": 6,
+      "vcoreOutput": 700,
+      "memoryType": "DDR4",
+      "memorySpeed": "3600MHz (PC4-28800)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 64GB",
+      "vgaConnection": "PCIe3.0 x16",
+      "pcieVersion": "PCIe3.0",
+      "sata": 4,
+      "m2": 1,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DVI"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 0,
+      "rearUsb2_0": 4,
+      "wiredLanChipset": "Realtek",
+      "wirelessLanType": "블루투스",
+      "audioChipset": "Realtek",
+      "ledSystem": "POLYCHROME"
+    },
+    "memory": {
+      "id": "40008",
+      "manufacturer": "TeamGroup",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR5",
+      "memoryCapacity": "32GB",
+      "operatingClock": "5600MHz (PC5-44800)",
+      "ramTiming": "CL40",
+      "operatingVoltage": "1.25V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "EXPO"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "그린",
+      "ledColor": "RGB",
+      "ledSystem": "TT RGB PLUS"
+    },
+    "gpu": {
+      "id": "50005",
+      "manufacturer": "SAPPHIRE",
+      "chipsetManufacturer": "AMD",
+      "productSeries": "라데온 RX 7000",
+      "gpuManufacturingProcess": "7 nm",
+      "amdChipset": "RX 7900 XTX",
+      "baseClock": 1900,
+      "boostClock": 2500,
+      "streamProcessors": "6144 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "24GB",
+      "memoryBus": "384-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP2.1"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 355,
+      "recommendedPower": "정격파워 850W 이상",
+      "powerPorts": "8핀 x2 + 6핀 x1",
+      "widthLength": "320mm",
+      "thickness": "55mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "오버클럭 물리키"
+      },
+      "ledSystem": "AURA SYNC",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60007",
+      "manufacturer": "Kingston",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe4.0x4 (64GT/s)",
+      "protocol": "NVMe 1.4",
+      "capacity": "2TB",
+      "memoryType": "TLC(토글)",
+      "nandStructure": "3D낸드",
+      "process": "14 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 2GB",
+      "controller": "파이슨",
+      "sequentialRead": "6,800 MB/s",
+      "sequentialWrite": "5,000 MB/s",
+      "readIOPS": "900K",
+      "writeIOPS": "750K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "S.M.A.R.T"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "RGB/LED"
+      },
+      "mtbf": "140만 시간",
+      "tbw": "700 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70002",
+      "manufacturer": "Western Digital",
+      "productType": "HDD (PC용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "4TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "5,400 RPM",
+      "bufferSize": "메모리 128MB",
+      "transferSpeed": "190MB/s",
+      "recordingMethod": "SMR(PMR)",
+      "diskCount": "플래터 2장",
+      "additionalFeatures": {
+        "1": "S.M.A.R.T 지원"
+      },
+      "mtbf": "80만 시간",
+      "warranty": "3년"
+    },
+    "case": {
+      "id": "80009",
+      "manufacturer": "Fractal Design",
+      "productType": "PC케이스(M-ATX)",
+      "caseSize": "미니타워",
+      "powerSupply": "M-ATX(SFX)",
+      "boardSupport": {
+        "1": "M-ATX",
+        "2": "ITX"
+      },
+      "bay13cm": "1개",
+      "bay89cm": "2개",
+      "storageMount": "1개",
+      "verticalPCI": "기본형",
+      "coolingFans": "3개",
+      "ledFans": "1개",
+      "frontPanel": "일반(솔리드)",
+      "sideOpening": "스윙도어",
+      "side": "아크릴",
+      "rear": "120mm",
+      "front": "140mm",
+      "top": "120mm",
+      "dustFilter": "부분",
+      "vgaMountLength": "240mm",
+      "cpuCoolerHeight": "140mm",
+      "liquidCoolerSupport": "최대 1열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 280mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "수랭쿨링홀"
+      },
+      "ledTuning": {
+        "1": "측면 LED 투과"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "화이트 계열"
+    },
+    "power": {
+      "id": "90001",
+      "manufacturer": "시소닉",
+      "productType": "ATX 파워",
+      "ratedOutput": "750W",
+      "certification80Plus": "80 PLUS 골드",
+      "certificationETA": "PLATINUM",
+      "certificationLAMBDA": "A+",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "135mm 팬",
+      "warrantyPeriod": "무상 10년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "플랫케이블",
+        "2": "대기전력 1W 미만"
+      },
+      "ledSystem": {
+        "1": "AURA SYNC"
+      }
+    }
+  },
+  "PC6": {
+    "cpu": {
+      "id": "10002",
+      "manufacturer": "AMD",
+      "cpuType": "라이젠9-5세대",
+      "socketType": "AMD(소켓AM5)",
+      "coreCount": "12코어",
+      "threadCount": "24스레드",
+      "baseClock": "3.0 ~ 3.49 GHz",
+      "boostClock": "4.5 ~ 4.99 GHz",
+      "l3Cache": "64MB",
+      "tdp": "105 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "20레인",
+      "maxMemorySize": "128GB",
+      "memoryType": "DDR5",
+      "memorySpeed": "5200MHz",
+      "integratedGraphics": "미탑재",
+      "supportedTechnologies": {
+        "1": "AMD 3D V캐시",
+        "2": "SenseMI"
+      },
+      "codeName": "피닉스 (2024)",
+      "packageType": "정품",
+      "coolerType": "미포함"
+    },
+    "cooler": {
+      "id": "20008",
+      "manufacturer": "ARCTIC",
+      "productType": "CPU 쿨러",
+      "coolingType": "수랭",
+      "warranty": "6년+누수보상",
+      "intelSocket": {
+        "1": "LGA1700",
+        "2": "LGA2066"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "TR4"
+      },
+      "height": 70,
+      "radiator": "3열",
+      "fanSize": "140mm",
+      "bearingType": "Hydro(유체)",
+      "maxFanSpeed": 2800,
+      "maxAirFlow": 85,
+      "minFanNoise": 12,
+      "maxFanNoise": 32,
+      "ledSystem": "MYSTIC LIGHT",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "PWM 지원",
+        "3": "RGB 컨트롤러"
+      },
+      "thermalType": "튜브형"
+    },
+    "motherboard": {
+      "id": "30002",
+      "manufacturer": "MSI",
+      "productType": "AMD CPU용",
+      "cpuSocket": "AMD(소켓AM5)",
+      "chipset": "AMD X670",
+      "formFactor": "ATX (30.5x24.4cm)",
+      "powerPhase": 14,
+      "vcoreOutput": 1300,
+      "memoryType": "DDR5",
+      "memorySpeed": "6200MHz (PC5-49600)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 128GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 6,
+      "m2": 3,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 1,
+      "rearUsb2_0": 6,
+      "wiredLanChipset": "Realtek",
+      "wirelessLanType": "무선랜(Wi-Fi)",
+      "audioChipset": "SupremeFX",
+      "ledSystem": "MYSTIC LIGHT"
+    },
+    "memory": {
+      "id": "40001",
+      "manufacturer": "삼성전자",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR5",
+      "memoryCapacity": "32GB",
+      "operatingClock": "5200MHz (PC5-41600)",
+      "ramTiming": "CL40",
+      "operatingVoltage": "1.25V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP",
+        "2": "온다이ECC"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "블랙",
+      "ledColor": "RGB",
+      "ledSystem": "AURA SYNC"
+    },
+    "gpu": {
+      "id": "50001",
+      "manufacturer": "MSI",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 RTX 40",
+      "gpuManufacturingProcess": "4 nm",
+      "nvidiaChipset": "RTX 4090",
+      "baseClock": 2230,
+      "boostClock": 2520,
+      "streamProcessors": "16384 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6X(DDR6X)",
+      "memoryCapacity": "24GB",
+      "memoryBus": "384-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP1.4"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 350,
+      "recommendedPower": "정격파워 850W 이상",
+      "powerPorts": "8핀 x3",
+      "widthLength": "336mm",
+      "thickness": "60mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "Dual BIOS"
+      },
+      "ledSystem": "RGB FUSION",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60009",
+      "manufacturer": "Corsair",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe4.0x4 (64GT/s)",
+      "protocol": "NVMe 1.4",
+      "capacity": "1TB",
+      "memoryType": "TLC(토글)",
+      "nandStructure": "3D낸드",
+      "process": "14 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 1GB",
+      "controller": "삼성",
+      "sequentialRead": "7,000 MB/s",
+      "sequentialWrite": "6,500 MB/s",
+      "readIOPS": "1,000K",
+      "writeIOPS": "900K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "S.M.A.R.T"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "RGB/LED"
+      },
+      "mtbf": "150만 시간",
+      "tbw": "700 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70001",
+      "manufacturer": "Seagate",
+      "productType": "HDD (PC용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "8TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 256MB",
+      "transferSpeed": "250MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 4장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "100만 시간",
+      "warranty": "5년"
+    },
+    "case": {
+      "id": "80001",
+      "manufacturer": "앱코",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "3개",
+      "bay89cm": "4개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "5개",
+      "ledFans": "2개",
+      "frontPanel": "메쉬",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm LED",
+      "top": "120mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "350mm",
+      "cpuCoolerHeight": "160mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "상태표시 창"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90003",
+      "manufacturer": "MSI",
+      "productType": "ATX 파워",
+      "ratedOutput": "850W",
+      "certification80Plus": "80 PLUS 플래티넘",
+      "certificationETA": "TITANIUM",
+      "certificationLAMBDA": "A++",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "140mm 팬",
+      "warrantyPeriod": "무상 10년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 2개",
+      "additionalFeatures": {
+        "1": "디지털제어",
+        "2": "자동 팬 조절"
+      },
+      "ledSystem": {
+        "1": "RGB FUSION"
+      }
+    }
+  },
+  "PC7": {
+    "cpu": {
+      "id": "10010",
+      "manufacturer": "AMD",
+      "cpuType": "라이젠9-4세대",
+      "socketType": "AMD(소켓AM4)",
+      "coreCount": "12코어",
+      "threadCount": "24스레드",
+      "baseClock": "3.0 ~ 3.49 GHz",
+      "boostClock": "4.5 ~ 4.99 GHz",
+      "l3Cache": "64MB",
+      "tdp": "105 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "20레인",
+      "maxMemorySize": "128GB",
+      "memoryType": "DDR5",
+      "memorySpeed": "5200MHz",
+      "integratedGraphics": "미탑재",
+      "supportedTechnologies": {
+        "1": "AMD 3D V캐시",
+        "2": "SenseMI"
+      },
+      "codeName": "피닉스 (2024)",
+      "packageType": "정품",
+      "coolerType": "미포함"
+    },
+    "cooler": {
+      "id": "20004",
+      "manufacturer": "Noctua",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "6년",
+      "intelSocket": {
+        "1": "LGA1700",
+        "2": "LGA2066"
+      },
+      "amdSocket": {
+        "1": "AM5",
+        "2": "AM4"
+      },
+      "height": 145,
+      "radiator": "2열",
+      "fanSize": "140mm",
+      "bearingType": "S-FDB V2(유체)",
+      "maxFanSpeed": 2000,
+      "maxAirFlow": 72,
+      "minFanNoise": 18,
+      "maxFanNoise": 28,
+      "ledSystem": "AURA SYNC",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "PWM 지원"
+      },
+      "thermalType": "주사기형"
+    },
+    "motherboard": {
+      "id": "30004",
+      "manufacturer": "ASRock",
+      "productType": "AMD CPU용",
+      "cpuSocket": "AMD(소켓AM4)",
+      "chipset": "AMD B550",
+      "formFactor": "ATX (30.5x24.4cm)",
+      "powerPhase": 10,
+      "vcoreOutput": 900,
+      "memoryType": "DDR4",
+      "memorySpeed": "4400MHz (PC4-35200)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 128GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 6,
+      "m2": 2,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 2,
+      "rearUsb2_0": 6,
+      "wiredLanChipset": "Realtek",
+      "wirelessLanType": "무선랜(Wi-Fi)",
+      "audioChipset": "Realtek",
+      "ledSystem": "POLYCHROME"
+    },
+    "memory": {
+      "id": "40007",
+      "manufacturer": "Micron",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR4",
+      "memoryCapacity": "32GB",
+      "operatingClock": "3200MHz (PC4-25600)",
+      "ramTiming": "CL16",
+      "operatingVoltage": "1.35V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "블랙",
+      "ledColor": "RGB",
+      "ledSystem": "POLYCHROME"
+    },
+    "gpu": {
+      "id": "50003",
+      "manufacturer": "GIGABYTE",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 RTX 20",
+      "gpuManufacturingProcess": "12 nm",
+      "nvidiaChipset": "RTX 2080 SUPER",
+      "baseClock": 1650,
+      "boostClock": 1815,
+      "streamProcessors": "3072 개",
+      "interface": "PCIe3.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "8GB",
+      "memoryBus": "256-bit",
+      "outputPort": {
+        "1": "HDMI2.0",
+        "2": "DP1.4"
+      },
+      "dvi": "1",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "4K 지원",
+        "2": "HDCP 2.2"
+      },
+      "powerConsumption": 250,
+      "recommendedPower": "정격파워 650W 이상",
+      "powerPorts": "8핀 x1 + 6핀 x1",
+      "widthLength": "285mm",
+      "thickness": "50mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "오버클럭 물리키"
+      },
+      "ledSystem": "RGB FUSION",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60003",
+      "manufacturer": "SK하이닉스",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe3.0x4 (32GT/s)",
+      "protocol": "NVMe 1.3",
+      "capacity": "512GB",
+      "memoryType": "MLC(토글)",
+      "nandStructure": "3D낸드",
+      "process": "20 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR3 512MB",
+      "controller": "SK하이닉스",
+      "sequentialRead": "3,500 MB/s",
+      "sequentialWrite": "2,100 MB/s",
+      "readIOPS": "600K",
+      "writeIOPS": "450K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "SLC캐싱"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화"
+      },
+      "mtbf": "130만 시간",
+      "tbw": "300 TB",
+      "warranty": "3년"
+    },
+    "hdd": {
+      "id": "70003",
+      "manufacturer": "도시바",
+      "productType": "HDD (PC용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "6TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 256MB",
+      "transferSpeed": "210MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 3장",
+      "additionalFeatures": {
+        "1": "헬륨충전"
+      },
+      "mtbf": "100만 시간",
+      "warranty": "3년"
+    },
+    "case": {
+      "id": "80010",
+      "manufacturer": "리안리",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "3개",
+      "bay89cm": "4개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "5개",
+      "ledFans": "2개",
+      "frontPanel": "메쉬",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm LED",
+      "top": "120mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "300mm",
+      "cpuCoolerHeight": "160mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "상태표시 창"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90007",
+      "manufacturer": "darkFlash",
+      "productType": "ATX 파워",
+      "ratedOutput": "650W",
+      "certification80Plus": "80 PLUS 골드",
+      "certificationETA": "GOLD",
+      "certificationLAMBDA": "A+",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "120mm 팬",
+      "warrantyPeriod": "무상 6년",
+      "cableConnection": "세미모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "대기전력 1W 미만",
+        "2": "자동 팬 조절"
+      },
+      "ledSystem": {
+        "1": "AURA SYNC"
+      }
+    }
+  },
+  "PC8": {
+    "cpu": {
+      "id": "10005",
+      "manufacturer": "인텔",
+      "cpuType": "코어i5-14세대",
+      "socketType": "인텔(소켓1700)",
+      "coreCount": "6코어",
+      "threadCount": "12스레드",
+      "baseClock": "3.0 ~ 3.49 GHz",
+      "boostClock": "4.5 ~ 4.99 GHz",
+      "l3Cache": "12MB",
+      "tdp": "65 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "16레인",
+      "maxMemorySize": "64GB",
+      "memoryType": "DDR4",
+      "memorySpeed": "2933MHz",
+      "integratedGraphics": "인텔 UHD 630",
+      "supportedTechnologies": {
+        "1": "하이퍼스레딩/SMT",
+        "2": "인텔 XTU"
+      },
+      "codeName": "코멧레이크 (2020)",
+      "packageType": "정품",
+      "coolerType": "인텔 기본쿨러 포함"
+    },
+    "cooler": {
+      "id": "20007",
+      "manufacturer": "Cooler Master",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "5년",
+      "intelSocket": {
+        "1": "LGA1700",
+        "2": "LGA1200"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "AM5"
+      },
+      "height": 155,
+      "radiator": "2열",
+      "fanSize": "120mm",
+      "bearingType": "FDB(유체)",
+      "maxFanSpeed": 2000,
+      "maxAirFlow": 75,
+      "minFanNoise": 18,
+      "maxFanNoise": 28,
+      "ledSystem": "AURA SYNC",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "PWM 지원"
+      },
+      "thermalType": "주사기형"
+    },
+    "motherboard": {
+      "id": "30010",
+      "manufacturer": "ASUS",
+      "productType": "인텔 CPU용",
+      "cpuSocket": "인텔(소켓1700)",
+      "chipset": "인텔 Z690",
+      "formFactor": "ATX (30.5x24.4cm)",
+      "powerPhase": 16,
+      "vcoreOutput": 1500,
+      "memoryType": "DDR5",
+      "memorySpeed": "6400MHz (PC5-51200)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 128GB",
+      "vgaConnection": "PCIe5.0 x16",
+      "pcieVersion": "PCIe5.0",
+      "sata": 6,
+      "m2": 4,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 20Gbps",
+        "2": "USB3.x 10Gbps",
+        "3": "USB4 40Gbps",
+        "4": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 2,
+      "rearUsb2_0": 4,
+      "wiredLanChipset": "Intel",
+      "wirelessLanType": "무선랜(Wi-Fi)",
+      "audioChipset": "Realtek",
+      "ledSystem": "AURA SYNC"
+    },
+    "memory": {
+      "id": "40002",
+      "manufacturer": "G.SKILL",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR4",
+      "memoryCapacity": "16GB",
+      "operatingClock": "3200MHz (PC4-25600)",
+      "ramTiming": "CL16",
+      "operatingVoltage": "1.35V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "레드",
+      "ledColor": "RGB",
+      "ledSystem": "RGB FUSION"
+    },
+    "gpu": {
+      "id": "50006",
+      "manufacturer": "ASRock",
+      "chipsetManufacturer": "AMD",
+      "productSeries": "라데온 RX 6000",
+      "gpuManufacturingProcess": "7 nm",
+      "amdChipset": "RX 6800 XT",
+      "baseClock": 1825,
+      "boostClock": 2250,
+      "streamProcessors": "4608 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "16GB",
+      "memoryBus": "256-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP1.4"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "2",
+      "monitorSupport": "최대 모니터 3개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 300,
+      "recommendedPower": "정격파워 750W 이상",
+      "powerPorts": "8핀 x2",
+      "widthLength": "305mm",
+      "thickness": "54mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "Dual BIOS"
+      },
+      "ledSystem": "POLYCHROME",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60005",
+      "manufacturer": "Crucial",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe3.0x4 (32GT/s)",
+      "protocol": "NVMe 1.3",
+      "capacity": "1TB",
+      "memoryType": "TLC(토글)",
+      "nandStructure": "3D낸드",
+      "process": "14 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 1GB",
+      "controller": "마벨",
+      "sequentialRead": "3,400 MB/s",
+      "sequentialWrite": "3,000 MB/s",
+      "readIOPS": "650K",
+      "writeIOPS": "500K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "S.M.A.R.T"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화"
+      },
+      "mtbf": "150만 시간",
+      "tbw": "600 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70005",
+      "manufacturer": "삼성전자",
+      "productType": "HDD (PC용)",
+      "diskSize": "6.4cm(2.5인치)",
+      "diskCapacity": "2TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "5,400 RPM",
+      "bufferSize": "메모리 128MB",
+      "transferSpeed": "160MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 1장",
+      "additionalFeatures": {
+        "1": "S.M.A.R.T 지원"
+      },
+      "mtbf": "80만 시간",
+      "warranty": "3년"
+    },
+    "case": {
+      "id": "80006",
+      "manufacturer": "DAVEN",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "3개",
+      "bay89cm": "4개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "5개",
+      "ledFans": "2개",
+      "frontPanel": "메쉬",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm LED",
+      "top": "120mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "300mm",
+      "cpuCoolerHeight": "160mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "상태표시 창"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90002",
+      "manufacturer": "앱코",
+      "productType": "ATX 파워",
+      "ratedOutput": "650W",
+      "certification80Plus": "80 PLUS 브론즈",
+      "certificationETA": "SILVER",
+      "certificationLAMBDA": "STANDARD+",
+      "outputType12V": "+12V 다중레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "120mm 팬",
+      "warrantyPeriod": "무상 5년",
+      "cableConnection": "세미모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 1개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "팬리스모드"
+      },
+      "ledSystem": {
+        "1": "MYSTIC LIGHT"
+      }
+    }
+  },
+  "PC9": {
+    "cpu": {
+      "id": "10001",
+      "manufacturer": "인텔",
+      "cpuType": "코어i9-14세대",
+      "socketType": "인텔(소켓1700)",
+      "coreCount": "16코어",
+      "threadCount": "32스레드",
+      "baseClock": "3.5 ~ 3.99 GHz",
+      "boostClock": "5.0 ~ 5.99 GHz",
+      "l3Cache": "30MB",
+      "tdp": "125 W",
+      "pcieVersion": "PCIe5.0",
+      "maxPcieLanes": "16레인",
+      "maxMemorySize": "128GB",
+      "memoryType": "DDR5",
+      "memorySpeed": "4800MHz",
+      "integratedGraphics": "인텔 UHD 770",
+      "supportedTechnologies": {
+        "1": "하이퍼스레딩/SMT",
+        "2": "인텔 XTU"
+      },
+      "codeName": "랩터레이크 (2022)",
+      "packageType": "정품",
+      "coolerType": "인텔 기본쿨러 포함"
+    },
+    "cooler": {
+      "id": "20002",
+      "manufacturer": "NZXT",
+      "productType": "CPU 쿨러",
+      "coolingType": "수랭",
+      "warranty": "6년+누수보상",
+      "intelSocket": {
+        "1": "LGA1700",
+        "2": "LGA2066"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "TR4"
+      },
+      "height": 65,
+      "radiator": "3열",
+      "fanSize": "140mm",
+      "bearingType": "Hydro(유체)",
+      "maxFanSpeed": 2800,
+      "maxAirFlow": 85,
+      "minFanNoise": 12,
+      "maxFanNoise": 33,
+      "ledSystem": "MYSTIC LIGHT",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "PWM 지원",
+        "3": "RGB 컨트롤러"
+      },
+      "thermalType": "튜브형"
+    },
+    "motherboard": {
+      "id": "30001",
+      "manufacturer": "ASUS",
+      "productType": "인텔 CPU용",
+      "cpuSocket": "인텔(소켓1700)",
+      "chipset": "인텔 Z790",
+      "formFactor": "ATX (30.5x24.4cm)",
+      "powerPhase": 16,
+      "vcoreOutput": 1500,
+      "memoryType": "DDR5",
+      "memorySpeed": "6400MHz (PC5-51200)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 128GB",
+      "vgaConnection": "PCIe5.0 x16",
+      "pcieVersion": "PCIe5.0",
+      "sata": 6,
+      "m2": 4,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 20Gbps",
+        "2": "USB3.x 10Gbps",
+        "3": "USB4 40Gbps",
+        "4": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 2,
+      "rearUsb2_0": 4,
+      "wiredLanChipset": "Intel",
+      "wirelessLanType": "무선랜(Wi-Fi)",
+      "audioChipset": "Realtek",
+      "ledSystem": "AURA SYNC"
+    },
+    "memory": {
+      "id": "40001",
+      "manufacturer": "삼성전자",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR5",
+      "memoryCapacity": "32GB",
+      "operatingClock": "5200MHz (PC5-41600)",
+      "ramTiming": "CL40",
+      "operatingVoltage": "1.25V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP",
+        "2": "온다이ECC"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "블랙",
+      "ledColor": "RGB",
+      "ledSystem": "AURA SYNC"
+    },
+    "gpu": {
+      "id": "50001",
+      "manufacturer": "MSI",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 RTX 40",
+      "gpuManufacturingProcess": "4 nm",
+      "nvidiaChipset": "RTX 4090",
+      "baseClock": 2230,
+      "boostClock": 2520,
+      "streamProcessors": "16384 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6X(DDR6X)",
+      "memoryCapacity": "24GB",
+      "memoryBus": "384-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP1.4"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 350,
+      "recommendedPower": "정격파워 850W 이상",
+      "powerPorts": "8핀 x3",
+      "widthLength": "336mm",
+      "thickness": "60mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "Dual BIOS"
+      },
+      "ledSystem": "RGB FUSION",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60001",
+      "manufacturer": "삼성전자",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe4.0x4 (64GT/s)",
+      "protocol": "NVMe 1.4",
+      "capacity": "1TB",
+      "memoryType": "TLC(토글)",
+      "nandStructure": "3D낸드",
+      "process": "14 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 1GB",
+      "controller": "삼성",
+      "sequentialRead": "7,000 MB/s",
+      "sequentialWrite": "5,100 MB/s",
+      "readIOPS": "1,000K",
+      "writeIOPS": "800K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "S.M.A.R.T"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "RGB/LED"
+      },
+      "mtbf": "150만 시간",
+      "tbw": "600 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70001",
+      "manufacturer": "Seagate",
+      "productType": "HDD (PC용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "8TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 256MB",
+      "transferSpeed": "250MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 4장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "100만 시간",
+      "warranty": "5년"
+    },
+    "case": {
+      "id": "80008",
+      "manufacturer": "NZXT",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "빅타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "E-ATX"
+      },
+      "bay13cm": "4개",
+      "bay89cm": "8개",
+      "storageMount": "4개",
+      "verticalPCI": "슬롯변경형",
+      "coolingFans": "9개",
+      "ledFans": "8개",
+      "frontPanel": "메쉬",
+      "sideOpening": "버튼",
+      "side": "강화유리",
+      "rear": "140mm LED",
+      "front": "200mm LED",
+      "top": "140mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "350mm",
+      "cpuCoolerHeight": "190mm",
+      "liquidCoolerSupport": "최대 4열 지원",
+      "radiatorTop": "최대 480mm",
+      "radiatorFront": "최대 600mm",
+      "radiatorRear": "최대 240mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "상태표시 창",
+        "3": "방음패드 내장"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바",
+        "2": "외부 LED"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤",
+        "2": "RGB 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90009",
+      "manufacturer": "쿨러마스터",
+      "productType": "ATX 파워",
+      "ratedOutput": "1000W",
+      "certification80Plus": "80 PLUS 티타늄",
+      "certificationETA": "TITANIUM",
+      "certificationLAMBDA": "A++",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "140mm 팬",
+      "warrantyPeriod": "무상 12년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 4개",
+      "pcie16pin": "12VHPWR 2개",
+      "additionalFeatures": {
+        "1": "디지털제어",
+        "2": "자동 팬 조절"
+      },
+      "ledSystem": {
+        "1": "RGB FUSION"
+      }
+    }
+  },
+  "PC10": {
+    "cpu": {
+      "id": "10003",
+      "manufacturer": "인텔",
+      "cpuType": "코어i7-14세대",
+      "socketType": "인텔(소켓1700)",
+      "coreCount": "8코어",
+      "threadCount": "16스레드",
+      "baseClock": "3.5 ~ 3.99 GHz",
+      "boostClock": "5.0 ~ 5.99 GHz",
+      "l3Cache": "20MB",
+      "tdp": "65 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "16레인",
+      "maxMemorySize": "64GB",
+      "memoryType": "DDR4",
+      "memorySpeed": "3200MHz",
+      "integratedGraphics": "인텔 UHD 730",
+      "supportedTechnologies": {
+        "1": "하이퍼스레딩/SMT",
+        "2": "인텔 퀵싱크"
+      },
+      "codeName": "엘더레이크 (2021)",
+      "packageType": "정품",
+      "coolerType": "인텔 기본쿨러 포함"
+    },
+    "cooler": {
+      "id": "20004",
+      "manufacturer": "Noctua",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "6년",
+      "intelSocket": {
+        "1": "LGA1700",
+        "2": "LGA2066"
+      },
+      "amdSocket": {
+        "1": "AM5",
+        "2": "AM4"
+      },
+      "height": 145,
+      "radiator": "2열",
+      "fanSize": "140mm",
+      "bearingType": "S-FDB V2(유체)",
+      "maxFanSpeed": 2000,
+      "maxAirFlow": 72,
+      "minFanNoise": 18,
+      "maxFanNoise": 28,
+      "ledSystem": "AURA SYNC",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "PWM 지원"
+      },
+      "thermalType": "주사기형"
+    },
+    "motherboard": {
+      "id": "30003",
+      "manufacturer": "GIGABYTE",
+      "productType": "인텔 CPU용",
+      "cpuSocket": "인텔(소켓1200)",
+      "chipset": "인텔 Z590",
+      "formFactor": "M-ATX (24.4x24.4cm)",
+      "powerPhase": 12,
+      "vcoreOutput": 1000,
+      "memoryType": "DDR4",
+      "memorySpeed": "5000MHz (PC4-40000)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 64GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 4,
+      "m2": 2,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 1,
+      "rearUsb2_0": 4,
+      "wiredLanChipset": "Killer",
+      "wirelessLanType": "블루투스",
+      "audioChipset": "Realtek",
+      "ledSystem": "RGB FUSION"
+    },
+    "memory": {
+      "id": "40007",
+      "manufacturer": "Micron",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR4",
+      "memoryCapacity": "32GB",
+      "operatingClock": "3200MHz (PC4-25600)",
+      "ramTiming": "CL16",
+      "operatingVoltage": "1.35V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "블랙",
+      "ledColor": "RGB",
+      "ledSystem": "POLYCHROME"
+    },
+    "gpu": {
+      "id": "50010",
+      "manufacturer": "EVGA",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 RTX 30",
+      "gpuManufacturingProcess": "8 nm",
+      "nvidiaChipset": "RTX 3060 Ti",
+      "baseClock": 1410,
+      "boostClock": 1665,
+      "streamProcessors": "4864 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "8GB",
+      "memoryBus": "256-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP1.4"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 200,
+      "recommendedPower": "정격파워 600W 이상",
+      "powerPorts": "8핀 x2",
+      "widthLength": "242mm",
+      "thickness": "45mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "Dual BIOS"
+      },
+      "ledSystem": "MYSTIC LIGHT",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60008",
+      "manufacturer": "Intel",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe3.0x4 (32GT/s)",
+      "protocol": "NVMe 1.3",
+      "capacity": "1TB",
+      "memoryType": "MLC(기타)",
+      "nandStructure": "3D낸드",
+      "process": "20 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 1GB",
+      "controller": "인텔",
+      "sequentialRead": "3,500 MB/s",
+      "sequentialWrite": "2,500 MB/s",
+      "readIOPS": "700K",
+      "writeIOPS": "600K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "S.M.A.R.T"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화"
+      },
+      "mtbf": "140만 시간",
+      "tbw": "500 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70006",
+      "manufacturer": "Synology",
+      "productType": "HDD (NAS용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "10TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 256MB",
+      "transferSpeed": "250MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 4장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "150만 시간",
+      "warranty": "5년"
+    },
+    "case": {
+      "id": "80007",
+      "manufacturer": "잘만",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "3개",
+      "bay89cm": "5개",
+      "storageMount": "3개",
+      "verticalPCI": "기본형",
+      "coolingFans": "6개",
+      "ledFans": "3개",
+      "frontPanel": "일반(솔리드)",
+      "sideOpening": "스윙도어",
+      "side": "통풍구",
+      "rear": "120mm",
+      "front": "200mm",
+      "top": "140mm",
+      "dustFilter": "전체",
+      "vgaMountLength": "350mm",
+      "cpuCoolerHeight": "180mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 280mm",
+      "radiatorFront": "최대 480mm",
+      "radiatorRear": "최대 120mm",
+      "additionalFeatures": {
+        "1": "그래픽카드 지지대",
+        "2": "수랭쿨링홀"
+      },
+      "ledTuning": {
+        "1": "측면 LED 투과"
+      },
+      "controllerSupport": {
+        "1": "리모컨"
+      },
+      "caseColor": "레드 계열"
+    },
+    "power": {
+      "id": "90005",
+      "manufacturer": "맥스엘리트",
+      "productType": "ATX 파워",
+      "ratedOutput": "700W",
+      "certification80Plus": "80 PLUS 골드",
+      "certificationETA": "GOLD",
+      "certificationLAMBDA": "A+",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "120mm 팬",
+      "warrantyPeriod": "무상 7년",
+      "cableConnection": "세미모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 1개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "플랫케이블",
+        "2": "대기전력 1W 미만"
+      },
+      "ledSystem": {
+        "1": "RAZER CHROMA"
+      }
+    }
+  },
+  "PC11": {
+    "cpu": {
+      "id": "10002",
+      "manufacturer": "AMD",
+      "cpuType": "라이젠9-5세대",
+      "socketType": "AMD(소켓AM5)",
+      "coreCount": "12코어",
+      "threadCount": "24스레드",
+      "baseClock": "3.0 ~ 3.49 GHz",
+      "boostClock": "4.5 ~ 4.99 GHz",
+      "l3Cache": "64MB",
+      "tdp": "105 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "20레인",
+      "maxMemorySize": "128GB",
+      "memoryType": "DDR5",
+      "memorySpeed": "5200MHz",
+      "integratedGraphics": "미탑재",
+      "supportedTechnologies": {
+        "1": "AMD 3D V캐시",
+        "2": "SenseMI"
+      },
+      "codeName": "피닉스 (2024)",
+      "packageType": "정품",
+      "coolerType": "미포함"
+    },
+    "cooler": {
+      "id": "20006",
+      "manufacturer": "MSI",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "3년",
+      "intelSocket": {
+        "1": "LGA1151",
+        "2": "LGA1150"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "AM3+"
+      },
+      "height": 110,
+      "radiator": "1열",
+      "fanSize": "120mm",
+      "bearingType": "Rifle(유체)",
+      "maxFanSpeed": 2500,
+      "maxAirFlow": 60,
+      "minFanNoise": 18,
+      "maxFanNoise": 29,
+      "ledSystem": "RGB FUSION",
+      "additionalFeatures": {
+        "1": "PWM 지원",
+        "2": "팬허브(컨트롤러)"
+      },
+      "thermalType": "브러시형"
+    },
+    "motherboard": {
+      "id": "30002",
+      "manufacturer": "MSI",
+      "productType": "AMD CPU용",
+      "cpuSocket": "AMD(소켓AM5)",
+      "chipset": "AMD X670",
+      "formFactor": "ATX (30.5x24.4cm)",
+      "powerPhase": 14,
+      "vcoreOutput": 1300,
+      "memoryType": "DDR5",
+      "memorySpeed": "6200MHz (PC5-49600)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 128GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 6,
+      "m2": 3,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 1,
+      "rearUsb2_0": 6,
+      "wiredLanChipset": "Realtek",
+      "wirelessLanType": "무선랜(Wi-Fi)",
+      "audioChipset": "SupremeFX",
+      "ledSystem": "MYSTIC LIGHT"
+    },
+    "memory": {
+      "id": "40003",
+      "manufacturer": "Corsair",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR5",
+      "memoryCapacity": "64GB",
+      "operatingClock": "6000MHz (PC5-48000)",
+      "ramTiming": "CL36",
+      "operatingVoltage": "1.30V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP3.0"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "화이트",
+      "ledColor": "RGB",
+      "ledSystem": "CORSAIR iCUE"
+    },
+    "gpu": {
+      "id": "50005",
+      "manufacturer": "SAPPHIRE",
+      "chipsetManufacturer": "AMD",
+      "productSeries": "라데온 RX 7000",
+      "gpuManufacturingProcess": "7 nm",
+      "amdChipset": "RX 7900 XTX",
+      "baseClock": 1900,
+      "boostClock": 2500,
+      "streamProcessors": "6144 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "24GB",
+      "memoryBus": "384-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP2.1"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 355,
+      "recommendedPower": "정격파워 850W 이상",
+      "powerPorts": "8핀 x2 + 6핀 x1",
+      "widthLength": "320mm",
+      "thickness": "55mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "오버클럭 물리키"
+      },
+      "ledSystem": "AURA SYNC",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60002",
+      "manufacturer": "Western Digital",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe4.0x4 (64GT/s)",
+      "protocol": "NVMe 1.4",
+      "capacity": "2TB",
+      "memoryType": "TLC(기타)",
+      "nandStructure": "3D낸드",
+      "process": "16 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 2GB",
+      "controller": "파이슨",
+      "sequentialRead": "6,500 MB/s",
+      "sequentialWrite": "4,800 MB/s",
+      "readIOPS": "950K",
+      "writeIOPS": "750K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "GC"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "전용 S/W"
+      },
+      "mtbf": "140만 시간",
+      "tbw": "700 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70008",
+      "manufacturer": "HP",
+      "productType": "HDD (기업용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "14TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 512MB",
+      "transferSpeed": "250MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 4장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "200만 시간",
+      "warranty": "5년"
+    },
+    "case": {
+      "id": "80001",
+      "manufacturer": "앱코",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "3개",
+      "bay89cm": "4개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "5개",
+      "ledFans": "2개",
+      "frontPanel": "메쉬",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm LED",
+      "top": "120mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "350mm",
+      "cpuCoolerHeight": "160mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "상태표시 창"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90003",
+      "manufacturer": "MSI",
+      "productType": "ATX 파워",
+      "ratedOutput": "850W",
+      "certification80Plus": "80 PLUS 플래티넘",
+      "certificationETA": "TITANIUM",
+      "certificationLAMBDA": "A++",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "140mm 팬",
+      "warrantyPeriod": "무상 10년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 2개",
+      "additionalFeatures": {
+        "1": "디지털제어",
+        "2": "자동 팬 조절"
+      },
+      "ledSystem": {
+        "1": "RGB FUSION"
+      }
+    }
+  },
+  "PC12": {
+    "cpu": {
+      "id": "10007",
+      "manufacturer": "인텔",
+      "cpuType": "코어i3-14세대",
+      "socketType": "인텔(소켓1700)",
+      "coreCount": "4코어",
+      "threadCount": "8스레드",
+      "baseClock": "3.5 ~ 3.99 GHz",
+      "boostClock": "4.0 ~ 4.49 GHz",
+      "l3Cache": "8MB",
+      "tdp": "65 W",
+      "pcieVersion": "PCIe3.0",
+      "maxPcieLanes": "16레인",
+      "maxMemorySize": "64GB",
+      "memoryType": "DDR4",
+      "memorySpeed": "2666MHz",
+      "integratedGraphics": "인텔 UHD 610",
+      "supportedTechnologies": {
+        "1": "하이퍼스레딩/SMT",
+        "2": "인텔 퀵싱크"
+      },
+      "codeName": "엘더레이크 (2021)",
+      "packageType": "정품",
+      "coolerType": "인텔 기본쿨러 포함"
+    },
+    "cooler": {
+      "id": "20010",
+      "manufacturer": "be quiet!",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "6년",
+      "intelSocket": {
+        "1": "LGA1700",
+        "2": "LGA2066"
+      },
+      "amdSocket": {
+        "1": "AM5",
+        "2": "AM4"
+      },
+      "height": 125,
+      "radiator": "2열",
+      "fanSize": "140mm",
+      "bearingType": "S-FDB V2(유체)",
+      "maxFanSpeed": 2000,
+      "maxAirFlow": 70,
+      "minFanNoise": 18,
+      "maxFanNoise": 28,
+      "ledSystem": "AURA SYNC",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "PWM 지원"
+      },
+      "thermalType": "주사기형"
+    },
+    "motherboard": {
+      "id": "30005",
+      "manufacturer": "BIOSTAR",
+      "productType": "인텔 CPU용",
+      "cpuSocket": "인텔(소켓1151)",
+      "chipset": "인텔 H470",
+      "formFactor": "ATX (30.5x24.4cm)",
+      "powerPhase": 8,
+      "vcoreOutput": 800,
+      "memoryType": "DDR4",
+      "memorySpeed": "3200MHz (PC4-25600)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 64GB",
+      "vgaConnection": "PCIe3.0 x16",
+      "pcieVersion": "PCIe3.0",
+      "sata": 4,
+      "m2": 1,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DVI"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 0,
+      "rearUsb2_0": 6,
+      "wiredLanChipset": "Intel",
+      "wirelessLanType": "무선랜(Wi-Fi)",
+      "audioChipset": "Realtek",
+      "ledSystem": "AURA SYNC"
+    },
+    "memory": {
+      "id": "40002",
+      "manufacturer": "G.SKILL",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR4",
+      "memoryCapacity": "16GB",
+      "operatingClock": "3200MHz (PC4-25600)",
+      "ramTiming": "CL16",
+      "operatingVoltage": "1.35V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "레드",
+      "ledColor": "RGB",
+      "ledSystem": "RGB FUSION"
+    },
+    "gpu": {
+      "id": "50008",
+      "manufacturer": "GALAX",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 RTX 30",
+      "gpuManufacturingProcess": "8 nm",
+      "nvidiaChipset": "RTX 3070",
+      "baseClock": 1500,
+      "boostClock": 1725,
+      "streamProcessors": "5888 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "8GB",
+      "memoryBus": "256-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP1.4"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 220,
+      "recommendedPower": "정격파워 650W 이상",
+      "powerPorts": "8핀 x2",
+      "widthLength": "286mm",
+      "thickness": "52mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "Dual BIOS"
+      },
+      "ledSystem": "MYSTIC LIGHT",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60003",
+      "manufacturer": "SK하이닉스",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe3.0x4 (32GT/s)",
+      "protocol": "NVMe 1.3",
+      "capacity": "512GB",
+      "memoryType": "MLC(토글)",
+      "nandStructure": "3D낸드",
+      "process": "20 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR3 512MB",
+      "controller": "SK하이닉스",
+      "sequentialRead": "3,500 MB/s",
+      "sequentialWrite": "2,100 MB/s",
+      "readIOPS": "600K",
+      "writeIOPS": "450K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "SLC캐싱"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화"
+      },
+      "mtbf": "130만 시간",
+      "tbw": "300 TB",
+      "warranty": "3년"
+    },
+    "hdd": {
+      "id": "70002",
+      "manufacturer": "Western Digital",
+      "productType": "HDD (PC용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "4TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "5,400 RPM",
+      "bufferSize": "메모리 128MB",
+      "transferSpeed": "190MB/s",
+      "recordingMethod": "SMR(PMR)",
+      "diskCount": "플래터 2장",
+      "additionalFeatures": {
+        "1": "S.M.A.R.T 지원"
+      },
+      "mtbf": "80만 시간",
+      "warranty": "3년"
+    },
+    "case": {
+      "id": "80005",
+      "manufacturer": "COX",
+      "productType": "PC케이스(M-ATX)",
+      "caseSize": "미니타워",
+      "powerSupply": "M-ATX(SFX)",
+      "boardSupport": {
+        "1": "M-ATX",
+        "2": "ITX"
+      },
+      "bay13cm": "1개",
+      "bay89cm": "2개",
+      "storageMount": "1개",
+      "verticalPCI": "기본형",
+      "coolingFans": "3개",
+      "ledFans": "1개",
+      "frontPanel": "일반(솔리드)",
+      "sideOpening": "스윙도어",
+      "side": "아크릴",
+      "rear": "120mm",
+      "front": "140mm",
+      "top": "120mm",
+      "dustFilter": "부분",
+      "vgaMountLength": "240mm",
+      "cpuCoolerHeight": "140mm",
+      "liquidCoolerSupport": "최대 1열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 280mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "수랭쿨링홀"
+      },
+      "ledTuning": {
+        "1": "측면 LED 투과"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "화이트 계열"
+    },
+    "power": {
+      "id": "90005",
+      "manufacturer": "맥스엘리트",
+      "productType": "ATX 파워",
+      "ratedOutput": "700W",
+      "certification80Plus": "80 PLUS 골드",
+      "certificationETA": "GOLD",
+      "certificationLAMBDA": "A+",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "120mm 팬",
+      "warrantyPeriod": "무상 7년",
+      "cableConnection": "세미모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 1개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "플랫케이블",
+        "2": "대기전력 1W 미만"
+      },
+      "ledSystem": {
+        "1": "RAZER CHROMA"
+      }
+    }
+  },
+  "PC13": {
+    "cpu": {
+      "id": "10005",
+      "manufacturer": "인텔",
+      "cpuType": "코어i5-14세대",
+      "socketType": "인텔(소켓1700)",
+      "coreCount": "6코어",
+      "threadCount": "12스레드",
+      "baseClock": "3.0 ~ 3.49 GHz",
+      "boostClock": "4.5 ~ 4.99 GHz",
+      "l3Cache": "12MB",
+      "tdp": "65 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "16레인",
+      "maxMemorySize": "64GB",
+      "memoryType": "DDR4",
+      "memorySpeed": "2933MHz",
+      "integratedGraphics": "인텔 UHD 630",
+      "supportedTechnologies": {
+        "1": "하이퍼스레딩/SMT",
+        "2": "인텔 XTU"
+      },
+      "codeName": "코멧레이크 (2020)",
+      "packageType": "정품",
+      "coolerType": "인텔 기본쿨러 포함"
+    },
+    "cooler": {
+      "id": "20007",
+      "manufacturer": "Cooler Master",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "5년",
+      "intelSocket": {
+        "1": "LGA1700",
+        "2": "LGA1200"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "AM5"
+      },
+      "height": 155,
+      "radiator": "2열",
+      "fanSize": "120mm",
+      "bearingType": "FDB(유체)",
+      "maxFanSpeed": 2000,
+      "maxAirFlow": 75,
+      "minFanNoise": 18,
+      "maxFanNoise": 28,
+      "ledSystem": "AURA SYNC",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "PWM 지원"
+      },
+      "thermalType": "주사기형"
+    },
+    "motherboard": {
+      "id": "30003",
+      "manufacturer": "GIGABYTE",
+      "productType": "인텔 CPU용",
+      "cpuSocket": "인텔(소켓1200)",
+      "chipset": "인텔 Z590",
+      "formFactor": "M-ATX (24.4x24.4cm)",
+      "powerPhase": 12,
+      "vcoreOutput": 1000,
+      "memoryType": "DDR4",
+      "memorySpeed": "5000MHz (PC4-40000)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 64GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 4,
+      "m2": 2,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 1,
+      "rearUsb2_0": 4,
+      "wiredLanChipset": "Killer",
+      "wirelessLanType": "블루투스",
+      "audioChipset": "Realtek",
+      "ledSystem": "RGB FUSION"
+    },
+    "memory": {
+      "id": "40007",
+      "manufacturer": "Micron",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR4",
+      "memoryCapacity": "32GB",
+      "operatingClock": "3200MHz (PC4-25600)",
+      "ramTiming": "CL16",
+      "operatingVoltage": "1.35V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "블랙",
+      "ledColor": "RGB",
+      "ledSystem": "POLYCHROME"
+    },
+    "gpu": {
+      "id": "50004",
+      "manufacturer": "ZOTAC",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 16",
+      "gpuManufacturingProcess": "12 nm",
+      "nvidiaChipset": "GTX 1660 SUPER",
+      "baseClock": 1530,
+      "boostClock": 1785,
+      "streamProcessors": "1408 개",
+      "interface": "PCIe3.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "6GB",
+      "memoryBus": "192-bit",
+      "outputPort": {
+        "1": "HDMI2.0",
+        "2": "DP1.4"
+      },
+      "dvi": "1",
+      "hdmi": "1",
+      "displayPort": "1",
+      "monitorSupport": "최대 모니터 3개",
+      "supportFeatures": {
+        "1": "4K 지원",
+        "2": "HDCP 2.2"
+      },
+      "powerConsumption": 125,
+      "recommendedPower": "정격파워 450W 이상",
+      "powerPorts": "8핀 x1",
+      "widthLength": "209mm",
+      "thickness": "41mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "수냉 장착 지원"
+      },
+      "ledSystem": "SPECTRA",
+      "warrantyPeriod": "A/S 2년"
+    },
+    "ssd": {
+      "id": "60005",
+      "manufacturer": "Crucial",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe3.0x4 (32GT/s)",
+      "protocol": "NVMe 1.3",
+      "capacity": "1TB",
+      "memoryType": "TLC(기타)",
+      "nandStructure": "3D낸드",
+      "process": "19 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR3 1GB",
+      "controller": "실리콘모션",
+      "sequentialRead": "3,400 MB/s",
+      "sequentialWrite": "3,000 MB/s",
+      "readIOPS": "500K",
+      "writeIOPS": "400K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "S.M.A.R.T"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "전용 S/W"
+      },
+      "mtbf": "150만 시간",
+      "tbw": "600 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70007",
+      "manufacturer": "Seagate",
+      "productType": "HDD (기업용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "12TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 256MB",
+      "transferSpeed": "235MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 6장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "250만 시간",
+      "warranty": "5년"
+    },
+    "case": {
+      "id": "80002",
+      "manufacturer": "3Rsystem",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "2개",
+      "bay89cm": "3개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "4개",
+      "ledFans": "1개",
+      "frontPanel": "일반(솔리드)",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm",
+      "top": "120mm",
+      "dustFilter": "전체",
+      "vgaMountLength": "350mm",
+      "cpuCoolerHeight": "160mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "하드베이 전환",
+        "2": "마더보드 장착홀"
+      },
+      "ledTuning": {
+        "1": "측면 LED 투과"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90006",
+      "manufacturer": "시소닉",
+      "productType": "ATX 파워",
+      "ratedOutput": "750W",
+      "certification80Plus": "80 PLUS 플래티넘",
+      "certificationETA": "PLATINUM",
+      "certificationLAMBDA": "A+",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "135mm 팬",
+      "warrantyPeriod": "무상 12년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "디지털제어",
+        "2": "자동 팬 조절"
+      },
+      "ledSystem": {
+        "1": "CORSAIR iCUE"
+      }
+    }
+  },
+  "PC14": {
+    "cpu": {
+      "id": "10001",
+      "manufacturer": "AMD",
+      "cpuType": "라이젠9-5세대",
+      "socketType": "AMD(소켓AM5)",
+      "coreCount": "16코어",
+      "threadCount": "32스레드",
+      "baseClock": "3.0 ~ 3.49 GHz",
+      "boostClock": "5.0 ~ 5.49 GHz",
+      "l3Cache": "128MB",
+      "tdp": "105 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "20레인",
+      "maxMemorySize": "128GB",
+      "memoryType": "DDR5",
+      "memorySpeed": "5600MHz",
+      "integratedGraphics": "미탑재",
+      "supportedTechnologies": {
+        "1": "Precision Boost",
+        "2": "XFR2"
+      },
+      "codeName": "바르셀로나 (2023)",
+      "packageType": "정품",
+      "coolerType": "미포함"
+    },
+    "cooler": {
+      "id": "20009",
+      "manufacturer": "ASUS",
+      "productType": "CPU 쿨러",
+      "coolingType": "수랭",
+      "warranty": "3년",
+      "intelSocket": {
+        "1": "LGA2066",
+        "2": "LGA1200"
+      },
+      "amdSocket": {
+        "1": "AM5",
+        "2": "TR4"
+      },
+      "height": 160,
+      "radiator": "3열",
+      "fanSize": "120mm",
+      "bearingType": "Rifle(유체)",
+      "maxFanSpeed": 2800,
+      "maxAirFlow": 80,
+      "minFanNoise": 16,
+      "maxFanNoise": 30,
+      "ledSystem": "RGB FUSION",
+      "additionalFeatures": {
+        "1": "팬허브(컨트롤러)",
+        "2": "LED 라이트"
+      },
+      "thermalType": "주사기형"
+    },
+    "motherboard": {
+      "id": "30007",
+      "manufacturer": "ASUS",
+      "productType": "AMD CPU용",
+      "cpuSocket": "AMD(소켓TRX4)",
+      "chipset": "AMD TRX40",
+      "formFactor": "E-ATX (30.5x27.7cm)",
+      "powerPhase": 16,
+      "vcoreOutput": 1400,
+      "memoryType": "DDR5",
+      "memorySpeed": "6200MHz (PC5-49600)",
+      "memorySlots": 8,
+      "memoryCapacity": "최대 256GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 8,
+      "m2": 4,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 2,
+      "rearUsb2_0": 8,
+      "wiredLanChipset": "Intel",
+      "wirelessLanType": "블루투스",
+      "audioChipset": "Realtek",
+      "ledSystem": "RGB FUSION"
+    },
+    "memory": {
+      "id": "40005",
+      "manufacturer": "G.SKILL",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR5",
+      "memoryCapacity": "128GB",
+      "operatingClock": "6400MHz (PC5-51200)",
+      "ramTiming": "CL32",
+      "operatingVoltage": "1.40V",
+      "numberOfModules": "4개",
+      "features": {
+        "1": "XMP3.0"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "블랙",
+      "ledColor": "RGB",
+      "ledSystem": "POLYCHROME"
+    },
+    "gpu": {
+      "id": "50003",
+      "manufacturer": "MSI",
+      "chipsetManufacturer": "AMD",
+      "productSeries": "라데온 RX 7000",
+      "gpuManufacturingProcess": "7 nm",
+      "amdChipset": "RX 7900 XT",
+      "baseClock": 1700,
+      "boostClock": 2400,
+      "streamProcessors": "5120 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "20GB",
+      "memoryBus": "320-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP2.1"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 300,
+      "recommendedPower": "정격파워 800W 이상",
+      "powerPorts": "8핀 x2",
+      "widthLength": "310mm",
+      "thickness": "55mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "오버클럭 물리키"
+      },
+      "ledSystem": "RGB FUSION",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60001",
+      "manufacturer": "삼성전자",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe4.0x4 (64GT/s)",
+      "protocol": "NVMe 1.4",
+      "capacity": "1TB",
+      "memoryType": "TLC(기타)",
+      "nandStructure": "3D낸드",
+      "process": "14 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 1GB",
+      "controller": "삼성",
+      "sequentialRead": "7,000 MB/s",
+      "sequentialWrite": "5,000 MB/s",
+      "readIOPS": "1,000K",
+      "writeIOPS": "800K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "GC"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "전용 S/W"
+      },
+      "mtbf": "150만 시간",
+      "tbw": "600 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70003",
+      "manufacturer": "HGST",
+      "productType": "HDD (기업용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "12TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 256MB",
+      "transferSpeed": "235MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 6장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "250만 시간",
+      "warranty": "5년"
+    },
+    "case": {
+      "id": "80009",
+      "manufacturer": "Fractal Design",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "3개",
+      "bay89cm": "4개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "6개",
+      "ledFans": "3개",
+      "frontPanel": "메쉬",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm LED",
+      "top": "120mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "350mm",
+      "cpuCoolerHeight": "160mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "하드베이 전환"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90004",
+      "manufacturer": "SilverStone",
+      "productType": "ATX 파워",
+      "ratedOutput": "850W",
+      "certification80Plus": "80 PLUS 플래티넘",
+      "certificationETA": "TITANIUM",
+      "certificationLAMBDA": "A++",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "140mm 팬",
+      "warrantyPeriod": "무상 10년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 2개",
+      "additionalFeatures": {
+        "1": "플랫케이블",
+        "2": "디지털제어"
+      },
+      "ledSystem": {
+        "1": "MYSTIC LIGHT"
+      }
+    }
+  },
+  "PC15": {
+    "cpu": {
+      "id": "10003",
+      "manufacturer": "AMD",
+      "cpuType": "라이젠7-5세대",
+      "socketType": "AMD(소켓AM5)",
+      "coreCount": "8코어",
+      "threadCount": "16스레드",
+      "baseClock": "3.0 ~ 3.49 GHz",
+      "boostClock": "4.5 ~ 4.99 GHz",
+      "l3Cache": "32MB",
+      "tdp": "65 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "20레인",
+      "maxMemorySize": "128GB",
+      "memoryType": "DDR5",
+      "memorySpeed": "5200MHz",
+      "integratedGraphics": "미탑재",
+      "supportedTechnologies": {
+        "1": "AMD 3D V캐시",
+        "2": "SenseMI"
+      },
+      "codeName": "피닉스 (2024)",
+      "packageType": "정품",
+      "coolerType": "미포함"
+    },
+    "cooler": {
+      "id": "20002",
+      "manufacturer": "ID-COOLING",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "3년",
+      "intelSocket": {
+        "1": "LGA1151",
+        "2": "LGA1150"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "AM3+"
+      },
+      "height": 110,
+      "radiator": "1열",
+      "fanSize": "120mm",
+      "bearingType": "Rifle(유체)",
+      "maxFanSpeed": 2500,
+      "maxAirFlow": 60,
+      "minFanNoise": 18,
+      "maxFanNoise": 29,
+      "ledSystem": "RGB FUSION",
+      "additionalFeatures": {
+        "1": "PWM 지원",
+        "2": "팬허브(컨트롤러)"
+      },
+      "thermalType": "브러시형"
+    },
+    "motherboard": {
+      "id": "30006",
+      "manufacturer": "ASRock",
+      "productType": "AMD CPU용",
+      "cpuSocket": "AMD(소켓AM4)",
+      "chipset": "AMD B550",
+      "formFactor": "ATX (30.5x24.4cm)",
+      "powerPhase": 10,
+      "vcoreOutput": 1000,
+      "memoryType": "DDR4",
+      "memorySpeed": "5100MHz (PC4-40800)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 128GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 6,
+      "m2": 2,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 1,
+      "rearUsb2_0": 6,
+      "wiredLanChipset": "Realtek",
+      "wirelessLanType": "무선랜(Wi-Fi)",
+      "audioChipset": "SupremeFX",
+      "ledSystem": "RGB FUSION"
+    },
+    "memory": {
+      "id": "40004",
+      "manufacturer": "Corsair",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR5",
+      "memoryCapacity": "64GB",
+      "operatingClock": "6000MHz (PC5-48000)",
+      "ramTiming": "CL36",
+      "operatingVoltage": "1.30V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP3.0"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "화이트",
+      "ledColor": "RGB",
+      "ledSystem": "CORSAIR iCUE"
+    },
+    "gpu": {
+      "id": "50006",
+      "manufacturer": "SAPPHIRE",
+      "chipsetManufacturer": "AMD",
+      "productSeries": "라데온 RX 6000",
+      "gpuManufacturingProcess": "7 nm",
+      "amdChipset": "RX 6900 XT",
+      "baseClock": 1825,
+      "boostClock": 2250,
+      "streamProcessors": "5120 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "16GB",
+      "memoryBus": "256-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP1.4"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 300,
+      "recommendedPower": "정격파워 850W 이상",
+      "powerPorts": "8핀 x2",
+      "widthLength": "305mm",
+      "thickness": "55mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "오버클럭 물리키"
+      },
+      "ledSystem": "RGB FUSION",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60004",
+      "manufacturer": "Intel",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe4.0x4 (64GT/s)",
+      "protocol": "NVMe 1.4",
+      "capacity": "2TB",
+      "memoryType": "TLC(기타)",
+      "nandStructure": "3D낸드",
+      "process": "16 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 2GB",
+      "controller": "파이슨",
+      "sequentialRead": "6,500 MB/s",
+      "sequentialWrite": "4,800 MB/s",
+      "readIOPS": "950K",
+      "writeIOPS": "750K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "GC"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "전용 S/W"
+      },
+      "mtbf": "140만 시간",
+      "tbw": "700 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70001",
+      "manufacturer": "Seagate",
+      "productType": "HDD (PC용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "4TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "5,400 RPM",
+      "bufferSize": "메모리 128MB",
+      "transferSpeed": "190MB/s",
+      "recordingMethod": "SMR(PMR)",
+      "diskCount": "플래터 2장",
+      "additionalFeatures": {
+        "1": "S.M.A.R.T 지원"
+      },
+      "mtbf": "80만 시간",
+      "warranty": "3년"
+    },
+    "case": {
+      "id": "80008",
+      "manufacturer": "NZXT",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "3개",
+      "bay89cm": "4개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "5개",
+      "ledFans": "2개",
+      "frontPanel": "메쉬",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm LED",
+      "top": "120mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "350mm",
+      "cpuCoolerHeight": "160mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "하드베이 전환"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90002",
+      "manufacturer": "MSI",
+      "productType": "ATX 파워",
+      "ratedOutput": "850W",
+      "certification80Plus": "80 PLUS 플래티넘",
+      "certificationETA": "TITANIUM",
+      "certificationLAMBDA": "A++",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "140mm 팬",
+      "warrantyPeriod": "무상 10년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 2개",
+      "additionalFeatures": {
+        "1": "디지털제어",
+        "2": "자동 팬 조절"
+      },
+      "ledSystem": {
+        "1": "RGB FUSION"
+      }
+    }
+  },
+  "PC16": {
+    "cpu": {
+      "id": "10006",
+      "manufacturer": "인텔",
+      "cpuType": "코어i9-14세대",
+      "socketType": "인텔(소켓1700)",
+      "coreCount": "8코어",
+      "threadCount": "16스레드",
+      "baseClock": "4.0 ~ 4.49 GHz",
+      "boostClock": "5.5 ~ 5.99 GHz",
+      "l3Cache": "16MB",
+      "tdp": "95 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "16레인",
+      "maxMemorySize": "64GB",
+      "memoryType": "DDR5",
+      "memorySpeed": "4800MHz",
+      "integratedGraphics": "인텔 UHD 750",
+      "supportedTechnologies": {
+        "1": "하이퍼스레딩/SMT",
+        "2": "인텔 XTU"
+      },
+      "codeName": "로켓레이크 (2021)",
+      "packageType": "정품",
+      "coolerType": "인텔 기본쿨러 포함"
+    },
+    "cooler": {
+      "id": "20004",
+      "manufacturer": "DeepCool",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "3년",
+      "intelSocket": {
+        "1": "LGA1151",
+        "2": "LGA1150"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "AM3+"
+      },
+      "height": 110,
+      "radiator": "1열",
+      "fanSize": "120mm",
+      "bearingType": "Rifle(유체)",
+      "maxFanSpeed": 2500,
+      "maxAirFlow": 60,
+      "minFanNoise": 18,
+      "maxFanNoise": 29,
+      "ledSystem": "RGB FUSION",
+      "additionalFeatures": {
+        "1": "PWM 지원",
+        "2": "팬허브(컨트롤러)"
+      },
+      "thermalType": "브러시형"
+    },
+    "motherboard": {
+      "id": "30004",
+      "manufacturer": "MSI",
+      "productType": "인텔 CPU용",
+      "cpuSocket": "인텔(소켓1700)",
+      "chipset": "인텔 B560",
+      "formFactor": "M-ATX (24.4x24.4cm)",
+      "powerPhase": 6,
+      "vcoreOutput": 600,
+      "memoryType": "DDR4",
+      "memorySpeed": "4600MHz (PC4-36800)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 128GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 4,
+      "m2": 2,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 0,
+      "rearUsb2_0": 6,
+      "wiredLanChipset": "Intel",
+      "wirelessLanType": "블루투스",
+      "audioChipset": "Realtek",
+      "ledSystem": "RGB FUSION"
+    },
+    "memory": {
+      "id": "40001",
+      "manufacturer": "삼성전자",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR4",
+      "memoryCapacity": "32GB",
+      "operatingClock": "3200MHz (PC4-25600)",
+      "ramTiming": "CL22",
+      "operatingVoltage": "1.20V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "블랙",
+      "ledColor": "RGB",
+      "ledSystem": "POLYCHROME"
+    },
+    "gpu": {
+      "id": "50007",
+      "manufacturer": "ASUS",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 RTX 30",
+      "gpuManufacturingProcess": "8 nm",
+      "nvidiaChipset": "RTX 3090",
+      "baseClock": 1400,
+      "boostClock": 1695,
+      "streamProcessors": "10496 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6X(DDR6X)",
+      "memoryCapacity": "24GB",
+      "memoryBus": "384-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP1.4"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 350,
+      "recommendedPower": "정격파워 850W 이상",
+      "powerPorts": "8핀 x2",
+      "widthLength": "310mm",
+      "thickness": "55mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "오버클럭 물리키"
+      },
+      "ledSystem": "AURA SYNC",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60006",
+      "manufacturer": "삼성전자",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe4.0x4 (64GT/s)",
+      "protocol": "NVMe 1.4",
+      "capacity": "1TB",
+      "memoryType": "TLC(기타)",
+      "nandStructure": "3D낸드",
+      "process": "14 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 1GB",
+      "controller": "삼성",
+      "sequentialRead": "7,000 MB/s",
+      "sequentialWrite": "5,000 MB/s",
+      "readIOPS": "1,000K",
+      "writeIOPS": "800K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "GC"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "전용 S/W"
+      },
+      "mtbf": "150만 시간",
+      "tbw": "600 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70006",
+      "manufacturer": "Western Digital",
+      "productType": "HDD (PC용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "2TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 64MB",
+      "transferSpeed": "220MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 2장",
+      "additionalFeatures": {
+        "1": "S.M.A.R.T 지원"
+      },
+      "mtbf": "100만 시간",
+      "warranty": "3년"
+    },
+    "case": {
+      "id": "80007",
+      "manufacturer": "Fractal Design",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "3개",
+      "bay89cm": "4개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "6개",
+      "ledFans": "3개",
+      "frontPanel": "메쉬",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm LED",
+      "top": "120mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "350mm",
+      "cpuCoolerHeight": "160mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "하드베이 전환"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90001",
+      "manufacturer": "시소닉",
+      "productType": "ATX 파워",
+      "ratedOutput": "1000W",
+      "certification80Plus": "80 PLUS 플래티넘",
+      "certificationETA": "PLATINUM",
+      "certificationLAMBDA": "A+",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "135mm 팬",
+      "warrantyPeriod": "무상 12년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "디지털제어",
+        "2": "자동 팬 조절"
+      },
+      "ledSystem": {
+        "1": "CORSAIR iCUE"
+      }
+    }
+  },
+  "PC17": {
+    "cpu": {
+      "id": "10002",
+      "manufacturer": "AMD",
+      "cpuType": "라이젠9-5세대",
+      "socketType": "AMD(소켓AM5)",
+      "coreCount": "12코어",
+      "threadCount": "24스레드",
+      "baseClock": "3.0 ~ 3.49 GHz",
+      "boostClock": "4.5 ~ 4.99 GHz",
+      "l3Cache": "64MB",
+      "tdp": "105 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "20레인",
+      "maxMemorySize": "128GB",
+      "memoryType": "DDR5",
+      "memorySpeed": "5200MHz",
+      "integratedGraphics": "미탑재",
+      "supportedTechnologies": {
+        "1": "AMD 3D V캐시",
+        "2": "SenseMI"
+      },
+      "codeName": "피닉스 (2024)",
+      "packageType": "정품",
+      "coolerType": "미포함"
+    },
+    "cooler": {
+      "id": "20002",
+      "manufacturer": "NZXT",
+      "productType": "CPU 쿨러",
+      "coolingType": "수랭",
+      "warranty": "6년+누수보상",
+      "intelSocket": {
+        "1": "LGA1700",
+        "2": "LGA2066"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "TR4"
+      },
+      "height": 65,
+      "radiator": "3열",
+      "fanSize": "140mm",
+      "bearingType": "Hydro(유체)",
+      "maxFanSpeed": 2800,
+      "maxAirFlow": 85,
+      "minFanNoise": 12,
+      "maxFanNoise": 33,
+      "ledSystem": "MYSTIC LIGHT",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "PWM 지원",
+        "3": "RGB 컨트롤러"
+      },
+      "thermalType": "튜브형"
+    },
+    "motherboard": {
+      "id": "30002",
+      "manufacturer": "MSI",
+      "productType": "AMD CPU용",
+      "cpuSocket": "AMD(소켓AM5)",
+      "chipset": "AMD X670",
+      "formFactor": "ATX (30.5x24.4cm)",
+      "powerPhase": 14,
+      "vcoreOutput": 1300,
+      "memoryType": "DDR5",
+      "memorySpeed": "6200MHz (PC5-49600)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 128GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 6,
+      "m2": 3,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 1,
+      "rearUsb2_0": 6,
+      "wiredLanChipset": "Realtek",
+      "wirelessLanType": "무선랜(Wi-Fi)",
+      "audioChipset": "SupremeFX",
+      "ledSystem": "MYSTIC LIGHT"
+    },
+    "memory": {
+      "id": "40003",
+      "manufacturer": "Corsair",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR5",
+      "memoryCapacity": "64GB",
+      "operatingClock": "6000MHz (PC5-48000)",
+      "ramTiming": "CL36",
+      "operatingVoltage": "1.30V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP3.0"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "화이트",
+      "ledColor": "RGB",
+      "ledSystem": "CORSAIR iCUE"
+    },
+    "gpu": {
+      "id": "50005",
+      "manufacturer": "SAPPHIRE",
+      "chipsetManufacturer": "AMD",
+      "productSeries": "라데온 RX 7000",
+      "gpuManufacturingProcess": "7 nm",
+      "amdChipset": "RX 7900 XTX",
+      "baseClock": 1900,
+      "boostClock": 2500,
+      "streamProcessors": "6144 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "24GB",
+      "memoryBus": "384-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP2.1"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 355,
+      "recommendedPower": "정격파워 850W 이상",
+      "powerPorts": "8핀 x2 + 6핀 x1",
+      "widthLength": "320mm",
+      "thickness": "55mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "오버클럭 물리키"
+      },
+      "ledSystem": "AURA SYNC",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60002",
+      "manufacturer": "Western Digital",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe4.0x4 (64GT/s)",
+      "protocol": "NVMe 1.4",
+      "capacity": "2TB",
+      "memoryType": "TLC(기타)",
+      "nandStructure": "3D낸드",
+      "process": "16 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 2GB",
+      "controller": "파이슨",
+      "sequentialRead": "6,500 MB/s",
+      "sequentialWrite": "4,800 MB/s",
+      "readIOPS": "950K",
+      "writeIOPS": "750K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "GC"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "전용 S/W"
+      },
+      "mtbf": "140만 시간",
+      "tbw": "700 TB",
+      "warranty": "5년"
+    },
+    "hdd": {
+      "id": "70004",
+      "manufacturer": "HGST",
+      "productType": "HDD (기업용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "12TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 256MB",
+      "transferSpeed": "250MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 4장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "200만 시간",
+      "warranty": "5년"
+    },
+    "case": {
+      "id": "80002",
+      "manufacturer": "darkFlash",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "4개",
+      "bay89cm": "6개",
+      "storageMount": "4개",
+      "verticalPCI": "슬롯변경형",
+      "coolingFans": "7개",
+      "ledFans": "4개",
+      "frontPanel": "강화유리",
+      "sideOpening": "버튼",
+      "side": "아크릴",
+      "rear": "140mm",
+      "front": "200mm LED",
+      "top": "140mm LED",
+      "dustFilter": "부분",
+      "vgaMountLength": "400mm",
+      "cpuCoolerHeight": "200mm",
+      "liquidCoolerSupport": "최대 3열 지원",
+      "radiatorTop": "최대 480mm",
+      "radiatorFront": "최대 600mm",
+      "radiatorRear": "최대 240mm",
+      "additionalFeatures": {
+        "1": "방음패드 내장",
+        "2": "수랭쿨링홀"
+      },
+      "ledTuning": {
+        "1": "외부 LED"
+      },
+      "controllerSupport": {
+        "1": "RGB 컨트롤"
+      },
+      "caseColor": "화이트 계열"
+    },
+    "power": {
+      "id": "90002",
+      "manufacturer": "앱코",
+      "productType": "ATX 파워",
+      "ratedOutput": "650W",
+      "certification80Plus": "80 PLUS 브론즈",
+      "certificationETA": "SILVER",
+      "certificationLAMBDA": "STANDARD+",
+      "outputType12V": "+12V 다중레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "120mm 팬",
+      "warrantyPeriod": "무상 5년",
+      "cableConnection": "세미모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 1개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "팬리스모드"
+      },
+      "ledSystem": {
+        "1": "MYSTIC LIGHT"
+      }
+    }
+  },
+  "PC18": {
+    "cpu": {
+      "id": "10003",
+      "manufacturer": "인텔",
+      "cpuType": "코어i7-14세대",
+      "socketType": "인텔(소켓1700)",
+      "coreCount": "8코어",
+      "threadCount": "16스레드",
+      "baseClock": "3.5 ~ 3.99 GHz",
+      "boostClock": "5.0 ~ 5.99 GHz",
+      "l3Cache": "20MB",
+      "tdp": "65 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "16레인",
+      "maxMemorySize": "64GB",
+      "memoryType": "DDR4",
+      "memorySpeed": "3200MHz",
+      "integratedGraphics": "인텔 UHD 730",
+      "supportedTechnologies": {
+        "1": "하이퍼스레딩/SMT",
+        "2": "인텔 퀵싱크"
+      },
+      "codeName": "엘더레이크 (2021)",
+      "packageType": "정품",
+      "coolerType": "인텔 기본쿨러 포함"
+    },
+    "cooler": {
+      "id": "20003",
+      "manufacturer": "Thermaltake",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "3년",
+      "intelSocket": {
+        "1": "LGA1151",
+        "2": "LGA1150"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "AM3+"
+      },
+      "height": 110,
+      "radiator": "1열",
+      "fanSize": "120mm",
+      "bearingType": "Rifle(유체)",
+      "maxFanSpeed": 2200,
+      "maxAirFlow": 65,
+      "minFanNoise": 17,
+      "maxFanNoise": 29,
+      "ledSystem": "RGB FUSION",
+      "additionalFeatures": {
+        "1": "PWM 지원",
+        "2": "팬허브(컨트롤러)"
+      },
+      "thermalType": "브러시형"
+    },
+    "motherboard": {
+      "id": "30003",
+      "manufacturer": "GIGABYTE",
+      "productType": "인텔 CPU용",
+      "cpuSocket": "인텔(소켓1200)",
+      "chipset": "인텔 Z590",
+      "formFactor": "M-ATX (24.4x24.4cm)",
+      "powerPhase": 12,
+      "vcoreOutput": 1000,
+      "memoryType": "DDR4",
+      "memorySpeed": "5000MHz (PC4-40000)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 64GB",
+      "vgaConnection": "PCIe4.0 x16",
+      "pcieVersion": "PCIe4.0",
+      "sata": 4,
+      "m2": 2,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 1,
+      "rearUsb2_0": 4,
+      "wiredLanChipset": "Killer",
+      "wirelessLanType": "블루투스",
+      "audioChipset": "Realtek",
+      "ledSystem": "RGB FUSION"
+    },
+    "memory": {
+      "id": "40002",
+      "manufacturer": "G.SKILL",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR4",
+      "memoryCapacity": "16GB",
+      "operatingClock": "3200MHz (PC4-25600)",
+      "ramTiming": "CL16",
+      "operatingVoltage": "1.35V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "레드",
+      "ledColor": "RGB",
+      "ledSystem": "RGB FUSION"
+    },
+    "gpu": {
+      "id": "50002",
+      "manufacturer": "ASUS",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 RTX 30",
+      "gpuManufacturingProcess": "8 nm",
+      "nvidiaChipset": "RTX 3080 Ti",
+      "baseClock": 1365,
+      "boostClock": 1665,
+      "streamProcessors": "10240 개",
+      "interface": "PCIe4.0x16",
+      "memoryType": "GDDR6X(DDR6X)",
+      "memoryCapacity": "12GB",
+      "memoryBus": "384-bit",
+      "outputPort": {
+        "1": "HDMI2.1",
+        "2": "DP1.4"
+      },
+      "dvi": "0",
+      "hdmi": "1",
+      "displayPort": "3",
+      "monitorSupport": "최대 모니터 4개",
+      "supportFeatures": {
+        "1": "8K 지원",
+        "2": "HDCP 2.3"
+      },
+      "powerConsumption": 320,
+      "recommendedPower": "정격파워 750W 이상",
+      "powerPorts": "8핀 x2",
+      "widthLength": "320mm",
+      "thickness": "58mm",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "Dual BIOS"
+      },
+      "ledSystem": "AURA SYNC",
+      "warrantyPeriod": "A/S 3년"
+    },
+    "ssd": {
+      "id": "60004",
+      "manufacturer": "킹스톤",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe4.0x4 (64GT/s)",
+      "protocol": "NVMe 1.4",
+      "capacity": "500GB",
+      "memoryType": "TLC(기타)",
+      "nandStructure": "3D낸드",
+      "process": "18 nm",
+      "ramEmbedded": "DRAM 미탑재",
+      "ramType": "None",
+      "controller": "킹스톤",
+      "sequentialRead": "4,000 MB/s",
+      "sequentialWrite": "3,000 MB/s",
+      "readIOPS": "750K",
+      "writeIOPS": "700K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "S.M.A.R.T"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "RGB/LED"
+      },
+      "mtbf": "100만 시간",
+      "tbw": "300 TB",
+      "warranty": "3년"
+    },
+    "hdd": {
+      "id": "70002",
+      "manufacturer": "Western Digital",
+      "productType": "HDD (데이터센터용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "10TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 256MB",
+      "transferSpeed": "240MB/s",
+      "recordingMethod": "SMR",
+      "diskCount": "플래터 3장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "150만 시간",
+      "warranty": "5년"
+    },
+    "case": {
+      "id": "80003",
+      "manufacturer": "Corsair",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "2개",
+      "bay89cm": "2개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "5개",
+      "ledFans": "2개",
+      "frontPanel": "메쉬",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm LED",
+      "top": "120mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "300mm",
+      "cpuCoolerHeight": "150mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "상태표시 창"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "화이트 계열"
+    },
+    "power": {
+      "id": "90003",
+      "manufacturer": "EVGA",
+      "productType": "ATX 파워",
+      "ratedOutput": "850W",
+      "certification80Plus": "80 PLUS 플래티넘",
+      "certificationETA": "PLATINUM",
+      "certificationLAMBDA": "A++",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "140mm 팬",
+      "warrantyPeriod": "무상 10년",
+      "cableConnection": "풀모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "플랫케이블",
+        "2": "대기전력 1W 미만"
+      },
+      "ledSystem": {
+        "1": "AURA SYNC"
+      }
+    }
+  },
+  "PC19": {
+    "cpu": {
+      "id": "10004",
+      "manufacturer": "AMD",
+      "cpuType": "라이젠5-5세대",
+      "socketType": "AMD(소켓AM4)",
+      "coreCount": "6코어",
+      "threadCount": "12스레드",
+      "baseClock": "2.0 ~ 2.49 GHz",
+      "boostClock": "4.0 ~ 4.49 GHz",
+      "l3Cache": "32MB",
+      "tdp": "65 W",
+      "pcieVersion": "PCIe3.0",
+      "maxPcieLanes": "16레인",
+      "maxMemorySize": "64GB",
+      "memoryType": "DDR4",
+      "memorySpeed": "3200MHz",
+      "integratedGraphics": "미탑재",
+      "supportedTechnologies": {
+        "1": "프리시전 부스트",
+        "2": "XFR2"
+      },
+      "codeName": "세잔 (2021)",
+      "packageType": "정품",
+      "coolerType": "기본쿨러 포함"
+    },
+    "cooler": {
+      "id": "20004",
+      "manufacturer": "Antec",
+      "productType": "CPU 쿨러",
+      "coolingType": "공랭",
+      "warranty": "2년",
+      "intelSocket": {
+        "1": "LGA1151",
+        "2": "LGA1150"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "AM3+"
+      },
+      "height": 90,
+      "radiator": "1열",
+      "fanSize": "80mm",
+      "bearingType": "Ball(볼)",
+      "maxFanSpeed": 2500,
+      "maxAirFlow": 40,
+      "minFanNoise": 15,
+      "maxFanNoise": 35,
+      "ledSystem": "미포함",
+      "additionalFeatures": {
+        "1": "PWM 지원"
+      },
+      "thermalType": "튜브형"
+    },
+    "motherboard": {
+      "id": "30004",
+      "manufacturer": "ASRock",
+      "productType": "AMD CPU용",
+      "cpuSocket": "AMD(소켓AM4)",
+      "chipset": "AMD B450",
+      "formFactor": "M-ATX (24.4x24.4cm)",
+      "powerPhase": 10,
+      "vcoreOutput": 950,
+      "memoryType": "DDR4",
+      "memorySpeed": "3200MHz (PC4-25600)",
+      "memorySlots": 2,
+      "memoryCapacity": "최대 32GB",
+      "vgaConnection": "PCIe3.0 x16",
+      "pcieVersion": "PCIe3.0",
+      "sata": 4,
+      "m2": 2,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DVI"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 0,
+      "rearUsb2_0": 4,
+      "wiredLanChipset": "Realtek",
+      "wirelessLanType": "미포함",
+      "audioChipset": "Realtek",
+      "ledSystem": "미포함"
+    },
+    "memory": {
+      "id": "40004",
+      "manufacturer": "ADATA",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR4",
+      "memoryCapacity": "8GB",
+      "operatingClock": "3200MHz (PC4-25600)",
+      "ramTiming": "CL16",
+      "operatingVoltage": "1.35V",
+      "numberOfModules": "1개",
+      "features": {
+        "1": "XMP"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "블랙",
+      "ledColor": "미포함",
+      "ledSystem": "미포함"
+    },
+    "gpu": {
+      "id": "50003",
+      "manufacturer": "ZOTAC",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 GTX 16",
+      "gpuManufacturingProcess": "12 nm",
+      "nvidiaChipset": "GTX 1660 SUPER",
+      "baseClock": 1530,
+      "boostClock": 1785,
+      "streamProcessors": "1408 개",
+      "interface": "PCIe3.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "6GB",
+      "memoryBus": "192-bit",
+      "outputPort": {
+        "1": "HDMI2.0",
+        "2": "DP1.4"
+      },
+      "dvi": "1",
+      "hdmi": "1",
+      "displayPort": "1",
+      "monitorSupport": "최대 모니터 3개",
+      "supportFeatures": {
+        "1": "4K 지원",
+        "2": "HDCP 2.2"
+      },
+      "powerConsumption": 125,
+      "recommendedPower": "정격파워 450W 이상",
+      "powerPorts": "6핀 x1",
+      "widthLength": "208mm",
+      "thickness": "2슬롯",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "Factory Overclock"
+      },
+      "ledSystem": "미포함",
+      "warrantyPeriod": "A/S 2년"
+    },
+    "ssd": {
+      "id": "60003",
+      "manufacturer": "삼성전자",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe3.0x4 (32GT/s)",
+      "protocol": "NVMe 1.3",
+      "capacity": "500GB",
+      "memoryType": "TLC(토글)",
+      "nandStructure": "3D낸드",
+      "process": "19 nm",
+      "ramEmbedded": "DRAM 탑재",
+      "ramType": "DDR4 512MB",
+      "controller": "삼성",
+      "sequentialRead": "3,500 MB/s",
+      "sequentialWrite": "3,200 MB/s",
+      "readIOPS": "500K",
+      "writeIOPS": "400K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "S.M.A.R.T"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "RGB/LED"
+      },
+      "mtbf": "140만 시간",
+      "tbw": "300 TB",
+      "warranty": "3년"
+    },
+    "hdd": {
+      "id": "70003",
+      "manufacturer": "Toshiba",
+      "productType": "HDD (소비자용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "4TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 128MB",
+      "transferSpeed": "200MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 2장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "100만 시간",
+      "warranty": "2년"
+    },
+    "case": {
+      "id": "80004",
+      "manufacturer": "Fractal Design",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "3개",
+      "bay89cm": "4개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "4개",
+      "ledFans": "1개",
+      "frontPanel": "메쉬",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm LED",
+      "top": "120mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "330mm",
+      "cpuCoolerHeight": "160mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "상태표시 창"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90004",
+      "manufacturer": "Cooler Master",
+      "productType": "ATX 파워",
+      "ratedOutput": "600W",
+      "certification80Plus": "80 PLUS 실버",
+      "certificationETA": "SILVER",
+      "certificationLAMBDA": "A+",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "120mm 팬",
+      "warrantyPeriod": "무상 3년",
+      "cableConnection": "세미모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 2개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "플랫케이블",
+        "2": "대기전력 1W 미만"
+      },
+      "ledSystem": {
+        "1": "RGB FUSION"
+      }
+    }
+  },
+  "PC20": {
+    "cpu": {
+      "id": "10005",
+      "manufacturer": "인텔",
+      "cpuType": "코어i5-12세대",
+      "socketType": "인텔(소켓1200)",
+      "coreCount": "6코어",
+      "threadCount": "12스레드",
+      "baseClock": "2.5 ~ 2.99 GHz",
+      "boostClock": "4.0 ~ 4.49 GHz",
+      "l3Cache": "12MB",
+      "tdp": "65 W",
+      "pcieVersion": "PCIe4.0",
+      "maxPcieLanes": "16레인",
+      "maxMemorySize": "64GB",
+      "memoryType": "DDR4",
+      "memorySpeed": "2933MHz",
+      "integratedGraphics": "인텔 UHD 750",
+      "supportedTechnologies": {
+        "1": "터보부스트",
+        "2": "인텔 퀵싱크"
+      },
+      "codeName": "코멧레이크 (2020)",
+      "packageType": "정품",
+      "coolerType": "인텔 기본쿨러 포함"
+    },
+    "cooler": {
+      "id": "20005",
+      "manufacturer": "DeepCool",
+      "productType": "CPU 쿨러",
+      "coolingType": "수랭",
+      "warranty": "2년",
+      "intelSocket": {
+        "1": "LGA1200",
+        "2": "LGA1151"
+      },
+      "amdSocket": {
+        "1": "AM4",
+        "2": "AM3+"
+      },
+      "height": 130,
+      "radiator": "2열",
+      "fanSize": "120mm",
+      "bearingType": "Fluid Dynamic(유체)",
+      "maxFanSpeed": 2000,
+      "maxAirFlow": 60,
+      "minFanNoise": 15,
+      "maxFanNoise": 25,
+      "ledSystem": "RGB",
+      "additionalFeatures": {
+        "1": "PWM 지원",
+        "2": "팬허브(컨트롤러)"
+      },
+      "thermalType": "브러시형"
+    },
+    "motherboard": {
+      "id": "30005",
+      "manufacturer": "ASRock",
+      "productType": "인텔 CPU용",
+      "cpuSocket": "인텔(소켓1200)",
+      "chipset": "인텔 B460",
+      "formFactor": "M-ATX (24.4x24.4cm)",
+      "powerPhase": 8,
+      "vcoreOutput": 800,
+      "memoryType": "DDR4",
+      "memorySpeed": "3200MHz (PC4-25600)",
+      "memorySlots": 4,
+      "memoryCapacity": "최대 64GB",
+      "vgaConnection": "PCIe3.0 x16",
+      "pcieVersion": "PCIe3.0",
+      "sata": 6,
+      "m2": 2,
+      "graphicOutput": {
+        "1": "HDMI",
+        "2": "DP"
+      },
+      "rearPorts": {
+        "1": "USB3.x 10Gbps",
+        "2": "USB3.x 5Gbps",
+        "3": "RJ-45"
+      },
+      "rearUsb3_20Gbps": 1,
+      "rearUsb2_0": 4,
+      "wiredLanChipset": "Intel",
+      "wirelessLanType": "미포함",
+      "audioChipset": "Realtek",
+      "ledSystem": "미포함"
+    },
+    "memory": {
+      "id": "40005",
+      "manufacturer": "Kingston",
+      "deviceType": "데스크탑용",
+      "productTypes": "DDR4",
+      "memoryCapacity": "16GB",
+      "operatingClock": "3000MHz (PC4-24000)",
+      "ramTiming": "CL15",
+      "operatingVoltage": "1.35V",
+      "numberOfModules": "2개",
+      "features": {
+        "1": "XMP"
+      },
+      "heatSink": "방열판",
+      "heatSinkColor": "블랙",
+      "ledColor": "미포함",
+      "ledSystem": "미포함"
+    },
+    "gpu": {
+      "id": "50004",
+      "manufacturer": "MSI",
+      "chipsetManufacturer": "NVIDIA",
+      "productSeries": "지포스 RTX 20",
+      "gpuManufacturingProcess": "12 nm",
+      "nvidiaChipset": "RTX 2060 SUPER",
+      "baseClock": 1470,
+      "boostClock": 1650,
+      "streamProcessors": "2176 개",
+      "interface": "PCIe3.0x16",
+      "memoryType": "GDDR6(DDR6)",
+      "memoryCapacity": "8GB",
+      "memoryBus": "256-bit",
+      "outputPort": {
+        "1": "HDMI2.0",
+        "2": "DP1.4"
+      },
+      "dvi": "1",
+      "hdmi": "1",
+      "displayPort": "1",
+      "monitorSupport": "최대 모니터 3개",
+      "supportFeatures": {
+        "1": "4K 지원",
+        "2": "HDCP 2.2"
+      },
+      "powerConsumption": 175,
+      "recommendedPower": "정격파워 550W 이상",
+      "powerPorts": "8핀 x1",
+      "widthLength": "235mm",
+      "thickness": "2슬롯",
+      "additionalFeatures": {
+        "1": "백플레이트",
+        "2": "Factory Overclock"
+      },
+      "ledSystem": "미포함",
+      "warrantyPeriod": "A/S 2년"
+    },
+    "ssd": {
+      "id": "60005",
+      "manufacturer": "마이크론",
+      "formFactor": "M.2 (2280)",
+      "interface": "PCIe3.0x4 (32GT/s)",
+      "protocol": "NVMe 1.3",
+      "capacity": "250GB",
+      "memoryType": "TLC(기타)",
+      "nandStructure": "3D낸드",
+      "process": "20 nm",
+      "ramEmbedded": "DRAM 미탑재",
+      "ramType": "None",
+      "controller": "마이크론",
+      "sequentialRead": "3,000 MB/s",
+      "sequentialWrite": "2,500 MB/s",
+      "readIOPS": "350K",
+      "writeIOPS": "300K",
+      "supportFeatures": {
+        "1": "TRIM",
+        "2": "S.M.A.R.T"
+      },
+      "additionalFeatures": {
+        "1": "AES 암호화",
+        "2": "RGB/LED"
+      },
+      "mtbf": "80만 시간",
+      "tbw": "150 TB",
+      "warranty": "2년"
+    },
+    "hdd": {
+      "id": "70005",
+      "manufacturer": "WD",
+      "productType": "HDD (가정용)",
+      "diskSize": "8.9cm(3.5인치)",
+      "diskCapacity": "2TB",
+      "interface": "SATA3 (6Gb/s)",
+      "rotationSpeed": "7,200 RPM",
+      "bufferSize": "메모리 64MB",
+      "transferSpeed": "150MB/s",
+      "recordingMethod": "CMR(PMR)",
+      "diskCount": "플래터 1장",
+      "additionalFeatures": {
+        "1": "헬륨충전",
+        "2": "S.M.A.R.T 지원"
+      },
+      "mtbf": "50만 시간",
+      "warranty": "2년"
+    },
+    "case": {
+      "id": "80005",
+      "manufacturer": "NZXT",
+      "productType": "PC케이스(ATX)",
+      "caseSize": "미들타워",
+      "powerSupply": "표준-ATX",
+      "boardSupport": {
+        "1": "ATX",
+        "2": "M-ATX",
+        "3": "ITX"
+      },
+      "bay13cm": "2개",
+      "bay89cm": "2개",
+      "storageMount": "2개",
+      "verticalPCI": "기본형",
+      "coolingFans": "4개",
+      "ledFans": "2개",
+      "frontPanel": "메쉬",
+      "sideOpening": "스윙도어",
+      "side": "강화유리",
+      "rear": "120mm",
+      "front": "140mm LED",
+      "top": "120mm LED",
+      "dustFilter": "전체",
+      "vgaMountLength": "300mm",
+      "cpuCoolerHeight": "150mm",
+      "liquidCoolerSupport": "최대 2열 지원",
+      "radiatorTop": "최대 240mm",
+      "radiatorFront": "최대 360mm",
+      "radiatorRear": "최대 140mm",
+      "additionalFeatures": {
+        "1": "LED 라이트",
+        "2": "상태표시 창"
+      },
+      "ledTuning": {
+        "1": "내부 LED 바"
+      },
+      "controllerSupport": {
+        "1": "팬 컨트롤"
+      },
+      "caseColor": "블랙 계열"
+    },
+    "power": {
+      "id": "90005",
+      "manufacturer": "SilverStone",
+      "productType": "ATX 파워",
+      "ratedOutput": "500W",
+      "certification80Plus": "80 PLUS 브론즈",
+      "certificationETA": "BRONZE",
+      "certificationLAMBDA": "A",
+      "outputType12V": "+12V 싱글레일",
+      "pfcCircuit": "액티브PFC",
+      "coolingFanSize": "120mm 팬",
+      "warrantyPeriod": "무상 3년",
+      "cableConnection": "세미모듈러",
+      "mainPower": "24핀(20+4)",
+      "auxiliaryPower": "8핀(4+4) 1개",
+      "pcie16pin": "12VHPWR 1개",
+      "additionalFeatures": {
+        "1": "플랫케이블",
+        "2": "대기전력 1W 미만"
+      },
+      "ledSystem": {
+        "1": "미포함"
+      }
+    }
+  }
+}

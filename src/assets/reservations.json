@@ -1,0 +1,487 @@
+{
+  "reservations": [
+    {
+      "reserveTime": "2024-07-20T08:00:00",
+      "status": "예약대기",
+      "mentorData": {
+        "id": "1",
+        "nickname": "하드웨어 마스터",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "컴퓨터 하드웨어와 관련된 모든 문제를 해결해 드립니다. 신속하고 정확한 상담을 제공합니다.",
+        "responseTime": "1시간 이내",
+        "matchingRate": "95%",
+        "reviewCount": 200,
+        "skills": {
+          "1": { "pk": "1", "name": "컴퓨터 견적" },
+          "2": { "pk": "2", "name": "CPU 장착" },
+          "4": { "pk": "4", "name": "배선 작업" },
+          "6": { "pk": "6", "name": "케이스 선택" },
+          "8": { "pk": "8", "name": "BIOS 설정" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 1",
+        "symptom": "컴퓨터가 부팅되지 않습니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "paymentLink": null,
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-07-21T09:00:00",
+      "status": "시간선택",
+      "mentorData": {
+        "id": "2",
+        "nickname": "게이밍 전문가",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "최고의 게이밍 성능을 위한 컴퓨터 조립과 튜닝에 대한 전문가입니다. 최고의 게임 환경을 만들어 드립니다.",
+        "responseTime": "30분 이내",
+        "matchingRate": "97%",
+        "reviewCount": 180,
+        "skills": {
+          "3": { "pk": "3", "name": "SSD/RAM 장착" },
+          "5": { "pk": "5", "name": "수냉 쿨러" },
+          "7": { "pk": "7", "name": "전원 공급 장치 설치" },
+          "15": { "pk": "15", "name": "고성능 게이밍 컴퓨터 조립" },
+          "19": { "pk": "19", "name": "벤치마크 퍼포먼스 조정" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 2",
+        "symptom": "게임 중 화면이 멈춥니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "paymentLink": null,
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-07-22T10:00:00",
+      "status": "결제",
+      "mentorData": {
+        "id": "3",
+        "nickname": "시스템 튜너",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "최적의 시스템 성능을 위해 하드웨어와 소프트웨어를 최적화하는 전문가입니다. 모든 문제를 신속하게 해결해 드립니다.",
+        "responseTime": "1시간 이내",
+        "matchingRate": "93%",
+        "reviewCount": 220,
+        "skills": {
+          "7": { "pk": "7", "name": "전원 공급 장치 설치" },
+          "8": { "pk": "8", "name": "BIOS 설정" },
+          "9": { "pk": "9", "name": "드라이버 설치" },
+          "10": { "pk": "10", "name": "온도 관리" },
+          "23": { "pk": "23", "name": "디스크 파티션 설정" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 3",
+        "symptom": "시스템이 자주 재부팅됩니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-07-30T19:00:00",
+        "paymentLink": "https://payment.example.com",
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-07-23T11:00:00",
+      "status": "채팅대기",
+      "mentorData": {
+        "id": "4",
+        "nickname": "네트워크 셰프",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "네트워크 및 인터넷 설정 전문가로, 안정적인 네트워크 환경을 구축해 드립니다.",
+        "responseTime": "45분 이내",
+        "matchingRate": "96%",
+        "reviewCount": 140,
+        "skills": {
+          "18": { "pk": "18", "name": "Wi-Fi 설정" },
+          "22": { "pk": "22", "name": "NAS 관련 데이터 전송" },
+          "20": { "pk": "20", "name": "에러 코드 해결" },
+          "23": { "pk": "23", "name": "디스크 파티션 설정" },
+          "26": { "pk": "26", "name": "IOT 장치 연결" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 4",
+        "symptom": "네트워크 연결이 불안정합니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-07-30T19:00:00",
+        "paymentLink": null,
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-07-24T12:00:00",
+      "status": "채팅입장",
+      "mentorData": {
+        "id": "5",
+        "nickname": "리눅스 마스터",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "리눅스 시스템의 설치와 관리, 문제 해결에 능숙한 전문가입니다.",
+        "responseTime": "2시간 이내",
+        "matchingRate": "94%",
+        "reviewCount": 160,
+        "skills": {
+          "25": { "pk": "25", "name": "리눅스 설치 및 구성" },
+          "10": { "pk": "10", "name": "온도 관리" },
+          "9": { "pk": "9", "name": "드라이버 설치" },
+          "14": { "pk": "14", "name": "마더보드 선택" },
+          "21": { "pk": "21", "name": "백업 및 복원" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 5",
+        "symptom": "리눅스 설치 중 오류가 발생합니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-07-30T19:00:00",
+        "paymentLink": null,
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-07-25T13:00:00",
+      "status": "매칭실패",
+      "mentorData": {
+        "id": "6",
+        "nickname": "소음 제거자",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "컴퓨터의 소음을 줄이고, 조용한 작업 환경을 만드는 데 전문적인 멘토입니다.",
+        "responseTime": "1시간 이내",
+        "matchingRate": "92%",
+        "reviewCount": 130,
+        "skills": {
+          "24": { "pk": "24", "name": "소음 감소 팁" },
+          "4": { "pk": "4", "name": "배선 작업" },
+          "7": { "pk": "7", "name": "전원 공급 장치 설치" },
+          "3": { "pk": "3", "name": "SSD/RAM 장착" },
+          "6": { "pk": "6", "name": "케이스 선택" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 6",
+        "symptom": "컴퓨터 소음이 심합니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "paymentLink": null,
+        "chatLink": null,
+        "message": "멘토가 예약을 취소했습니다.",
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-07-26T14:00:00",
+      "status": "매칭완료",
+      "mentorData": {
+        "id": "7",
+        "nickname": "업그레이드 조언자",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "컴퓨터 성능 업그레이드에 대한 팁과 조언을 제공하는 전문가입니다.",
+        "responseTime": "2시간 이내",
+        "matchingRate": "89%",
+        "reviewCount": 110,
+        "skills": {
+          "11": { "pk": "11", "name": "업그레이드 팁" },
+          "15": { "pk": "15", "name": "고성능 게이밍 컴퓨터 조립" },
+          "5": { "pk": "5", "name": "수냉 쿨러" },
+          "17": { "pk": "17", "name": "사운드 카드 설치" },
+          "19": { "pk": "19", "name": "벤치마크 퍼포먼스 조정" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 7",
+        "symptom": "컴퓨터 성능을 업그레이드하고 싶습니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-07-30T19:00:00",
+        "paymentLink": null,
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": 5,
+          "content": "멘토가 매우 친절하고 도움이 되었습니다!"
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-07-27T15:00:00",
+      "status": "예약대기",
+      "mentorData": {
+        "id": "8",
+        "nickname": "하드웨어 전문가",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "최적의 하드웨어 솔루션을 제공하는 전문가입니다.",
+        "responseTime": "1시간 이내",
+        "matchingRate": "90%",
+        "reviewCount": 150,
+        "skills": {
+          "1": { "pk": "1", "name": "컴퓨터 견적" },
+          "2": { "pk": "2", "name": "CPU 장착" },
+          "4": { "pk": "4", "name": "배선 작업" },
+          "6": { "pk": "6", "name": "케이스 선택" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 8",
+        "symptom": "컴퓨터가 느려졌습니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "paymentLink": null,
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-07-28T16:00:00",
+      "status": "시간선택",
+      "mentorData": {
+        "id": "9",
+        "nickname": "소프트웨어 마스터",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "소프트웨어 문제를 신속하게 해결해 드립니다.",
+        "responseTime": "2시간 이내",
+        "matchingRate": "92%",
+        "reviewCount": 170,
+        "skills": {
+          "9": { "pk": "9", "name": "드라이버 설치" },
+          "10": { "pk": "10", "name": "온도 관리" },
+          "23": { "pk": "23", "name": "디스크 파티션 설정" },
+          "25": { "pk": "25", "name": "리눅스 설치 및 구성" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 9",
+        "symptom": "소프트웨어 오류가 발생합니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "paymentLink": null,
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-07-29T17:00:00",
+      "status": "결제",
+      "mentorData": {
+        "id": "10",
+        "nickname": "성능 조정자",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "최고의 성능을 위해 시스템을 최적화합니다.",
+        "responseTime": "3시간 이내",
+        "matchingRate": "94%",
+        "reviewCount": 140,
+        "skills": {
+          "19": { "pk": "19", "name": "벤치마크 퍼포먼스 조정" },
+          "11": { "pk": "11", "name": "업그레이드 팁" },
+          "10": { "pk": "10", "name": "온도 관리" },
+          "23": { "pk": "23", "name": "디스크 파티션 설정" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 10",
+        "symptom": "컴퓨터 성능이 저하되었습니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-07-30T19:00:00",
+        "paymentLink": "https://payment.example.com",
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-07-30T18:00:00",
+      "status": "채팅대기",
+      "mentorData": {
+        "id": "11",
+        "nickname": "전문 기술자",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "전문적인 기술 지원을 제공합니다.",
+        "responseTime": "30분 이내",
+        "matchingRate": "96%",
+        "reviewCount": 200,
+        "skills": {
+          "1": { "pk": "1", "name": "컴퓨터 견적" },
+          "2": { "pk": "2", "name": "CPU 장착" },
+          "4": { "pk": "4", "name": "배선 작업" },
+          "6": { "pk": "6", "name": "케이스 선택" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 11",
+        "symptom": "컴퓨터가 부팅되지 않습니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-07-30T19:00:00",
+        "paymentLink": null,
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-07-31T19:00:00",
+      "status": "채팅입장",
+      "mentorData": {
+        "id": "12",
+        "nickname": "보안 전문가",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "최고의 보안 솔루션을 제공합니다.",
+        "responseTime": "2시간 이내",
+        "matchingRate": "95%",
+        "reviewCount": 180,
+        "skills": {
+          "25": { "pk": "25", "name": "리눅스 설치 및 구성" },
+          "10": { "pk": "10", "name": "온도 관리" },
+          "9": { "pk": "9", "name": "드라이버 설치" },
+          "14": { "pk": "14", "name": "마더보드 선택" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 12",
+        "symptom": "보안 문제가 발생했습니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-07-30T19:00:00",
+        "paymentLink": null,
+        "chatLink": "https://chat.example.com",
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-01T20:00:00",
+      "status": "매칭실패",
+      "mentorData": {
+        "id": "13",
+        "nickname": "네트워크 마스터",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "최적의 네트워크 환경을 구축합니다.",
+        "responseTime": "3시간 이내",
+        "matchingRate": "93%",
+        "reviewCount": 160,
+        "skills": {
+          "1": { "pk": "1", "name": "컴퓨터 견적" },
+          "2": { "pk": "2", "name": "CPU 장착" },
+          "4": { "pk": "4", "name": "배선 작업" },
+          "6": { "pk": "6", "name": "케이스 선택" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 13",
+        "symptom": "네트워크 연결이 불안정합니다."
+      },
+      "matchingData": {
+        "reservedTime": null,
+        "paymentLink": null,
+        "chatLink": null,
+        "message": "네트워크 문제가 해결되지 않았습니다.",
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    },
+    {
+      "reserveTime": "2024-08-02T21:00:00",
+      "status": "매칭완료",
+      "mentorData": {
+        "id": "14",
+        "nickname": "업그레이드 전문가",
+        "profilePicture": "https://via.placeholder.com/150",
+        "introduction": "최고의 업그레이드 솔루션을 제공합니다.",
+        "responseTime": "1시간 이내",
+        "matchingRate": "90%",
+        "reviewCount": 170,
+        "skills": {
+          "11": { "pk": "11", "name": "업그레이드 팁" },
+          "15": { "pk": "15", "name": "고성능 게이밍 컴퓨터 조립" },
+          "5": { "pk": "5", "name": "수냉 쿨러" },
+          "17": { "pk": "17", "name": "사운드 카드 설치" }
+        }
+      },
+      "reserveData": {
+        "availableTime": ["2024-07-30T19:00:00", "2024-07-31T20:00:00", "2024-08-01T21:00:00"],
+        "pc": "PC 14",
+        "symptom": "업그레이드에 대한 조언이 필요합니다."
+      },
+      "matchingData": {
+        "reservedTime": "2024-07-30T19:00:00",
+        "paymentLink": null,
+        "chatLink": null,
+        "message": null,
+        "review": {
+          "rating": null,
+          "content": null
+        }
+      }
+    }
+  ]
+}
