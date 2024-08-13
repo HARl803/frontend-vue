@@ -4,166 +4,166 @@
       <div class="container-fluid">
         <router-link class="navbar-brand" to="/">
           <span class="text-primary">P</span><span class="text-success">|</span
-          ><span class="text-success2">sh</span
-          ><span class="text-success3">el</span
-          ><span class="text-success4">ter</span>
+        ><span class="text-success2">sh</span
+        ><span class="text-success3">el</span
+        ><span class="text-success4">ter</span>
         </router-link>
         <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse"
-          id="navbarNav"
-          style="font-weight: bold"
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            style="font-weight: bold"
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <router-link class="nav-link" to="/parts-search"
-                >부품 찾기</router-link
+              >부품 찾기
+              </router-link
               >
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/mentor-search"
-                >멘토 검색</router-link
+              >멘토 검색
+              </router-link
               >
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/community"
-                >자유게시판</router-link
+              >자유게시판
+              </router-link
               >
             </li>
           </ul>
-          <div class="d-flex align-items-center position-relative">
+          <div v-if="profile" class="d-flex align-items-center position-relative">
             <div class="dropdown">
-              <span
-                class="me-3"
-                @click="toggleNotificationsDropdown"
-                id="notificationsDropdown"
-                role="button"
+              <div
+                  class="profile"
+                  @click="toggleProfileDropdown"
+                  id="profileDropdown"
+                  role="button"
               >
-                <i class="bi bi-bell"></i>
-              </span>
+                <img class="profileImage"
+                     src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+                     alt="프로필 이미지">
+                <!--                                <img class="profileImage" :src="profile.profileMember.profileImage">-->
+              </div>
+
               <ul
-                class="dropdown-menu dropdown-menu-end"
-                :class="{ show: showNotificationsDropdown }"
-                aria-labelledby="notificationsDropdown"
-              >
-                <li
-                  v-for="notification in unreadNotifications"
-                  :key="notification.id"
-                >
-                  <router-link
-                    class="dropdown-item"
-                    :to="{
-                      name: 'notifications',
-                      params: { id: notification.id },
-                    }"
-                    @click="hideNotificationsDropdown"
-                  >
-                    {{ notification.text }}
-                  </router-link>
-                </li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <span
-                @click="toggleProfileDropdown"
-                id="profileDropdown"
-                role="button"
-              >
-                <i class="bi bi-person-circle"></i>
-              </span>
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                :class="{ show: showProfileDropdown }"
-                aria-labelledby="profileDropdown"
+                  class="dropdown-menu dropdown-menu-end"
+                  :class="{ show: showProfileDropdown }"
+                  aria-labelledby="profileDropdown"
               >
                 <li>
                   <router-link
-                    class="dropdown-item"
-                    to="/profile"
-                    @click="hideProfileDropdown"
-                    >회원정보</router-link
+                      class="dropdown-item"
+                      to="/profile"
+                      @click="hideProfileDropdown"
+                  >회원정보
+                  </router-link
                   >
                 </li>
                 <li>
                   <router-link
-                    class="dropdown-item"
-                    to="/my-pc"
-                    @click="hideProfileDropdown"
-                    >내 PC</router-link
+                      class="dropdown-item"
+                      to="/my-pc"
+                      @click="hideProfileDropdown"
+                  >내 PC
+                  </router-link
                   >
                 </li>
                 <li>
                   <router-link
-                    class="dropdown-item"
-                    to="/reservations"
-                    @click="hideProfileDropdown"
-                    >예약관리</router-link
+                      class="dropdown-item"
+                      to="/reservations"
+                      @click="hideProfileDropdown"
+                  >예약관리
+                  </router-link
                   >
                 </li>
                 <li>
                   <router-link
-                    class="dropdown-item"
-                    to="/schedule"
-                    @click="hideProfileDropdown"
-                    >스케줄관리</router-link
+                      class="dropdown-item"
+                      to="/schedule"
+                      @click="hideProfileDropdown"
+                  >스케줄관리
+                  </router-link
                   >
                 </li>
                 <li>
                   <router-link
-                    class="dropdown-item"
-                    to="/wishlist"
-                    @click="hideProfileDropdown"
-                    >찜 목록</router-link
+                      class="dropdown-item"
+                      to="/wishlist"
+                      @click="hideProfileDropdown"
+                  >찜 목록
+                  </router-link
                   >
                 </li>
                 <li>
                   <router-link
-                    class="dropdown-item"
-                    to="/notifications"
-                    @click="hideProfileDropdown"
-                    >알림</router-link
+                      class="dropdown-item"
+                      to="/notifications"
+                      @click="hideProfileDropdown"
+                  >알림
+                  </router-link
                   >
                 </li>
                 <li>
                   <router-link
-                    class="dropdown-item"
-                    to="/cscenter"
-                    @click="hideProfileDropdown"
-                    >문의</router-link
+                      class="dropdown-item"
+                      to="/cscenter"
+                      @click="hideProfileDropdown"
+                  >문의
+                  </router-link
                   >
                 </li>
                 <li>
                   <router-link
-                    class="dropdown-item"
-                    to="/payment"
-                    @click="hideProfileDropdown"
-                    >결제내역/관리</router-link
+                      class="dropdown-item"
+                      to="/payment"
+                      @click="hideProfileDropdown"
+                  >결제내역/관리
+                  </router-link
+                  >
+                </li>
+                <li>
+                  <router-link
+                      class="dropdown-item"
+                      to="/"
+                      @click="logout"
+                  >로그아웃
+                  </router-link
                   >
                 </li>
               </ul>
             </div>
           </div>
+          <a v-else href="http://localhost:8080/api/v1/auth/authorize">
+            <img src="@/assets/kakao_login_medium_narrow.png" alt="카카오 로그인">
+          </a>
+
         </div>
       </div>
     </nav>
-    <ProfileNav v-if="showProfileNav" />
+    <ProfileNav v-if="showProfileNav"/>
   </header>
 </template>
 
 <script>
 import ProfileNav from "./ProfileNav.vue";
-import { ref, watch } from "vue";
-import { useRoute } from "vue-router";
+import {computed, onMounted, ref, watch} from "vue";
+import {useRoute, useRouter} from "vue-router";
+import {useAuthStore} from "@/stores/auth.js";
+
 
 export default {
   name: "Navbar",
@@ -175,10 +175,13 @@ export default {
     const showProfileNav = ref(false);
     const showNotificationsDropdown = ref(false);
     const unreadNotifications = ref([
-      { id: 1, text: "새로운 메시지가 도착했습니다." },
-      { id: 2, text: "새로운 댓글이 달렸습니다." },
+      {id: 1, text: "새로운 메시지가 도착했습니다."},
+      {id: 2, text: "새로운 댓글이 달렸습니다."},
     ]);
     const route = useRoute();
+
+    const authStore = useAuthStore();
+    const profile = computed(() => authStore.profile);
 
     const toggleProfileDropdown = () => {
       showProfileDropdown.value = !showProfileDropdown.value;
@@ -196,15 +199,23 @@ export default {
       showNotificationsDropdown.value = false;
     };
 
+    const logout = () => {
+      authStore.logout();
+    }
+
+    onMounted(() => {
+      authStore.getProfile();
+    })
+
     watch(route, (newRoute) => {
       if (
-        newRoute.path.startsWith("/profile") ||
-        newRoute.path.startsWith("/my-pc") ||
-        newRoute.path.startsWith("/reservations") ||
-        newRoute.path.startsWith("/schedule") ||
-        newRoute.path.startsWith("/wishlist") ||
-        newRoute.path.startsWith("/notifications") ||
-        newRoute.path.startsWith("/cscenter")
+          newRoute.path.startsWith("/profile") ||
+          newRoute.path.startsWith("/my-pc") ||
+          newRoute.path.startsWith("/reservations") ||
+          newRoute.path.startsWith("/schedule") ||
+          newRoute.path.startsWith("/wishlist") ||
+          newRoute.path.startsWith("/notifications") ||
+          newRoute.path.startsWith("/cscenter")
       ) {
         showProfileNav.value = true;
       } else {
@@ -221,6 +232,10 @@ export default {
       hideProfileDropdown,
       toggleNotificationsDropdown,
       hideNotificationsDropdown,
+
+      profile,
+      logout,
+
     };
   },
 };
@@ -251,6 +266,7 @@ export default {
   color: #00ff00 !important;
   letter-spacing: 1.5px !important;
 }
+
 .navbar-dark .navbar-brand span.text-success4 {
   color: #2015f2 !important;
   letter-spacing: 1.5px !important;
@@ -292,5 +308,16 @@ export default {
 
 .dropdown-menu.show {
   display: block;
+}
+
+.profile {
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.profileImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
 }
 </style>
