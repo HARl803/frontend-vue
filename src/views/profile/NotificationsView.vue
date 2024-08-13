@@ -2,14 +2,13 @@
   <div class="notification-container">
     <div class="tabs">
       <button
-        :class="{ active: activeTab.value === '컴터챗' }"
+        :class="{ active: activeTab === '컴터챗' }"
         @click="setActiveTab('컴터챗')"
       >
         컴터챗
       </button>
-      {{ notificationChatList }}
       <button
-        :class="{ active: activeTab.value === '기타' }"
+        :class="{ active: activeTab === '기타' }"
         @click="setActiveTab('기타')"
       >
         기타
@@ -17,10 +16,10 @@
     </div>
 
     <!-- 컴터챗 알림 영역 -->
-    <div v-if="activeTab.value === '컴터챗'" class="notification-section">
+    <div v-if="activeTab === '컴터챗'" class="notification-section">
       <h5>컴터챗 알림입니다 !</h5>
-      {{ notificationChatLists.length }}
-      <div v-if="notificationChatLists.length">
+
+      <div v-if="notificationChatList.length">
         <div
           v-for="notification in notificationChatList"
           :key="notification.notiId"
@@ -83,11 +82,11 @@
     </div>
 
     <!-- 기타 알림 영역 -->
-    <div v-if="activeTab.value === '기타'" class="notification-section">
+    <div v-else class="notification-section">
       <h5>기타 알림입니다 !</h5>
-      <div v-if="notificationElseList.value.length">
+      <div v-if="notificationElseList.length">
         <div
-          v-for="notification in notificationElseList.value"
+          v-for="notification in notificationElseList"
           :key="notification.notiId"
           :class="[
             'notification-card',
@@ -106,9 +105,6 @@
                 @change="markAsRead(notification)"
                 class="read-checkbox"
               />
-
-              <!-- 기타 알림의 링크 버튼 -->
-              <a :href="notification.link" class="link-button">알림 확인하기</a>
             </div>
           </div>
         </div>
@@ -156,8 +152,29 @@ export default {
       console.log(`Showing report modal for ID: ${matchingId}`);
     };
 
+    // 결제 관련 기능 추가
+    const IMP = window.IMP;
+    IMP.init("imp42622840");
+
     const requestPay = () => {
-      console.log("Requesting payment");
+      IMP.request_pay(
+        {
+          pg: "kakaopay",
+          pay_method: "card",
+          merchant_uid: "sadkjlsadf-sasdfsdffssdfsdfkjafsd", // 상점 고유 주문번호
+          name: "포트원 테스트",
+          amount: 1004,
+          buyer_email: "good@portone.io",
+          buyer_name: "포트원 기술지원팀",
+          buyer_tel: "010-1234-5678",
+          buyer_addr: "서울특별시 강남구 삼성동",
+          buyer_postcode: "123-456",
+        },
+        function (rsp) {
+          console.log(rsp);
+          // callback 처리: rsp.imp_uid 값으로 결제 단건조회 API를 호출하여 결제결과를 판단합니다.
+        }
+      );
     };
 
     return {

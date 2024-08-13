@@ -11,7 +11,7 @@ export const useNotificationStore = defineStore("notificationstore", () => {
     {
       notiId: 1,
       receiver: "chaeni",
-      typeId: "컴터챗",
+      typeId: "컴터챗 확정",
       messageContent: "오주원님과 컴터챗이 확정되었습니다.",
       isRead: false,
       createdTime: "2024-08-01T00:00:30",
@@ -20,7 +20,7 @@ export const useNotificationStore = defineStore("notificationstore", () => {
     {
       notiId: 4,
       receiver: "chaeni",
-      typeId: "컴터챗",
+      typeId: "컴터챗 요청",
       messageContent: "2024.08.11 18:30 - 19:00 (30분) 컴터챗을 요청했습니다.",
       isRead: false,
       createdTime: "2024-08-01T00:00:30",
@@ -34,6 +34,15 @@ export const useNotificationStore = defineStore("notificationstore", () => {
       isRead: false,
       createdTime: "2024-08-01T00:00:30",
       matchingId: "3",
+    },
+    {
+      notiId: 7,
+      receiver: "chaeni",
+      typeId: "컴터챗 확정",
+      messageContent: "chaeni님과 컴터챗이 확정되었습니다.",
+      isRead: false,
+      createdTime: "2024-08-01T00:00:30",
+      matchingId: "1",
     },
   ]);
 
