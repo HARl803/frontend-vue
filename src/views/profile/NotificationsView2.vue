@@ -2,14 +2,13 @@
   <div class="notification-container">
     <div class="tabs">
       <button
-        :class="{ active: activeTab.value === '컴터챗' }"
+        :class="{ active: activeTab === '컴터챗' }"
         @click="setActiveTab('컴터챗')"
       >
         컴터챗
       </button>
-      {{ notificationChatList }}
       <button
-        :class="{ active: activeTab.value === '기타' }"
+        :class="{ active: activeTab === '기타' }"
         @click="setActiveTab('기타')"
       >
         기타
@@ -17,10 +16,9 @@
     </div>
 
     <!-- 컴터챗 알림 영역 -->
-    <div v-if="activeTab.value === '컴터챗'" class="notification-section">
+    <div v-if="activeTab === '컴터챗'" class="notification-section">
       <h5>컴터챗 알림입니다 !</h5>
-      {{ notificationChatLists.length }}
-      <div v-if="notificationChatLists.length">
+      <div v-if="notificationChatList.length">
         <div
           v-for="notification in notificationChatList"
           :key="notification.notiId"
@@ -83,11 +81,11 @@
     </div>
 
     <!-- 기타 알림 영역 -->
-    <div v-if="activeTab.value === '기타'" class="notification-section">
+    <div v-if="activeTab === '기타'" class="notification-section">
       <h5>기타 알림입니다 !</h5>
-      <div v-if="notificationElseList.value.length">
+      <div v-if="notificationElseList.length">
         <div
-          v-for="notification in notificationElseList.value"
+          v-for="notification in notificationElseList"
           :key="notification.notiId"
           :class="[
             'notification-card',
@@ -120,56 +118,68 @@
 
 <script>
 import { useNotificationStore } from "@/stores/notification";
-import { ref, computed } from "vue";
-import { useRouter } from "vue-router";
+import axios from "axios";
+import { ref, computed, onMounted } from "vue";
+import { useRoute, useRouter } from "vue-router";
 
 export default {
   name: "NotificationsView",
   setup() {
-    const notificationStore = useNotificationStore();
-    const router = useRouter();
-    const activeTab = ref("컴터챗");
 
-    // 컴터챗 알림 관련 데이터
-    const notificationChatList = computed(
-      () => notificationStore.notificationChatList
-    );
+    
 
-    // 기타 알림 관련 데이터
-    const notificationElseList = computed(
-      () => notificationStore.notificationElseList
-    );
 
-    const setActiveTab = (tabName) => {
-      activeTab.value = tabName;
-    };
-
-    const markAsRead = (notification) => {
-      notification.isRead = true;
-    };
-
-    const enterComtochat = (matchingId) => {
-      console.log(`Entering Comtochat with ID: ${matchingId}`);
-    };
-
-    const showReportModal = (matchingId) => {
-      console.log(`Showing report modal for ID: ${matchingId}`);
-    };
-
-    const requestPay = () => {
-      console.log("Requesting payment");
-    };
-
+  }
+  data() {
     return {
-      activeTab,
-      notificationChatList,
-      notificationElseList,
-      setActiveTab,
-      markAsRead,
-      enterComtochat,
-      showReportModal,
-      requestPay,
+      activeTab: "컴터챗", // 초기 탭을 설정합니다.
+      notificationChatList: [
+        // 예시 데이터: 실제 데이터는 API로부터 받아옵니다.
+        {
+          notiId: 1,
+          receiver: "chaeni",
+          typeId: "컴터챗 확정",
+          messageContent: "오주원님과 컴터챗이 확정되었습니다.",
+          isRead: false,
+          createdTime: "2024-08-01T00:00:30",
+          matchingId: "1",
+        },
+      ],
+      notificationElseList: [
+        // 예시 데이터: 실제 데이터는 API로부터 받아옵니다.
+        {
+          notiId: 2,
+          notiNum: 2,
+          receiver: "chaeni",
+          typeId: "기타",
+          messageContent: "작성하신 댓글 관련하여 신고가 접수되었습니다.",
+          isRead: false,
+          createdTime: "2024-08-01T00:00:30",
+          link: "urlurlurl",
+        },
+      ],
     };
+  },
+  methods: {
+    setActiveTab(tabName) {
+      this.activeTab = tabName;
+    },
+    markAsRead(notification) {
+      // 알림을 읽음 처리하는 로직을 여기에 추가합니다.
+      notification.isRead = true;
+    },
+    enterComtochat(matchingId) {
+      // 컴터챗 입장하기 동작을 여기에 추가합니다.
+      console.log(`Entering Comtochat with ID: ${matchingId}`);
+    },
+    showReportModal(matchingId) {
+      // 수락/거절 모달을 여는 동작을 여기에 추가합니다.
+      console.log(`Showing report modal for ID: ${matchingId}`);
+    },
+    requestPay() {
+      // 결제하기 동작을 여기에 추가합니다.
+      console.log("Requesting payment");
+    },
   },
 };
 </script>
