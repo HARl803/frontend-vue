@@ -10,11 +10,11 @@ export const useMatchingStore = defineStore("matchingStore", () => {
   // 멘토 정보를 저장할 상태를 정의합니다.
   const matchingList = ref([
     {
-      1: {
+      2: {
         possible_start_time: [
           "2024-07-30T19:00:00",
-          "2024-07-30T19:00:00",
-          "2024-07-30T19:00:00",
+          "2024-07-30T20:00:00",
+          "2024-07-30T21:00:00",
         ],
         symptomDetail: "hihi",
         symptomImageFile: "image urll",
