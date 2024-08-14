@@ -13,7 +13,6 @@
       >
         기타
       </button>
-      
     </div>
 
     <!-- 컴터챗 알림 영역 -->
@@ -165,8 +164,7 @@
             <p class="notification-message">
               {{ notification.messageContent }}
             </p>
-            <div class="notification-actions">
-            </div>
+            <div class="notification-actions"></div>
           </div>
         </div>
       </div>
@@ -176,91 +174,86 @@
 
   <!-- 모달 관련 코드 -->
   <div
-      class="modal fade"
-      id="rejectModal"
-      tabindex="-1"
-      aria-labelledby="rejectModalLabel"
-      aria-hidden="true"
-      ref="rejectModal"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="rejectModalLabel">거절하기</h5>
-            <button
-              type="button"
-              class="btn-close"
-              @click="closeRejectModal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p style="color: black">정말 거절하시겠습니까? 진짜로?</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" @click="confirmReject">
-              확인
-            </button>
-            <button
-              type="button"
-              class="btn btn-secondary"
-              @click="closeRejectModal"
-            >
-              취소
-            </button>
-          </div>
+    class="modal fade"
+    id="rejectModal"
+    tabindex="-1"
+    aria-labelledby="rejectModalLabel"
+    aria-hidden="true"
+    ref="rejectModal"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="rejectModalLabel">거절하기</h5>
+          <button
+            type="button"
+            class="btn-close"
+            @click="closeRejectModal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p style="color: black">정말 거절하시겠습니까? 진짜로?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" @click="confirmReject">
+            확인
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            @click="closeRejectModal"
+          >
+            취소
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- '수락' 모달 -->
-    <div
-      class="modal fade"
-      id="acceptModal"
-      tabindex="-1"
-      aria-labelledby="acceptModalLabel"
-      aria-hidden="true"
-      ref="acceptModal"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="acceptModalLabel">수락하기</h5>
-            <button
-              type="button"
-              class="btn-close"
-              @click="closeAcceptModal"
-              aria-label="Close"
-            ></button>
+  <!-- '수락' 모달 -->
+  <div
+    class="modal fade"
+    id="acceptModal"
+    tabindex="-1"
+    aria-labelledby="acceptModalLabel"
+    aria-hidden="true"
+    ref="acceptModal"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="acceptModalLabel">수락하기</h5>
+          <button
+            type="button"
+            class="btn-close"
+            @click="closeAcceptModal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p style="color: black">원하는 시간을 선택해주세요:</p>
+          <div v-for="time in possibleTimes" :key="time">
+            <input type="radio" :value="time" v-model="selectedTime" />
+            <label>{{ new Date(time).toLocaleString() }}</label>
           </div>
-          <div class="modal-body">
-            <p style="color: black">원하는 시간을 선택해주세요:</p>
-            <div v-for="time in possibleTimes" :key="time">
-              <input
-                type="radio"
-                :value="time"
-                v-model="selectedTime"
-              />
-              <label>{{ new Date(time).toLocaleString() }}</label>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-success" @click="confirmAccept">
-              확인
-            </button>
-            <button
-              type="button"
-              class="btn btn-secondary"
-              @click="closeAcceptModal"
-            >
-              취소
-            </button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" @click="confirmAccept">
+            확인
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            @click="closeAcceptModal"
+          >
+            취소
+          </button>
         </div>
       </div>
     </div>
+  </div>
 </template>
-
 
 <script>
 import { useNotificationStore } from "@/stores/notification";
@@ -293,9 +286,7 @@ export default {
     );
 
     // 매칭 관련 데이터
-    const matchingList = computed(
-      () => matchingStore.matchingList
-    );
+    const matchingList = computed(() => matchingStore.matchingList);
 
     // 읽지 않은 알림과 읽은 알림을 나누기 위한 computed 속성
     const unreadChatNotifications = computed(() => {
@@ -327,13 +318,14 @@ export default {
       activeTab.value = tabName;
     };
 
-
     // 컴터챗 입장하기 --> 백엔드로 매칭 아이디 보내기 --> 추후, 수정 팔요
     const enterComtochat = async (matchingId) => {
       try {
-        await axios.post('/api/v1/comtochat/enter', { matchingId });
+        await axios.post("/api/v1/comtochat/enter", { matchingId });
 
-        console.log(`Successfully sent matchingId ${matchingId} to the backend.`);
+        console.log(
+          `Successfully sent matchingId ${matchingId} to the backend.`
+        );
       } catch (error) {
         console.error("Error sending matchingId to backend:", error);
       }
@@ -358,13 +350,12 @@ export default {
     const showAcceptModal = (id) => {
       reportTarget.value.id = id;
 
-
       // 알림 리스트에서 matchingId를 가져옴
       const notification = notificationChatList.value.find(
         (item) => item.notiId === id
       );
-      
-      console.log(notification)
+
+      console.log(notification);
 
       if (notification) {
         const matchingId = notification.matchingId;
@@ -374,13 +365,12 @@ export default {
           (item) => item[matchingId]
         );
 
-        console.log(matchingData)
+        console.log(matchingData);
 
         if (matchingData) {
           // possible_start_time 값을 possibleTimes에 할당
           possibleTimes.value = matchingData[matchingId].possible_start_time;
-          console.log(possibleTimes.value)
-
+          console.log(possibleTimes.value);
         } else {
           console.error("Matching data not found.");
           return;
@@ -390,24 +380,23 @@ export default {
         return;
       }
 
-      const modalElement = document.getElementById('acceptModal');
+      const modalElement = document.getElementById("acceptModal");
       const modal = new bootstrap.Modal(modalElement);
       modal.show();
     };
-
 
     // '거절' 모달 열기
     const showRejectModal = (id) => {
       reportTarget.value = { id };
 
-      const modalElement = document.getElementById('rejectModal');
+      const modalElement = document.getElementById("rejectModal");
       const modal = new bootstrap.Modal(modalElement);
       modal.show();
     };
 
     // 모달 닫기
     const closeAcceptModal = () => {
-      const modalElement = document.getElementById('acceptModal');
+      const modalElement = document.getElementById("acceptModal");
       const modal = bootstrap.Modal.getInstance(modalElement);
       if (modal) {
         modal.hide();
@@ -415,7 +404,7 @@ export default {
     };
 
     const closeRejectModal = () => {
-      const modalElement = document.getElementById('rejectModal');
+      const modalElement = document.getElementById("rejectModal");
       const modal = bootstrap.Modal.getInstance(modalElement);
       if (modal) {
         modal.hide();
@@ -431,12 +420,14 @@ export default {
 
       try {
         const matchingId = reportTarget.value.id;
-        
+
         await axios.put(`/api/v1/matching/${matchingId}`, {
           possible_start_time: [selectedTime.value], // 선택된 시간만 보냄
         });
 
-        console.log(`Confirmed accept for matching ID: ${matchingId} with time: ${selectedTime.value}`);
+        console.log(
+          `Confirmed accept for matching ID: ${matchingId} with time: ${selectedTime.value}`
+        );
         closeAcceptModal();
       } catch (error) {
         console.error("Error updating matching data:", error);
@@ -446,14 +437,13 @@ export default {
     // 거절에서 '확인' -> 백엔드로 possible_start_time을 null값 처리 후 전송
     const confirmReject = async () => {
       try {
-        
         const notification = notificationChatList.value.find(
           (item) => item.notiId === reportTarget.value.id
         );
 
-        console.log(reportTarget.value) // matching_id
-        console.log(notificationChatList.value)
-        console.log(notification)
+        console.log(reportTarget.value); // matching_id
+        console.log(notificationChatList.value);
+        console.log(notification);
 
         if (notification) {
           const matchingId = notification.matchingId;
@@ -482,7 +472,6 @@ export default {
         console.error("Error updating matching data:", error);
       }
     };
-
 
     // 결제 관련 기능 추가
     const IMP = window.IMP;
@@ -531,7 +520,6 @@ export default {
       closeAcceptModal,
       selectedTime,
       possibleTimes,
-
     };
   },
 };
@@ -719,5 +707,4 @@ h3 {
   justify-content: flex-end;
   margin-top: 10px;
 }
-
 </style>

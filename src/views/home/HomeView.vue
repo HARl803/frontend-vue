@@ -6,68 +6,118 @@
         <div class="col">
           <div class="card bg-dark text-white ad-banner">
             <div class="card-body">
-              <h5 class="card-title" style="font-weight: bold;">컴터챗 안에서 자유롭게 원격 수리 멘토링을 받을 수 있어요 !</h5>
-              <p class="card-text">조립 컴퓨터의 궁금한 정보들 직접 얻는 1:1 음성대화, 컴터챗 어때요?</p>
+              <h5 class="card-title" style="font-weight: bold">
+                컴터챗 안에서 자유롭게 원격 수리 멘토링을 받을 수 있어요 !
+              </h5>
+              <p class="card-text">
+                조립 컴퓨터의 궁금한 정보들 직접 얻는 1:1 음성대화, 컴터챗
+                어때요?
+              </p>
               <div class="button-container">
-                <router-link to="/community" class="btn btn-primary">멘토 알아보기</router-link>
+                <router-link to="/mentor-search" class="btn btn-primary"
+                  >멘토 알아보기</router-link
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- 2. 신규 멘토 섹션 -->
-      <div class="row mb-5"> 
+      <div class="row mb-5">
         <div class="col">
-          <h5 style="font-weight: bold;">신규 등록한 멘토님이에요!</h5>
+          <h5 style="font-weight: bold">신규 등록한 멘토님이에요!</h5>
           <div class="d-flex justify-content-center flex-wrap">
-            <div v-for="mentor in mentors" :key="mentor.id" class="card m-4 position-relative" style="width: 18rem;">
-              <div class="card-header" style="background-color: #D83F78; color: white; font-style: normal !important;">신규 멘토님이에요!</div>
-              <div class="image-container">
-                <img :src="mentor.image" class="card-img-top" alt="멘토 이미지">
+            <div
+              v-for="mentor in homes[0].mentorLists"
+              :key="mentor.id"
+              class="card m-4 position-relative"
+              style="width: 18rem"
+            >
+              <div
+                class="card-header"
+                style="
+                  background-color: #d83f78;
+                  color: white;
+                  font-style: normal !important;
+                "
+              >
+                신규 멘토님이에요!
               </div>
               <div class="card-body">
-                <h5 class="card-title" style="font-weight: bold;">{{ mentor.name }}</h5>
-                <p class="card-text" style="color: #5e67eb; font-weight: bold;">응답시간: {{ mentor.responseTime }} | 만족률: {{ mentor.matchingRate }}%</p>
-                <p class="card-text">모든 부품 멘탈잡아보세요! 전화하기 열일하는덕후!!!</p>
-                <div class="button-group">
-                  <button class="btn btn-outline-primary btn-sm custom-button">SSD 장착</button>
-                  <button class="btn btn-outline-primary btn-sm custom-button">백업/복구</button>
-                  <button class="btn btn-outline-primary btn-sm custom-button">BIOS 설정</button>
-                  <button class="btn btn-outline-primary btn-sm custom-button">하드웨어 진단</button>
-                </div>
-                <i :class="bookmarkStore.isMentorBookmarked(mentor.id) ? 'bi bi-bookmark-fill' : 'bi bi-bookmark'"
-                  class="position-absolute top-0 end-0 m-2 bookmark-icon"
-                  role="button"
-                  @click="bookmarkItem(mentor, 'mentor')"></i>
+                <h5 class="card-title" style="font-weight: bold">
+                  {{ mentor.nickname }}
+                </h5>
+                <p class="card-text" style="color: #5e67eb; font-weight: bold">
+                  만족률:
+                  {{ mentor.matchingRate }}%
+                </p>
+                <p class="card-text">
+                  {{ mentor.intro }}
+                </p>
               </div>
-              <div class="card-footer text-center">
-                <a href="#" class="btn btn-dark btn-sm detail-button w-100">상세보기</a>
+              <div class="mt-auto">
+                <div class="skills mb-2">
+                  <span
+                    v-for="tech in mentor.techs"
+                    :key="tech"
+                    class="badge bg-secondary m-1"
+                    >{{ techList[tech] }}</span
+                  >
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-dark btn-sm detail-button w-100"
+                    >상세보기</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- 3. 인기 부품 섹션 -->
       <div class="row mb-5">
         <div class="col">
-          <h5 style="font-weight: bold;">지금 많이 검색되고 있는 부품은? TOP 3</h5>
+          <h5 style="font-weight: bold">
+            지금 많이 검색되고 있는 부품은? TOP 3
+          </h5>
           <div class="d-flex justify-content-center flex-wrap">
-            <div v-for="part in topParts" :key="part.id" class="card m-4 position-relative" style="width: 18rem;">
-              <div class="card-header bg-success text-white">인기 부품이에요 !</div>
-              <img :src="part.image" class="card-img-top" alt="부품 이미지">
+            <div
+              v-for="(part, partId) in homes[0].parts"
+              :key="part.id"
+              class="card m-4 position-relative"
+              style="width: 18rem"
+            >
+              <div class="card-header bg-success text-white">
+                인기 부품이에요 !
+              </div>
               <div class="card-body">
-                <h5 class="card-title" style="font-weight: bold;">{{ part.name }}</h5>
+                <h5 class="card-title" style="font-weight: bold">
+                  {{ part.partName }}
+                </h5>
                 <div class="button-group mb-3">
-                  <button class="btn btn-outline-primary btn-sm custom-button">{{ part.socketType }}</button>
-                  <button class="btn btn-outline-primary btn-sm custom-button">{{ part.coreCount }} cores</button>
-                  <button class="btn btn-outline-primary btn-sm custom-button">{{ part.threadCount }} threads</button>
-                  <button class="btn btn-outline-primary btn-sm custom-button">{{ part.baseClock }}GHz</button>
+                  <button class="btn btn-outline-primary btn-sm custom-button">
+                    {{ part.property1 }}
+                  </button>
+                  <button class="btn btn-outline-primary btn-sm custom-button">
+                    {{ part.property2 }}
+                  </button>
+                  <button class="btn btn-outline-primary btn-sm custom-button">
+                    {{ part.property3 }}
+                  </button>
+                  <button class="btn btn-outline-primary btn-sm custom-button">
+                    {{ part.property4 }}
+                  </button>
+                  <button class="btn btn-outline-primary btn-sm custom-button">
+                    {{ part.property5 }}
+                  </button>
                 </div>
-                <i :class="bookmarkStore.isPartBookmarked(part.id) ? 'bi bi-bookmark-fill' : 'bi bi-bookmark'"
-                   class="position-absolute top-0 end-0 m-2 bookmark-icon"
-                   role="button"
-                   @click="bookmarkItem(part, 'part')"></i>
-                <router-link :to="{ name: 'partDetail', params: { id: part.id } }" class="btn btn-dark btn-sm detail-button w-100">상세보기</router-link>
+                <router-link
+                  :to="{ name: 'partDetail', params: { id: partId } }"
+                  class="btn btn-dark btn-sm detail-button w-100"
+                  >상세보기</router-link
+                >
               </div>
             </div>
           </div>
@@ -87,61 +137,57 @@
 </template>
 
 <script>
-import { useBookmarkStore } from '@/stores/bookmark';
-import FreeBoardList from '@/components/Board/FreeBoardList.vue';
-import HotBoardList from '@/components/Board/HotBoardList.vue';
-import partsData from '@/assets/dummy.json';
-import Navbar from '@/components/Navbar.vue';
+import { ref, computed, watch, onMounted, onUnmounted } from "vue";
+import { useBookmarkStore } from "@/stores/bookmark";
+import { useHomeStore } from "@/stores/home";
+import FreeBoardList from "@/components/Board/FreeBoardList.vue";
+import HotBoardList from "@/components/Board/HotBoardList.vue";
+import partsData from "@/assets/dummy.json";
+import Navbar from "@/components/Navbar.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
     FreeBoardList,
-    HotBoardList,
     Navbar,
   },
   setup() {
-    const bookmarkStore = useBookmarkStore();
+    const homeStore = useHomeStore();
+    const homes = computed(() => homeStore.homeList);
 
-    const mentors = [
-      { id: 1, name: '가브리엘', image: 'https://via.placeholder.com/150', description: '컴퓨터 멘토', responseTime: '30분 이내', matchingRate: 99 },
-      { id: 2, name: '미카엘', image: 'https://via.placeholder.com/150', description: '컴퓨터 멘토', responseTime: '1시간 이내', matchingRate: 98 },
-      { id: 3, name: '라파엘', image: 'https://via.placeholder.com/150', description: '컴퓨터 멘토', responseTime: '2시간 이내', matchingRate: 95 }
-    ];
-
-    const sampleParts = Object.entries(partsData.cpu).slice(0, 3).map(([id, part]) => ({
-      id,
-      name: `${part.manufacturer} ${part.cpuType}`,
-      image: 'https://via.placeholder.com/150',
-      socketType: part.socketType,
-      coreCount: part.coreCount,
-      threadCount: part.threadCount,
-      baseClock: part.baseClock
-    }));
-
-    const bookmarkItem = (item, type) => {
-      if (type === 'mentor') {
-        if (bookmarkStore.isMentorBookmarked(item.id)) {
-          bookmarkStore.removeMentorBookmark(item.id);
-        } else {
-          bookmarkStore.addMentorBookmark(item);
-        }
-      } else if (type === 'part') {
-        if (bookmarkStore.isPartBookmarked(item.id)) {
-          bookmarkStore.removePartBookmark(item.id);
-        } else {
-          bookmarkStore.addPartBookmark(item);
-        }
-      }
+    // 기술 태그 리스트
+    const techList = {
+      1: "컴퓨터 견적",
+      2: "CPU 장착",
+      3: "SSD/RAM 장착",
+      4: "배선 작업",
+      5: "수냉 쿨러",
+      6: "케이스 선택",
+      7: "전원 공급 장치 설치",
+      8: "BIOS 설정",
+      9: "드라이버 설치",
+      10: "온도 관리",
+      11: "업그레이드 팁",
+      12: "모니터 연결",
+      13: "전원 버튼 연결",
+      14: "마더보드 선택",
+      15: "고성능 게이밍 컴퓨터 조립",
+      16: "소형 폼팩터 컴퓨터 조립",
+      17: "사운드 카드 설치",
+      18: "Wi-Fi 설정",
+      19: "벤치마크 퍼포먼스 조정",
+      20: "에러 코드 해결",
+      21: "백업 및 복원",
+      22: "NAS 관련 데이터 전송",
+      23: "디스크 파티션 설정",
+      24: "소음 감소 팁",
+      25: "리눅스 설치 및 구성",
+      26: "IOT 장치 연결",
+      27: "데이터 복구",
     };
 
-    return {
-      mentors,
-      topParts: sampleParts,
-      bookmarkItem,
-      bookmarkStore
-    };
-  }
+    return { homes, techList };
+  },
 };
 </script>
 
@@ -156,7 +202,8 @@ export default {
 footer {
   width: 100%;
 }
-.bi-bookmark, .bi-bookmark-fill {
+.bi-bookmark,
+.bi-bookmark-fill {
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
@@ -167,31 +214,31 @@ footer {
 }
 
 .ad-banner {
-  height: 250px; 
-  padding: 20px; 
-  position: relative; 
+  height: 250px;
+  padding: 20px;
+  position: relative;
 }
 
 .button-container {
   position: absolute;
-  bottom: 20px; 
-  right: 20px; 
+  bottom: 20px;
+  right: 20px;
 }
 
 .button-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .custom-button {
-  background-color: #ebedff; 
-  color: #333; 
-  border-color: #ebedff; 
+  background-color: #ebedff;
+  color: #333;
+  border-color: #ebedff;
 }
 
 .custom-button:hover {
-  background-color: #0056b3; 
+  background-color: #0056b3;
   border-color: #0056b3;
 }
 

@@ -90,11 +90,6 @@
                 <div v-if="isInclude(mento.techs, selectedSkills).length">
                   <div v-if="searchQuery.length">
                     <div v-if="mento.nickname.includes(searchQuery)">
-                      <img
-                        :src="mento.profilePicture"
-                        class="card-img-top"
-                        :alt="mento.nickname"
-                      />
                       <div class="card-body d-flex flex-column">
                         <h5 class="card-title">{{ mento.nickname }}</h5>
                         <p class="card-text">
@@ -122,11 +117,6 @@
                     </div>
                   </div>
                   <div v-else>
-                    <img
-                      :src="mento.profilePicture"
-                      class="card-img-top"
-                      :alt="mento.nickname"
-                    />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">{{ mento.nickname }}</h5>
                       <p class="card-text">
@@ -157,11 +147,6 @@
               <div v-else>
                 <div v-if="searchQuery.length">
                   <div v-if="mento.nickname.includes(searchQuery)">
-                    <img
-                      :src="mento.profilePicture"
-                      class="card-img-top"
-                      :alt="mento.nickname"
-                    />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title">{{ mento.nickname }}</h5>
                       <p class="card-text">
@@ -189,11 +174,6 @@
                   </div>
                 </div>
                 <div v-else>
-                  <img
-                    :src="mento.profilePicture"
-                    class="card-img-top"
-                    :alt="mento.nickname"
-                  />
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title">{{ mento.nickname }}</h5>
                     <p class="card-text">
@@ -299,7 +279,7 @@ export default {
       router.push({ name: "mentorDetail", params: { id } });
     };
 
-    // 
+    //
     const isInclude = (arr1, arr2) => {
       return arr1.filter((v) => arr2.includes(techList[v]));
     };
