@@ -9,6 +9,7 @@
         적극적인 소통을 기대합니다!
       </p>
     </div>
+    {{ $route.params }}
 
     <!-- 2. 게시글 작성 폼 영역 -->
     <!-- 2-1. 게시글 카테고리 선택 -->
@@ -87,7 +88,7 @@ export default {
     const router = useRouter();
     const route = useRoute();
     const postDetail = ref(null);
-    const API_URL = "/api/v1";
+    const API_URL = "/api/v1/community";
     const isEditMode = ref(false);
 
     // 게시글 유형
@@ -102,39 +103,19 @@ export default {
     };
 
     onMounted(() => {
-
-      console.log(route.query);
+      console.log(route);
       
-      // 수정 모드인지 확인
-      if (route.query.mode === 'edit') {
-        isEditMode.value = true;
-
-        if (route.query.postData) {
-          try {
-            const postData = JSON.parse(route.query.postData);
-            console.log(postData);
-            postTitle.value = postData.postTitle;
-            postContent.value = postData.postContent;
-            postTypeId.value = postData.postTypeId;
-          } catch (e) {
-            console.error('Error parsing postData:', e);
-          }
-        } else {
-          console.error('postData is undefined');
-        }
-        // const postData = JSON.parse(route.params.postData);
-
-        // console.log(postData)
-        // postTitle.value = postData.postTitle;
-        // postContent.value = postData.postContent;
-        // postTypeId.value = postData.postTypeId;
-        // 이미지 파일은 수정하지 않으면 그대로 유지
-      } 
-    });
+      isEditMode.value = true;
+      postTitle.value = route.params.postData.postTitle;
+      postContent.value = route.params.postData.postContent;
+      postTypeId.value = route.params.postData.postTypeId;
+  });
 
     // 게시글 저장 (생성 또는 수정)
     const savePost = async () => {
+      console.log(router.params.postId)
       const formData = new FormData();
+      formData.append("postId", route.params.postId)
       formData.append("postTypeId", postTypeId.value);
       formData.append("postTitle", postTitle.value);
       formData.append("postContent", postContent.value);
@@ -146,7 +127,7 @@ export default {
       try {
         if (isEditMode.value) {
           // 게시글 수정
-          await axios.put(`${API_URL}/posts/${route.params.postId}`, formData, {
+          await axios.patch(`${API_URL}/post`, formData, {
             headers: {
               "Content-Type": "multipart/form-data",
             },
@@ -154,7 +135,7 @@ export default {
           console.log("게시글 수정 성공!");
         } else {
           // 새 게시글 생성
-          await axios.post(`${API_URL}/post/create`, formData, {
+          await axios.post(`${API_URL}/post`, formData, {
             headers: {
               "Content-Type": "multipart/form-data",
             },

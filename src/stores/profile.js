@@ -16,7 +16,7 @@ export const useProfileStore = defineStore("profileStore", () => {
             intro: "반가워요 ! 잘 가르쳐드리겠습니다 ",
         }
     );
-
+    
 return {
     profileList
     };

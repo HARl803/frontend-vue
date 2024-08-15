@@ -10,7 +10,13 @@
     </div>
 
     <div class="container mt-4">
-      <button @click="editPost">게시글 수정하기</button>
+      {{ postDetail.postId }}
+  
+      <router-link
+        :to="{ name: 'boardCreate', params: { id: postDetail.postId } }"
+        >게시글 수정하기</router-link
+      >
+      <!-- <button @click="editPost">게시글 수정하기</button> -->
       <div class="card card-expanded">
         <!--1. 게시글 내용 영역 -->
         <div class="card-body">
@@ -282,32 +288,7 @@ export default {
       boardStore.getPostDetail(route.params.id); // postDetail data 업데이트 하기 !
     });
 
-    // 게시글 수정 페이지로 이동
-    const editPost = () => {
-      // postDetail의 값을 확인
-      console.log("postDetail:", postDetail.value);
-
-      // params로 전달할 데이터를 확인
-      console.log("params:", {
-        postId: postDetail.value.postId,
-        postData: JSON.stringify(postDetail.value),
-      });
-
-      if (!postDetail.value) {
-        console.error("postDetail is undefined or not loaded");
-        return;
-      }
-
-      router.push({
-        name: "boardCreate",
-        query: {
-          mode: "edit",
-          postId: postDetail.value.postId,
-          postData: JSON.stringify(postDetail.value),
-        },
-      });
-    };
-
+    
     const submitComment = async function () {
       // 1. 서버로 날아감
       console.log(postDetail.value.postId)
@@ -430,7 +411,6 @@ export default {
       postType,
       postDetail,
       newCommentContent,
-      editPost,
 
       modifyComment,
 
