@@ -356,7 +356,7 @@
   <!--    </div>-->
   <!--  </div>-->
 
-  <!--  &lt;!&ndash; 부품 출력 영역 &ndash;&gt;-->
+  <!--  부품 출력 영역 -->
   <!--  <div class="container">-->
   <!--    <div class="row">-->
   <!--      <div-->
@@ -419,325 +419,325 @@ import {useRouter, useRoute} from "vue-router";
 export default {
   name: "PartsSearchView",
   setup() {
-    // const pcStore = usePcStore();
+    const pcStore = usePcStore();
     const partsStore = usePartsStore();
     const partsData = computed(() => partsStore.partsData);
-    // const router = useRouter();
-    // const route = useRoute();
-    // const parts = ref([]);
-    // const pcs = computed(() => pcStore.pcList);
-    // const showDropdown = ref(false);
-    // const showAllCategories = ref(false);
-    // const showFilterOptions = ref({});
-    // const filtersStore = useFiltersStore();
-    // const selectedFilters = ref([]);
-    // const searchQuery = ref("");
-    // const comparisonParts = ref([]);
-    // const isComparisonVisible = ref(true); // 비교 영역 표시 여부를 제어하는 상태 추가
+    const router = useRouter();
+    const route = useRoute();
+    const parts = ref([]);
+    const pcs = computed(() => pcStore.pcList);
+    const showDropdown = ref(false);
+    const showAllCategories = ref(false);
+    const showFilterOptions = ref({});
+    const filtersStore = useFiltersStore();
+    const selectedFilters = ref([]);
+    const searchQuery = ref("");
+    const comparisonParts = ref([]);
+    const isComparisonVisible = ref(true); // 비교 영역 표시 여부를 제어하는 상태 추가
 
-    // const currentCategory = ref("cpu");
-    // const currentFilters = ref(filtersStore.currentFilters);
-    // const currentImage = ref(1);
-    // const categoryLabels = {
-    //   cpu: "CPU",
-    //   coolerTuning: "쿨러",
-    //   motherboard: "메인보드",
-    //   memory: "메모리",
-    //   gpu: "그래픽카드",
-    //   ssd: "SSD",
-    //   hdd: "HDD",
-    //   case: "케이스",
-    //   power: "파워",
-    // };
+    const currentCategory = ref("cpu");
+    const currentFilters = ref(filtersStore.currentFilters);
+    const currentImage = ref(1);
+    const categoryLabels = {
+      cpu: "CPU",
+      coolerTuning: "쿨러",
+      motherboard: "메인보드",
+      memory: "메모리",
+      gpu: "그래픽카드",
+      ssd: "SSD",
+      hdd: "HDD",
+      case: "케이스",
+      power: "파워",
+    };
 
-    // const setCategory = (category) => {
-    //   currentCategory.value = category;
-    //   currentFilters.value = category;
-    //   searchQuery.value = "";
-    //   selectedFilters.value = [];
-    //   comparisonParts.value = []; // 부품 비교 초기화
-    //
-    //   parts.value = Object.entries(partsData[category]).reduce(
-    //       (acc, [id, part]) => {
-    //         acc[id] = {
-    //           name: `${part.manufacturer} ${
-    //               part.cpuType ||
-    //               part.productType ||
-    //               part.deviceType ||
-    //               part.productSeries ||
-    //               part.formFactor ||
-    //               part.productType ||
-    //               part.ratedOutput
-    //           }`,
-    //           image: "https://via.placeholder.com/150",
-    //           description: generateDescription(part),
-    //           ...part,
-    //         };
-    //         return acc;
-    //       },
-    //       {}
-    //   );
-    // };
-    //
-    // const generateDescription = (part) => {
-    //   let description = "";
-    //   switch (currentCategory.value) {
-    //     case "cpu":
-    //       description = `${part.socketType}, ${part.coreCount}, ${part.threadCount}, ${part.baseClock}~${part.boostClock}, ${part.tdp}`;
-    //       break;
-    //     case "coolerTuning":
-    //       description = `${part.coolingType}, ${part.height}mm, ${part.fanSize}, ${part.maxFanSpeed}RPM`;
-    //       break;
-    //     case "motherboard":
-    //       description = `${part.cpuSocket}, ${part.chipset}, ${part.formFactor}, ${part.memoryType}, ${part.memorySlots} slots`;
-    //       break;
-    //     case "memory":
-    //       description = `${part.memoryCapacity}, ${part.operatingClock}, ${part.ramTiming}, ${part.operatingVoltage}`;
-    //       break;
-    //     case "gpu":
-    //       description = `${
-    //           part.nvidiaChipset || part.amdChipset || part.intelChipset
-    //       }, ${part.baseClock}~${part.boostClock}, ${part.memoryCapacity}`;
-    //       break;
-    //     case "ssd":
-    //       description = `${part.capacity}, ${part.interface}, ${part.sequentialRead}/${part.sequentialWrite} MB/s`;
-    //       break;
-    //     case "hdd":
-    //       description = `${part.diskCapacity}, ${part.interface}, ${part.rotationSpeed} RPM, ${part.bufferSize}`;
-    //       break;
-    //     case "case":
-    //       description = `${part.caseSize}, ${part.boardSupport}, ${part.coolingFans} cooling fans`;
-    //       break;
-    //     case "power":
-    //       description = `${part.ratedOutput}, ${part.certification80Plus}, ${part.coolingFanSize}, ${part.cableConnection}`;
-    //       break;
-    //     default:
-    //       description = "";
-    //   }
-    //   return description;
-    // };
-    //
-    // const toggleDropdown = () => {
-    //   showDropdown.value = !showDropdown.value;
-    // };
-    //
-    // const editPCName = (pc) => {
-    //   pc.editing = true;
-    // };
-    //
-    // const savePCName = (pc) => {
-    //   pc.editing = false;
-    // };
-    //
-    // const loadPC = (pc) => {
-    //   Object.keys(pcStore.pcList[0]).forEach((key) => {
-    //     pcStore.pcList[0][key] = pc[key] || null;
-    //   });
-    //   pcStore.currentPCIndex = pc.id;
-    //   showDropdown.value = false;
-    // };
-    //
-    // const removePC = async (pcId) => {
-    //   if (confirm("정말로 이 PC를 삭제하시겠습니까?")) {
-    //     await pcStore.removePC(pcId);
-    //   }
-    // };
-    //
-    // const addPC = () => {
-    //   const newPC = {
-    //     id: Date.now(),
-    //     computerName: "새 PC",
-    //     image: "https://via.placeholder.com/150",
-    //     editing: false,
-    //     ...Object.keys(pcStore.pcList[0]).reduce((acc, key) => {
-    //       acc[key] = null;
-    //       return acc;
-    //     }, {}),
-    //   };
-    //   pcStore.pcList.push(newPC);
-    // };
-    //
-    // const removeFromCart = (category) => {
-    //   pcStore.pcList[0][category] = null;
-    // };
-    //
-    // const savePC = async () => {
-    //   if (confirm("저장하시겠습니까?")) {
-    //     try {
-    //       const updatedPC = Object.keys(pcStore.pcList[0]).reduce(
-    //           (acc, key) => {
-    //             acc[key] = pcStore.pcList[0][key] || null;
-    //             return acc;
-    //           },
-    //           {}
-    //       );
-    //       const currentPCIndex = pcs.value.findIndex(
-    //           (pc) => pc.id === pcStore.currentPCIndex
-    //       );
-    //       if (currentPCIndex !== -1) {
-    //         await pcStore.updatePC(pcStore.currentPCIndex, {
-    //           ...pcs.value[currentPCIndex],
-    //           ...updatedPC,
-    //         });
-    //         alert("PC가 저장되었습니다.");
-    //       } else {
-    //         throw new Error("유효하지 않은 PC 인덱스입니다.");
-    //       }
-    //     } catch (error) {
-    //       console.error("PC 저장 중 오류 발생:", error);
-    //       alert(
-    //           "PC를 저장하는 중에 오류가 발생했습니다. 콘솔에서 오류를 확인하세요."
-    //       );
-    //     }
-    //   }
-    // };
-    //
-    // const toggleAllCategories = () => {
-    //   showAllCategories.value = !showAllCategories.value;
-    // };
-    //
-    // const visibleFilters = computed(() => {
-    //   const filters = filtersStore.filterList[currentCategory.value];
-    //   return showAllCategories.value
-    //       ? filters
-    //       : Object.fromEntries(Object.entries(filters).slice(0, 8));
-    // });
-    //
-    // const toggleFilterVisibility = (filterName) => {
-    //   showFilterOptions.value[filterName] =
-    //       !showFilterOptions.value[filterName];
-    // };
-    //
-    // const clearFilters = () => {
-    //   selectedFilters.value = [];
-    // };
-    //
-    // const removeFilter = (filter) => {
-    //   const index = selectedFilters.value.indexOf(filter);
-    //   if (index > -1) {
-    //     selectedFilters.value.splice(index, 1);
-    //   }
-    // };
-    //
-    // const viewPartDetail = (id) => {
-    //   router.push({name: "partDetail", params: {id}});
-    // };
-    //
-    // const filteredParts = computed(() => {
-    //   return Object.entries(parts.value).reduce((acc, [id, part]) => {
-    //     const partNameMatch = part.name
-    //         .toLowerCase()
-    //         .includes(searchQuery.value.toLowerCase());
-    //     const filtersMatch = selectedFilters.value.every((filter) =>
-    //         part.description.includes(filter)
-    //     );
-    //
-    //     if (partNameMatch && filtersMatch) {
-    //       acc[id] = part;
-    //     }
-    //     return acc;
-    //   }, {});
-    // });
-    //
-    // const filterParts = (category) => {
-    //   setCategory(category);
-    //   searchQuery.value = "";
-    //   selectedFilters.value = [];
-    // };
-    //
-    // const addToComparison = (part) => {
-    //   if (comparisonParts.value.length < 2) {
-    //     comparisonParts.value.push(part);
-    //   }
-    // };
-    //
-    // const addToCart = (partId) => {
-    //   const category = currentCategory.value;
-    //   pcStore.pcList[0][category] = partId;
-    // };
-    //
-    // const removeFromComparison = (index) => {
-    //   comparisonParts.value.splice(index, 1);
-    // };
-    //
-    // // AI 추천기능 페이지 새창 열기
-    // const recommendAI = () => {
-    //   const url = router.resolve({name: "recommend"}).href;
-    //
-    //   // 창의 너비와 높이 설정
-    //   const width = 500;
-    //   const height = 700;
-    //
-    //   // 화면의 가로 세로 크기 계산
-    //   const screenWidth = window.screen.width;
-    //   const screenHeight = window.screen.height;
-    //
-    //   // 창을 화면의 중앙에 위치시키기 위한 left, top 계산
-    //   const left = screenWidth / 2 - width / 2;
-    //   const top = screenHeight / 2 - height / 2;
-    //
-    //   // 창 열기
-    //   window.open(
-    //       url,
-    //       "AI 견적 추천",
-    //       `width=${width},height=${height},resizable=yes,scrollbars=yes,status=no,left=${left},top=${top}`
-    //   );
-    // };
-    //
-    // const attributes = computed(() => {
-    //   if (comparisonParts.value.length === 0) return [];
-    //   return Object.keys(comparisonParts.value[0]).filter(
-    //       (attr) =>
-    //           attr !== "id" &&
-    //           attr !== "name" &&
-    //           attr !== "description" &&
-    //           attr !== "image"
-    //   );
-    // });
+    const setCategory = (category) => {
+      currentCategory.value = category;
+      currentFilters.value = category;
+      searchQuery.value = "";
+      selectedFilters.value = [];
+      comparisonParts.value = []; // 부품 비교 초기화
+    
+      parts.value = Object.entries(partsData[category]).reduce(
+          (acc, [id, part]) => {
+            acc[id] = {
+              name: `${part.manufacturer} ${
+                  part.cpuType ||
+                  part.productType ||
+                  part.deviceType ||
+                  part.productSeries ||
+                  part.formFactor ||
+                  part.productType ||
+                  part.ratedOutput
+              }`,
+              image: "https://via.placeholder.com/150",
+              description: generateDescription(part),
+              ...part,
+            };
+            return acc;
+          },
+          {}
+      );
+    };
+    
+    const generateDescription = (part) => {
+      let description = "";
+      switch (currentCategory.value) {
+        case "cpu":
+          description = `${part.socketType}, ${part.coreCount}, ${part.threadCount}, ${part.baseClock}~${part.boostClock}, ${part.tdp}`;
+          break;
+        case "coolerTuning":
+          description = `${part.coolingType}, ${part.height}mm, ${part.fanSize}, ${part.maxFanSpeed}RPM`;
+          break;
+        case "motherboard":
+          description = `${part.cpuSocket}, ${part.chipset}, ${part.formFactor}, ${part.memoryType}, ${part.memorySlots} slots`;
+          break;
+        case "memory":
+          description = `${part.memoryCapacity}, ${part.operatingClock}, ${part.ramTiming}, ${part.operatingVoltage}`;
+          break;
+        case "gpu":
+          description = `${
+              part.nvidiaChipset || part.amdChipset || part.intelChipset
+          }, ${part.baseClock}~${part.boostClock}, ${part.memoryCapacity}`;
+          break;
+        case "ssd":
+          description = `${part.capacity}, ${part.interface}, ${part.sequentialRead}/${part.sequentialWrite} MB/s`;
+          break;
+        case "hdd":
+          description = `${part.diskCapacity}, ${part.interface}, ${part.rotationSpeed} RPM, ${part.bufferSize}`;
+          break;
+        case "case":
+          description = `${part.caseSize}, ${part.boardSupport}, ${part.coolingFans} cooling fans`;
+          break;
+        case "power":
+          description = `${part.ratedOutput}, ${part.certification80Plus}, ${part.coolingFanSize}, ${part.cableConnection}`;
+          break;
+        default:
+          description = "";
+      }
+      return description;
+    };
+    
+    const toggleDropdown = () => {
+      showDropdown.value = !showDropdown.value;
+    };
+    
+    const editPCName = (pc) => {
+      pc.editing = true;
+    };
+    
+    const savePCName = (pc) => {
+      pc.editing = false;
+    };
+    
+    const loadPC = (pc) => {
+      Object.keys(pcStore.pcList[0]).forEach((key) => {
+        pcStore.pcList[0][key] = pc[key] || null;
+      });
+      pcStore.currentPCIndex = pc.id;
+      showDropdown.value = false;
+    };
+    
+    const removePC = async (pcId) => {
+      if (confirm("정말로 이 PC를 삭제하시겠습니까?")) {
+        await pcStore.removePC(pcId);
+      }
+    };
+    
+    const addPC = () => {
+      const newPC = {
+        id: Date.now(),
+        computerName: "새 PC",
+        image: "https://via.placeholder.com/150",
+        editing: false,
+        ...Object.keys(pcStore.pcList[0]).reduce((acc, key) => {
+          acc[key] = null;
+          return acc;
+        }, {}),
+      };
+      pcStore.pcList.push(newPC);
+    };
+    
+    const removeFromCart = (category) => {
+      pcStore.pcList[0][category] = null;
+    };
+    
+    const savePC = async () => {
+      if (confirm("저장하시겠습니까?")) {
+        try {
+          const updatedPC = Object.keys(pcStore.pcList[0]).reduce(
+              (acc, key) => {
+                acc[key] = pcStore.pcList[0][key] || null;
+                return acc;
+              },
+              {}
+          );
+          const currentPCIndex = pcs.value.findIndex(
+              (pc) => pc.id === pcStore.currentPCIndex
+          );
+          if (currentPCIndex !== -1) {
+            await pcStore.updatePC(pcStore.currentPCIndex, {
+              ...pcs.value[currentPCIndex],
+              ...updatedPC,
+            });
+            alert("PC가 저장되었습니다.");
+          } else {
+            throw new Error("유효하지 않은 PC 인덱스입니다.");
+          }
+        } catch (error) {
+          console.error("PC 저장 중 오류 발생:", error);
+          alert(
+              "PC를 저장하는 중에 오류가 발생했습니다. 콘솔에서 오류를 확인하세요."
+          );
+        }
+      }
+    };
+    
+    const toggleAllCategories = () => {
+      showAllCategories.value = !showAllCategories.value;
+    };
+    
+    const visibleFilters = computed(() => {
+      const filters = filtersStore.filterList[currentCategory.value];
+      return showAllCategories.value
+          ? filters
+          : Object.fromEntries(Object.entries(filters).slice(0, 8));
+    });
+    
+    const toggleFilterVisibility = (filterName) => {
+      showFilterOptions.value[filterName] =
+          !showFilterOptions.value[filterName];
+    };
+    
+    const clearFilters = () => {
+      selectedFilters.value = [];
+    };
+    
+    const removeFilter = (filter) => {
+      const index = selectedFilters.value.indexOf(filter);
+      if (index > -1) {
+        selectedFilters.value.splice(index, 1);
+      }
+    };
+    
+    const viewPartDetail = (id) => {
+      router.push({name: "partDetail", params: {id}});
+    };
+    
+    const filteredParts = computed(() => {
+      return Object.entries(parts.value).reduce((acc, [id, part]) => {
+        const partNameMatch = part.name
+            .toLowerCase()
+            .includes(searchQuery.value.toLowerCase());
+        const filtersMatch = selectedFilters.value.every((filter) =>
+            part.description.includes(filter)
+        );
+    
+        if (partNameMatch && filtersMatch) {
+          acc[id] = part;
+        }
+        return acc;
+      }, {});
+    });
+    
+    const filterParts = (category) => {
+      setCategory(category);
+      searchQuery.value = "";
+      selectedFilters.value = [];
+    };
+    
+    const addToComparison = (part) => {
+      if (comparisonParts.value.length < 2) {
+        comparisonParts.value.push(part);
+      }
+    };
+    
+    const addToCart = (partId) => {
+      const category = currentCategory.value;
+      pcStore.pcList[0][category] = partId;
+    };
+    
+    const removeFromComparison = (index) => {
+      comparisonParts.value.splice(index, 1);
+    };
+    
+    // AI 추천기능 페이지 새창 열기
+    const recommendAI = () => {
+      const url = router.resolve({name: "recommend"}).href;
+    
+      // 창의 너비와 높이 설정
+      const width = 500;
+      const height = 700;
+    
+      // 화면의 가로 세로 크기 계산
+      const screenWidth = window.screen.width;
+      const screenHeight = window.screen.height;
+    
+      // 창을 화면의 중앙에 위치시키기 위한 left, top 계산
+      const left = screenWidth / 2 - width / 2;
+      const top = screenHeight / 2 - height / 2;
+    
+      // 창 열기
+      window.open(
+          url,
+          "AI 견적 추천",
+          `width=${width},height=${height},resizable=yes,scrollbars=yes,status=no,left=${left},top=${top}`
+      );
+    };
+    
+    const attributes = computed(() => {
+      if (comparisonParts.value.length === 0) return [];
+      return Object.keys(comparisonParts.value[0]).filter(
+          (attr) =>
+              attr !== "id" &&
+              attr !== "name" &&
+              attr !== "description" &&
+              attr !== "image"
+      );
+    });
 
     onMounted(() => {
       partsStore.getParts();
-      // setCategory("cpu");
+      setCategory("cpu");
     });
 
     return {
-      // pcStore,
-      // filtersStore,
-      // setCategory,
-      // parts,
-      // categoryLabels,
-      // toggleDropdown,
-      // showDropdown,
-      // editPCName,
-      // savePCName,
-      // removePC,
-      // loadPC,
-      // addPC,
-      // visibleFilters,
-      // currentImage,
+      pcStore,
+      filtersStore,
+      setCategory,
+      parts,
+      categoryLabels,
+      toggleDropdown,
+      showDropdown,
+      editPCName,
+      savePCName,
+      removePC,
+      loadPC,
+      addPC,
+      visibleFilters,
+      currentImage,
       partsData,
-      // currentCategory,
-      // removeFromCart,
-      // toggleAllCategories,
-      // showAllCategories,
-      // currentFilters,
-      // showFilterOptions,
-      // toggleFilterVisibility,
-      // clearFilters,
-      // selectedFilters,
-      // removeFilter,
-      // searchQuery,
-      // filterParts,
-      // filteredParts,
-      // addToComparison,
-      // viewPartDetail,
-      // addToCart,
-      // comparisonParts,
-      // removeFromComparison,
-      // attributes,
-      // savePC,
-      // isComparisonVisible,
-      // recommendAI,
+      currentCategory,
+      removeFromCart,
+      toggleAllCategories,
+      showAllCategories,
+      currentFilters,
+      showFilterOptions,
+      toggleFilterVisibility,
+      clearFilters,
+      selectedFilters,
+      removeFilter,
+      searchQuery,
+      filterParts,
+      filteredParts,
+      addToComparison,
+      viewPartDetail,
+      addToCart,
+      comparisonParts,
+      removeFromComparison,
+      attributes,
+      savePC,
+      isComparisonVisible,
+      recommendAI,
     };
   },
 };
