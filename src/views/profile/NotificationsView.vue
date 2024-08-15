@@ -457,7 +457,7 @@ export default {
 
             await axios.put(``, {
               matchingId: notification.matchingId,
-              possible_start_time: null,
+              possible_start_time: "",
             });
 
             console.log(`Confirmed reject for matching ID: ${matchingId}`);

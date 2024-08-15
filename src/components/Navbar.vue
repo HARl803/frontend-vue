@@ -147,7 +147,7 @@
               </ul>
             </div>
           </div>
-          <a v-else href="http://localhost:8080/api/v1/auth/authorize">
+          <a v-else href="https://i11a803.p.ssafy.io/api/v1/auth/authorize">
             <img src="@/assets/kakao_login_medium_narrow.png" alt="카카오 로그인">
           </a>
 

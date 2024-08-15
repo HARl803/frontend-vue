@@ -53,65 +53,67 @@
       <!-- 2. 댓글 영역 -->
       <!-- 2-1. 댓글 리스트 -->
       <div class="comments mt-4">
-        <h5>댓글 ({{ postDetail.comments.length }})</h5>
-        <ul class="list-group">
-          <li
-            class="list-group-item"
-            v-for="comment in postDetail.comments"
-            :key="comment.commentId"
-          >
-            <p>
-              <strong>{{ comment.commentAuthorId }}</strong> ({{
-                comment.commentCreatedDate
-              }})
-            </p>
+        <div v-if="postDetail.comments">
+          <h5>댓글 ({{ postDetail.comments.length }})</h5>
+          <ul class="list-group">
+            <li
+              class="list-group-item"
+              v-for="comment in postDetail.comments"
+              :key="comment.commentId"
+            >
+              <p>
+                <strong>{{ comment.commentAuthorId }}</strong> ({{
+                  comment.commentCreatedDate
+                }})
+              </p>
 
+              <input
+                v-if="comment.editing"
+                v-model="comment.commentContent"
+                @keyup.enter="
+                  showModifyModal(comment.commentContent, comment.commentId)
+                "
+                class="form-control form-control-sm me-2"
+              />
+              <p v-else>{{ comment.commentContent }}</p>
+
+              <div v-if="comment.isWriter">
+                <button
+                  class="btn btn-secondary btn-sm"
+                  @click="modifyComment(comment)"
+                >
+                  수정
+                </button>
+                <button
+                  class="btn btn-danger btn-sm"
+                  @click="showDeleteModal(comment.commentId)"
+                >
+                  삭제
+                </button>
+              </div>
+              <div v-else>
+                <button
+                  class="btn btn-danger btn-sm"
+                  @click="showReportModal('comment', comment.commentId)"
+                >
+                  신고
+                </button>
+              </div>
+            </li>
+          </ul>
+
+          <!-- 2-2. 댓글 입력 -->
+          <div class="input-group mt-3">
             <input
-              v-if="comment.editing"
-              v-model="comment.commentContent"
-              @keyup.enter="
-                showModifyModal(comment.commentContent, comment.commentId)
-              "
-              class="form-control form-control-sm me-2"
+              type="text"
+              class="form-control"
+              v-model="newCommentContent"
+              placeholder="댓글을 입력하세요 !"
             />
-            <p v-else>{{ comment.commentContent }}</p>
-
-            <div v-if="comment.isWriter">
-              <button
-                class="btn btn-secondary btn-sm"
-                @click="modifyComment(comment)"
-              >
-                수정
-              </button>
-              <button
-                class="btn btn-danger btn-sm"
-                @click="showDeleteModal(comment.commentId)"
-              >
-                삭제
-              </button>
-            </div>
-            <div v-else>
-              <button
-                class="btn btn-danger btn-sm"
-                @click="showReportModal('comment', comment.commentId)"
-              >
-                신고
-              </button>
-            </div>
-          </li>
-        </ul>
-
-        <!-- 2-2. 댓글 입력 -->
-        <div class="input-group mt-3">
-          <input
-            type="text"
-            class="form-control"
-            v-model="newCommentContent"
-            placeholder="댓글을 입력하세요 !"
-          />
-          <button class="btn btn-primary" @click="submitComment">
-            댓글 달기
-          </button>
+            <button class="btn btn-primary" @click="submitComment">
+              댓글 달기
+            </button>
+          </div>
         </div>
       </div>
 
@@ -251,9 +253,10 @@ export default {
   setup() {
     const boardStore = useBoardStore();
     const router = useRouter();
+    const route = useRoute();
     const postDetail = computed(() => boardStore.postDetail);
     const newCommentContent = ref("");
-    const API_URL = "/api/v1";
+    const API_URL = "/api/v1/community";
 
     const reportModal = ref(null);
     const modifyModal = ref(null);
@@ -276,7 +279,7 @@ export default {
     const commentContent = ref("");
 
     onMounted(async () => {
-      // boardStore.postDetail(); // postDetail data 업데이트 하기 !
+      boardStore.getPostDetail(route.params.id); // postDetail data 업데이트 하기 !
     });
 
     // 게시글 수정 페이지로 이동
@@ -307,17 +310,17 @@ export default {
 
     const submitComment = async function () {
       // 1. 서버로 날아감
+      console.log(postDetail.value.postId)
       axios({
         method: "post",
-        url: `${API_URL}/postdetail/create`,
-        data: { commentContent: commentContent.value },
+        url: `${API_URL}/comment`,
+        data: { postId: postDetail.value.postId, commentContent: commentContent.value },
       });
 
       // 2. 데이터 불러오기
       try {
         newCommentContent.value = "";
         console.log("댓글 추가 성공");
-        boardStore.postDetail(); // 전체 detail 정보
       } catch (error) {
         console.error("댓글 추가 실패:", error);
         console.log(postDetail.value.comments);

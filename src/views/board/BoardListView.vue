@@ -59,7 +59,6 @@
             <td>{{ post.postNum }}</td>
             <td>{{ postType[post.postTypeId] }}</td>
             <td>
-              {{ post.postId }}
               <router-link
                 :to="{ name: 'boardDetail', params: { id: post.postId } }"
                 >{{ post.postTitle }}</router-link
@@ -117,7 +116,7 @@ export default {
     };
 
     onMounted(() => {
-      // boardStore.posts();
+      boardStore.getPost();
     });
 
     // 내가 작성한 댓글 단 글 필터링 함수
@@ -149,6 +148,8 @@ export default {
     // 목록 -> 특정 게시글 보이기
     const filteredPosts = computed(() => {
       if (filterType.value === "all") {
+        console.log("게시글 다가져옴");
+        
         return posts.value;
       }
       return posts.value.filter((post) => post.postTypeId === filterType.value);
