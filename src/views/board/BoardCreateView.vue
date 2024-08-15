@@ -9,6 +9,11 @@
         적극적인 소통을 기대합니다!
       </p>
     </div>
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> a819f14ed38190c49022c4544890ec9bf1f4c9d7
 
     <!-- 2. 게시글 작성 폼 영역 -->
     <!-- 2-1. 게시글 카테고리 선택 -->
@@ -104,7 +109,11 @@ export default {
     onMounted(() => {
 
       console.log(route.query);
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> a819f14ed38190c49022c4544890ec9bf1f4c9d7
       // 수정 모드인지 확인
       if (route.query.mode === 'edit') {
         isEditMode.value = true;
@@ -129,12 +138,17 @@ export default {
         // postContent.value = postData.postContent;
         // postTypeId.value = postData.postTypeId;
         // 이미지 파일은 수정하지 않으면 그대로 유지
+<<<<<<< HEAD
       }
+=======
+      } 
+>>>>>>> a819f14ed38190c49022c4544890ec9bf1f4c9d7
     });
 
     // 게시글 저장 (생성 또는 수정)
     const savePost = async () => {
       const formData = new FormData();
+<<<<<<< HEAD
       formData.append("postTypeId", postTypeId.value);
       formData.append("postTitle", postTitle.value);
       formData.append("postContent", postContent.value);
@@ -184,6 +198,81 @@ export default {
                 },
               }
           );
+=======
+      // const updateFormDate = new FormData();
+      // formData.append("postTypeId", postTypeId.value);
+      // formData.append("postTitle", postTitle.value);
+      // formData.append("postContent", postContent.value);
+
+      const data = {
+        postTypeId: postTypeId.value,
+        postTitle: postTitle.value,
+        postContent: postContent.value
+      }
+
+      // const updateData = {
+      //   postId: postId.value,
+      //   postTypeId: postTypeId.value,
+      //   postTitle: postTitle.value,
+      //   postContent: postContent.value
+      // }
+
+      formData.append('request', new Blob([JSON.stringify(data)], {
+        type: 'application/json'
+      }))
+
+      // updateFormDate.append('request', new Blob([JSON.stringify(updateData)], {
+      //   type: 'application/json'
+      // }))
+
+      console.log(postTypeId.value)
+      console.log(postTitle.value)
+      // console.log(formData.keys())
+
+      if (postImageFile.value) {
+        formData.append("file", postImageFile.value);
+      }
+
+      for (let key of formData.values()) {
+        console.log(key)
+      }
+      
+      try {
+        if (isEditMode.value) {
+          // 게시글 수정
+          fetch(`${API_URL}/post`, {
+            method: 'FETCH',
+            cache: 'no-cache',
+            body: formData
+          })
+          
+          console.log("게시글 수정 성공!");
+        } else {
+          
+          for (let key of formData.values()) {
+            console.log(key)
+          }
+
+          // 새 게시글 생성
+          fetch(`${API_URL}/post`, {
+            method: 'POST',
+            cache: 'no-cache',
+            body: formData
+          })
+        //   await axios.post(`${API_URL}/post`, formData
+        //   , {
+        //     headers: {
+        //       "Content-Type": "multipart/form-data",
+        //     },
+        //   }
+        // );
+
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+        });
+
+>>>>>>> a819f14ed38190c49022c4544890ec9bf1f4c9d7
           console.log("게시글 생성 성공!");
         }
         router.push({name: "community"});
