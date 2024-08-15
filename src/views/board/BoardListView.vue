@@ -64,7 +64,7 @@
                 >{{ post.postTitle }}</router-link
               >
             </td>
-            <td>{{ post.postAuthorId }}</td>
+            <td>{{ post.nickName }}</td>
             <td>{{ post.postCreatedDate }}</td>
           </tr>
         </tbody>

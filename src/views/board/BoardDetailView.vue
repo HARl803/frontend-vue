@@ -62,7 +62,7 @@
               :key="comment.commentId"
             >
               <p>
-                <strong>{{ comment.commentAuthorId }}</strong> ({{
+                <strong>{{ comment.nickName }}</strong> ({{
                   comment.commentCreatedDate
                 }})
               </p>

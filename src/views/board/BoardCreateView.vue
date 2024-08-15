@@ -10,6 +10,8 @@
       </p>
     </div>
 
+    
+
     <!-- 2. 게시글 작성 폼 영역 -->
     <!-- 2-1. 게시글 카테고리 선택 -->
     <div class="form-group mb-3">
@@ -135,6 +137,7 @@ export default {
     // 게시글 저장 (생성 또는 수정)
     const savePost = async () => {
       const formData = new FormData();
+      const updateFormDate = new FormData();
       // formData.append("postTypeId", postTypeId.value);
       // formData.append("postTitle", postTitle.value);
       // formData.append("postContent", postContent.value);
@@ -145,7 +148,18 @@ export default {
         postContent: postContent.value
       }
 
+      const updateData = {
+        postId: postId.value,
+        postTypeId: postTypeId.value,
+        postTitle: postTitle.value,
+        postContent: postContent.value
+      }
+
       formData.append('request', new Blob([JSON.stringify(data)], {
+        type: 'application/json'
+      }))
+
+      updateFormDate.append('request', new Blob([JSON.stringify(updateData)], {
         type: 'application/json'
       }))
 
@@ -160,27 +174,16 @@ export default {
       for (let key of formData.values()) {
         console.log(key)
       }
-
-      // const data = {
-      //   postTypeId:postTypeId.value,
-      //   postTitle: postTitle.value,
-      //   postCotent: postContent.value,
-        
-      // }
-
-      // console.log(data)
       
       try {
         if (isEditMode.value) {
           // 게시글 수정
+          fetch(`${API_URL}/post`, {
+            method: 'FETCH',
+            cache: 'no-cache',
+            body: formData
+          })
           
-        //   await axios.patch(`${API_URL}/post`, formData,
-        //   {
-        //     headers: {
-        //       "Content-Type": "multipart/form-data",
-        //     },
-        //   }
-        // );
           console.log("게시글 수정 성공!");
         } else {
           
