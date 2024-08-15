@@ -5,7 +5,7 @@ import axios from "axios";
 
 export const usePcStore = defineStore("mypcstore", () => {
   const router = useRouter();
-  const API_URL = "https://i11a803.p.ssafy.io/api/v1";
+  const API_URL = "/api/v1";
 
   // PC 정보를 저장할 상태를 정의합니다.
   const pcList = ref([

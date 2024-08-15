@@ -29,7 +29,7 @@
           <h5 style="font-weight: bold">신규 등록한 멘토님이에요!</h5>
           <div class="d-flex justify-content-center flex-wrap">
             <div
-              v-for="mentor in homes[0].mentorLists"
+              v-for="(mentor, mentorId) in homes[0].mentorLists"
               :key="mentor.id"
               class="card m-4 position-relative"
               style="width: 18rem"
@@ -50,7 +50,7 @@
                 </h5>
                 <p class="card-text" style="color: #5e67eb; font-weight: bold">
                   만족률:
-                  {{ mentor.matchingRate }}%
+                  {{ mentor.matchingRate }}
                 </p>
                 <p class="card-text">
                   {{ mentor.intro }}
@@ -65,11 +65,11 @@
                     >{{ techList[tech] }}</span
                   >
                 </div>
-                <div class="card-footer text-center">
-                  <a href="#" class="btn btn-dark btn-sm detail-button w-100"
-                    >상세보기</a
-                  >
-                </div>
+                <router-link
+                  :to="{ name: 'mentorDetail', params: { id: mentorId } }"
+                  class="btn btn-dark btn-sm detail-button w-100"
+                  >상세보기</router-link
+                >
               </div>
             </div>
           </div>
@@ -93,9 +93,13 @@
                 인기 부품이에요 !
               </div>
               <div class="card-body">
+
+                <img :src="part.image" alt="부품 이미지" class="card-img-top" />
                 <h5 class="card-title" style="font-weight: bold">
                   {{ part.partName }}
                 </h5>
+
+                <p style="color: white;">{{ part.partDescription }}</p>
                 <div class="button-group mb-3">
                   <button class="btn btn-outline-primary btn-sm custom-button">
                     {{ part.property1 }}
@@ -125,11 +129,27 @@
       </div>
       <!-- 4. 게시판 -->
       <div class="row mb-4">
-        <div class="col-md-6">
-          <FreeBoardList />
-        </div>
-        <div class="col-md-6">
-          <HotBoardList />
+        <div class="col-md-12">
+
+          <div>
+            <h5 style="font-weight: bold;">자유게시판 <a href="#" class="custom-more-link">더보기</a></h5>
+            <table class="table table-borderless table-hover custom-table">
+              <thead class="custom-thead">
+                <tr>
+                  <th scope="col">작성시간</th>
+                  <th scope="col">제목</th>
+                  <th scope="col">작성자</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(post, postId) in homes[0].boradLists" :key="post.id">
+                  <td>{{ post.postCreatedDate }}</td>
+                  <td><router-link :to="{ name: 'boardDetail', params: { id: postId } }" class="custom-link">{{ post.postTitle }}</router-link></td>
+                  <td>{{ post.postAuthorId }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -138,17 +158,12 @@
 
 <script>
 import { ref, computed, watch, onMounted, onUnmounted } from "vue";
-import { useBookmarkStore } from "@/stores/bookmark";
 import { useHomeStore } from "@/stores/home";
-import FreeBoardList from "@/components/Board/FreeBoardList.vue";
-import HotBoardList from "@/components/Board/HotBoardList.vue";
-import partsData from "@/assets/dummy.json";
 import Navbar from "@/components/Navbar.vue";
 
 export default {
   name: "HomeView",
   components: {
-    FreeBoardList,
     Navbar,
   },
   setup() {
@@ -252,5 +267,42 @@ footer {
 
 .mb-3 {
   margin-bottom: 1rem !important;
+}
+
+.custom-table {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+.custom-table th,
+.custom-table td {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #444 !important;
+}
+
+.custom-thead {
+  border-bottom: 2px solid orange;
+}
+
+.custom-link {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: #ddd !important;
+}
+
+.custom-more-link {
+  color: #fff !important;
+  font-size: 0.8rem; 
+}
+
+.custom-more-link:hover {
+  color: #ddd !important;
 }
 </style>

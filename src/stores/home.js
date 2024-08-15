@@ -12,6 +12,8 @@ export const useHomeStore = defineStore("homestore", () => {
       parts: {
         10001: {
           partName: "부품명1",
+          image: "https://img.danawa.com/prod_img/500000/459/728/img/18728459_1.jpg?shrink=270:270",
+          partDescription: "부품1에 대한 짧은 소개입니다.",
           property1: "특성1",
           property2: "특성2",
           property3: "특성3",
@@ -20,6 +22,8 @@ export const useHomeStore = defineStore("homestore", () => {
         },
         10002: {
           partName: "부품명2",
+          image: "https://img.danawa.com/prod_img/500000/459/728/img/18728459_1.jpg?shrink=270:270",
+          partDescription: "부품2에 대한 짧은 소개입니다.",
           property1: "특성11",
           property2: "특성22",
           property3: "특성33",
@@ -28,6 +32,8 @@ export const useHomeStore = defineStore("homestore", () => {
         },
         10003: {
           partName: "부품명3",
+          image: "https://img.danawa.com/prod_img/500000/459/728/img/18728459_1.jpg?shrink=270:270",
+          partDescription: "부품3에 대한 짧은 소개입니다.",
           property1: "특성111",
           property2: "특성222",
           property3: "특성333",
@@ -56,6 +62,36 @@ export const useHomeStore = defineStore("homestore", () => {
           techs: ["1", "2", "3", "4", "6"],
         },
       },
+
+      boradLists: {
+        777777: {
+          postAuthorId: "chaeni",
+          postTitle: "첫 번째 게시글",
+          postCreatedDate: "2024-01-01 12:00",
+        },
+        123546: {
+          postAuthorId: "juwon",
+          postTitle: "두 번째 게시글",
+          postCreatedDate: "2024-01-01 12:00",
+        },
+        1223446: {
+          postAuthorId: "updown",
+          postTitle: "세 번째 게시글",
+          postCreatedDate: "2024-01-01 12:00",
+        },
+        123234546: {
+          postAuthorId: "juwon",
+          postTitle: "네 번째 게시글",
+          postCreatedDate: "2024-01-01 12:00",
+        },
+        12354316: {
+          postAuthorId: "updown",
+          postTitle: "다섯 번째 게시글",
+          postCreatedDate: "2024-01-01 12:00",
+        },
+
+
+      }
     },
   ]);
 

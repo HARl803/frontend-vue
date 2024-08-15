@@ -5,7 +5,7 @@ import axios from "axios";
 
 export const useMentorStore = defineStore("mentorStore", () => {
   const router = useRouter();
-  const API_URL = "https://i11a803.p.ssafy.io/api/v1";
+  const API_URL = "/api/v1";
 
   // 멘토 정보를 저장할 상태를 정의합니다.
   const mentorList = ref([

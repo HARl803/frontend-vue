@@ -44,6 +44,15 @@ export const useNotificationStore = defineStore("notificationstore", () => {
       createdTime: "2024-08-01T00:00:30",
       matchingId: "1",
     },
+    {
+      notiId: 11,
+      receiver: "chaeni",
+      typeId: "컴터챗 거절",
+      messageContent: "chaeni님과 컴터챗이 거절되었습니다.",
+      isRead: false,
+      createdTime: "2024-08-01T00:00:30",
+      matchingId: "1",
+    },
   ]);
 
   const notificationElseList = ref([
@@ -63,16 +72,6 @@ export const useNotificationStore = defineStore("notificationstore", () => {
       receiver: "chaeni",
       typeId: "게시글",
       messageContent: "작성하신 게시글에 댓글이 달렸습니다.",
-      isRead: false,
-      createdTime: "2024-08-01T00:00:30",
-      link: "urlurlurl",
-    },
-    {
-      notiId: 5,
-      notiNum: 5,
-      receiver: "chaeni",
-      typeId: "컴터챗 결제",
-      messageContent: "컴터챗이 매칭되었습니다. 결제를 진행하세요 !",
       isRead: false,
       createdTime: "2024-08-01T00:00:30",
       link: "urlurlurl",

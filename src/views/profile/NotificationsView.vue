@@ -420,8 +420,8 @@ export default {
 
       try {
         const matchingId = reportTarget.value.id;
-
-        await axios.put(`/api/v1/matching/${matchingId}`, {
+        await axios.put(``, {
+          matchingId: notification.matchingId,
           possible_start_time: [selectedTime.value], // 선택된 시간만 보냄
         });
 
@@ -455,7 +455,8 @@ export default {
           if (matchingData) {
             matchingData[matchingId].possible_start_time = null;
 
-            await axios.put(`/api/v1/matching/${matchingId}`, {
+            await axios.put(``, {
+              matchingId: notification.matchingId,
               possible_start_time: null,
             });
 
@@ -482,18 +483,33 @@ export default {
         {
           pg: "kakaopay",
           pay_method: "card",
-          merchant_uid: "sadkjlsadf-sasdfsdffssdfsdfkjafsd", // 상점 고유 주문번호
-          name: "포트원 테스트",
-          amount: 1004,
-          buyer_email: "good@portone.io",
-          buyer_name: "포트원 기술지원팀",
-          buyer_tel: "010-1234-5678",
-          buyer_addr: "서울특별시 강남구 삼성동",
-          buyer_postcode: "123-456",
+          merchant_uid: "sadkjlsadf-dfsdfsdfssdfsdgdgsfsdfsdfdf", 
+          name: "컴터챗 이용권",
+          amount: 3000,
         },
-        function (rsp) {
+        async function (rsp) {
           console.log(rsp);
-          // callback 처리: rsp.imp_uid 값으로 결제 단건조회 API를 호출하여 결제결과를 판단합니다.
+          console.log(reportTarget.value.id)
+
+          if (rsp.success) {
+            try {
+              const data = {
+                merchantUID: rsp.merchant_uid,
+                matchingId: reportTarget.value.id,
+                productName: rsp.name,
+                paidAmount: rsp.paid_amount,
+              };
+
+              // 백엔드 API로 데이터 전송
+              const response = await axios.post("/api/v1/payment", data);
+
+              console.log("Payment data sent successfully:", response.data);
+            } catch (error) {
+              console.error("Error sending payment data:", error);
+            }
+          } else {
+            console.error("Payment failed or canceled:", rsp.error_msg);
+          }
         }
       );
     };
