@@ -696,7 +696,7 @@ export default {
     // });
 
     onMounted(() => {
-      // partsStore.getParts();
+      partsStore.getParts();
       // setCategory("cpu");
     });
 

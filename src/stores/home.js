@@ -44,19 +44,19 @@ export const useHomeStore = defineStore("homestore", () => {
 
       mentorLists: {
         1234567: {
-          nickname: "chaeni",
+          nicknName: "chaeni",
           intro: "반가워요 ! 잘 가르쳐드리겠습니다 ",
           matchingRate: "99%",
           techs: ["1", "2", "3", "4", "5"],
         },
         1234568: {
-          nickname: "juwon",
+          nicknName: "juwon",
           intro: "반가워요 ! 가보자구 같이 ",
           matchingRate: "100%",
           techs: ["1", "2", "3", "4", "7"],
         },
         1234569: {
-          nickname: "updown",
+          nicknName: "updown",
           intro: "반가워요 ! 잘 고쳐볼게요오 ",
           matchingRate: "30%",
           techs: ["1", "2", "3", "4", "6"],
@@ -65,27 +65,27 @@ export const useHomeStore = defineStore("homestore", () => {
 
       boradLists: {
         777777: {
-          postAuthorId: "chaeni",
+          nicknName: "chaeni",
           postTitle: "첫 번째 게시글",
           postCreatedDate: "2024-01-01 12:00",
         },
         123546: {
-          postAuthorId: "juwon",
+          nicknName: "juwon",
           postTitle: "두 번째 게시글",
           postCreatedDate: "2024-01-01 12:00",
         },
         1223446: {
-          postAuthorId: "updown",
+          nicknName: "updown",
           postTitle: "세 번째 게시글",
           postCreatedDate: "2024-01-01 12:00",
         },
         123234546: {
-          postAuthorId: "juwon",
+          nicknName: "juwon",
           postTitle: "네 번째 게시글",
           postCreatedDate: "2024-01-01 12:00",
         },
         12354316: {
-          postAuthorId: "updown",
+          nicknName: "updown",
           postTitle: "다섯 번째 게시글",
           postCreatedDate: "2024-01-01 12:00",
         },
