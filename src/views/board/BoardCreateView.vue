@@ -135,9 +135,19 @@ export default {
     // 게시글 저장 (생성 또는 수정)
     const savePost = async () => {
       const formData = new FormData();
-      formData.append("postTypeId", postTypeId.value);
-      formData.append("postTitle", postTitle.value);
-      formData.append("postContent", postContent.value);
+      // formData.append("postTypeId", postTypeId.value);
+      // formData.append("postTitle", postTitle.value);
+      // formData.append("postContent", postContent.value);
+
+      const data = {
+        postTypeId: postTypeId.value,
+        postTitle: postTitle.value,
+        postContent: postContent.value
+      }
+
+      formData.append('request', new Blob([JSON.stringify(data)], {
+        type: 'application/json'
+      }))
 
       console.log(postTypeId.value)
       console.log(postTitle.value)
@@ -164,7 +174,6 @@ export default {
         if (isEditMode.value) {
           // 게시글 수정
           
-          console.log(formData)
         //   await axios.patch(`${API_URL}/post`, formData,
         //   {
         //     headers: {
@@ -174,8 +183,11 @@ export default {
         // );
           console.log("게시글 수정 성공!");
         } else {
+          
+          for (let key of formData.values()) {
+            console.log(key)
+          }
 
-          console.log(formData)
           // 새 게시글 생성
           fetch(`${API_URL}/post`, {
             method: 'POST',
