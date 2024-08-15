@@ -1,5 +1,5 @@
 <template>
-  {{ partsData.c }}
+  {{ partsData.cpu }}
       <div class="container mt-4 mb-4 flex-grow-1">
         <div class="row mb-5">
           <!-- 필터 -->
