@@ -158,23 +158,23 @@
                       {{
                         partsData[categoryKey][`${pcStore.pcList[0][categoryKey]}`].manufacturer
                       }}
-<!--                      - -->
-<!--                      <span v-if="categoryKey == 'cpu'">{{-->
-<!--                          partsData[categoryKey][`${pcStore.pcList[0][categoryKey]}`]-->
-<!--                              .cpuType-->
-<!--                        }}</span>-->
-<!--                      <span v-if="categoryKey == 'memory'">{{-->
-<!--                          partsData[categoryKey][`${pcStore.pcList[0][categoryKey]}`]-->
-<!--                              .deviceType-->
-<!--                        }}</span>-->
-<!--                      <span v-if="categoryKey == 'gpu'">{{-->
-<!--                          partsData[categoryKey][`${pcStore.pcList[0][categoryKey]}`]-->
-<!--                              .chipsetManufacturer-->
-<!--                        }}</span>-->
-<!--                      <span v-if="categoryKey == 'ssd'">{{-->
-<!--                          partsData[categoryKey][`${pcStore.pcList[0][categoryKey]}`]-->
-<!--                              .formFactor-->
-<!--                        }}</span>-->
+                      -
+                      <span v-if="categoryKey == 'cpu'">{{
+                          partsData[categoryKey][`${pcStore.pcList[0][categoryKey]}`]
+                              .cpuType
+                        }}</span>
+                      <span v-if="categoryKey == 'memory'">{{
+                          partsData[categoryKey][`${pcStore.pcList[0][categoryKey]}`]
+                              .deviceType
+                        }}</span>
+                      <span v-if="categoryKey == 'gpu'">{{
+                          partsData[categoryKey][`${pcStore.pcList[0][categoryKey]}`]
+                              .chipsetManufacturer
+                        }}</span>
+                      <span v-if="categoryKey == 'ssd'">{{
+                          partsData[categoryKey][`${pcStore.pcList[0][categoryKey]}`]
+                              .formFactor
+                        }}</span>
                       <span
                           v-if="
                           [
