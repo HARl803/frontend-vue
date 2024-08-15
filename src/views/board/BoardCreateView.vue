@@ -137,7 +137,7 @@ export default {
     // 게시글 저장 (생성 또는 수정)
     const savePost = async () => {
       const formData = new FormData();
-      const updateFormDate = new FormData();
+      // const updateFormDate = new FormData();
       // formData.append("postTypeId", postTypeId.value);
       // formData.append("postTitle", postTitle.value);
       // formData.append("postContent", postContent.value);
@@ -148,20 +148,20 @@ export default {
         postContent: postContent.value
       }
 
-      const updateData = {
-        postId: postId.value,
-        postTypeId: postTypeId.value,
-        postTitle: postTitle.value,
-        postContent: postContent.value
-      }
+      // const updateData = {
+      //   postId: postId.value,
+      //   postTypeId: postTypeId.value,
+      //   postTitle: postTitle.value,
+      //   postContent: postContent.value
+      // }
 
       formData.append('request', new Blob([JSON.stringify(data)], {
         type: 'application/json'
       }))
 
-      updateFormDate.append('request', new Blob([JSON.stringify(updateData)], {
-        type: 'application/json'
-      }))
+      // updateFormDate.append('request', new Blob([JSON.stringify(updateData)], {
+      //   type: 'application/json'
+      // }))
 
       console.log(postTypeId.value)
       console.log(postTitle.value)
