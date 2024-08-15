@@ -9,7 +9,6 @@
         적극적인 소통을 기대합니다!
       </p>
     </div>
-    {{ $route.params }}
 
     <!-- 2. 게시글 작성 폼 영역 -->
     <!-- 2-1. 게시글 카테고리 선택 -->
@@ -27,11 +26,11 @@
     <div class="form-group mb-3">
       <label for="title">제목</label>
       <input
-        type="text"
-        id="title"
-        class="form-control"
-        v-model="postTitle"
-        placeholder="제목을 입력하세요"
+          type="text"
+          id="title"
+          class="form-control"
+          v-model="postTitle"
+          placeholder="제목을 입력하세요"
       />
     </div>
 
@@ -39,11 +38,11 @@
     <div class="form-group mb-3">
       <label for="content">내용</label>
       <textarea
-        id="content"
-        class="form-control"
-        v-model="postContent"
-        rows="10"
-        placeholder="내용을 입력하세요"
+          id="content"
+          class="form-control"
+          v-model="postContent"
+          rows="10"
+          placeholder="내용을 입력하세요"
       ></textarea>
     </div>
 
@@ -52,16 +51,16 @@
       <div class="form-group mb-3">
         <label for="image">이미지 첨부</label>
         <input
-          type="file"
-          id="postImageFile"
-          class="form-control-file"
-          @change="onFileChange"
+            type="file"
+            id="postImageFile"
+            class="form-control-file"
+            @change="onFileChange"
         />
 
         <!-- 4. 용량 제한 두기 -->
         <span v-if="postImageFile.length === 0">0</span>
         <span v-else
-          >{{ (postImageFile.size / 1024 / 1024).toFixed(2) }} MB</span
+        >{{ (postImageFile.size / 1024 / 1024).toFixed(2) }} MB</span
         >
         <span> / 10MB, 그 이상의 용량을 올릴 시 누락됩니다 ^^</span>
       </div>
@@ -88,7 +87,7 @@ export default {
     const router = useRouter();
     const route = useRoute();
     const postDetail = ref(null);
-    const API_URL = "/api/v1/community";
+    const API_URL = "/api/v1";
     const isEditMode = ref(false);
 
     // 게시글 유형
@@ -103,53 +102,99 @@ export default {
     };
 
     onMounted(() => {
-      console.log(route);
-      
-      isEditMode.value = true;
-      postTitle.value = route.params.postData.postTitle;
-      postContent.value = route.params.postData.postContent;
-      postTypeId.value = route.params.postData.postTypeId;
-  });
+
+      console.log(route.query);
+
+      // 수정 모드인지 확인
+      if (route.query.mode === 'edit') {
+        isEditMode.value = true;
+
+        if (route.query.postData) {
+          try {
+            const postData = JSON.parse(route.query.postData);
+            console.log(postData);
+            postTitle.value = postData.postTitle;
+            postContent.value = postData.postContent;
+            postTypeId.value = postData.postTypeId;
+          } catch (e) {
+            console.error('Error parsing postData:', e);
+          }
+        } else {
+          console.error('postData is undefined');
+        }
+        // const postData = JSON.parse(route.params.postData);
+
+        // console.log(postData)
+        // postTitle.value = postData.postTitle;
+        // postContent.value = postData.postContent;
+        // postTypeId.value = postData.postTypeId;
+        // 이미지 파일은 수정하지 않으면 그대로 유지
+      }
+    });
 
     // 게시글 저장 (생성 또는 수정)
     const savePost = async () => {
-      console.log(router.params.postId)
       const formData = new FormData();
-      formData.append("postId", route.params.postId)
       formData.append("postTypeId", postTypeId.value);
       formData.append("postTitle", postTitle.value);
       formData.append("postContent", postContent.value);
 
+      console.log(postTypeId.value)
+      console.log(postTitle.value)
+      // console.log(formData.keys())
+
       if (postImageFile.value) {
-        formData.append("postImageFile", postImageFile.value);
+        formData.append("file", postImageFile.value);
       }
+
+      for (let key of formData.values()) {
+        console.log(key)
+      }
+
+      // const data = {
+      //   postTypeId:postTypeId.value,
+      //   postTitle: postTitle.value,
+      //   postCotent: postContent.value,
+
+      // }
+
+      // console.log(data)
 
       try {
         if (isEditMode.value) {
           // 게시글 수정
-          await axios.patch(`${API_URL}/post`, formData, {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
-          });
+
+          console.log(formData)
+          await axios.patch(`${API_URL}/post`, formData,
+              {
+                headers: {
+                  "Content-Type": "multipart/form-data",
+                },
+              }
+          );
           console.log("게시글 수정 성공!");
         } else {
+
+          console.log(formData)
           // 새 게시글 생성
-          await axios.post(`${API_URL}/post`, formData, {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
-          });
+          await axios.post(`${API_URL}/post`, formData
+              , {
+                headers: {
+                  "Content-Type": "multipart/form-data",
+                },
+              }
+          );
           console.log("게시글 생성 성공!");
         }
-        router.push({ name: "community" });
+        router.push({name: "community"});
       } catch (error) {
+        console.log(formData)
         console.error("게시글 저장 실패:", error);
       }
     };
 
     const cancel = () => {
-      router.push({ name: "community" });
+      router.push({name: "community"});
     };
 
     return {
