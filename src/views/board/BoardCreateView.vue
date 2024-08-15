@@ -87,7 +87,7 @@ export default {
     const router = useRouter();
     const route = useRoute();
     const postDetail = ref(null);
-    const API_URL = "/api/v1";
+    const API_URL = "/api/v1/community";
     const isEditMode = ref(false);
 
     // 게시글 유형
@@ -134,55 +134,72 @@ export default {
 
     // 게시글 저장 (생성 또는 수정)
     const savePost = async () => {
-      // const formData = new FormData();
-      // formData.append("postTypeId", postTypeId.value);
-      // formData.append("postTitle", postTitle.value);
-      // formData.append("postContent", postContent.value);
+      const formData = new FormData();
+      formData.append("postTypeId", postTypeId.value);
+      formData.append("postTitle", postTitle.value);
+      formData.append("postContent", postContent.value);
 
-      // console.log(postTypeId.value)
-      // console.log(postTitle.value)
-      // console.log(formData)
+      console.log(postTypeId.value)
+      console.log(postTitle.value)
+      // console.log(formData.keys())
 
-      // if (postImageFile.value) {
-      //   formData.append("postImageFile", postImageFile.value);
-      // }
-
-      const data = {
-        postTypeId:postTypeId.value,
-        postTitle: postTitle.value,
-        postCotent: postContent.value,
-        
+      if (postImageFile.value) {
+        formData.append("file", postImageFile.value);
       }
 
-      console.log(data)
+      for (let key of formData.values()) {
+        console.log(key)
+      }
+
+      // const data = {
+      //   postTypeId:postTypeId.value,
+      //   postTitle: postTitle.value,
+      //   postCotent: postContent.value,
+        
+      // }
+
+      // console.log(data)
       
       try {
         if (isEditMode.value) {
           // 게시글 수정
           
-          await axios.patch(`${API_URL}/post`, data
-          // {
-          //   headers: {
-          //     "Content-Type": "multipart/form-data",
-          //   },
-          // }
-        );
+          console.log(formData)
+        //   await axios.patch(`${API_URL}/post`, formData,
+        //   {
+        //     headers: {
+        //       "Content-Type": "multipart/form-data",
+        //     },
+        //   }
+        // );
           console.log("게시글 수정 성공!");
         } else {
 
-          console.log(data)
+          console.log(formData)
           // 새 게시글 생성
-          await axios.post(`${API_URL}/post`, data
-          // , {
-          //   headers: {
-          //     "Content-Type": "multipart/form-data",
-          //   },
-          // }
-        );
+          fetch(`${API_URL}/post`, {
+            method: 'POST',
+            cache: 'no-cache',
+            body: formData
+          })
+        //   await axios.post(`${API_URL}/post`, formData
+        //   , {
+        //     headers: {
+        //       "Content-Type": "multipart/form-data",
+        //     },
+        //   }
+        // );
+
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+        });
+
           console.log("게시글 생성 성공!");
         }
         router.push({ name: "community" });
       } catch (error) {
+        console.log(formData)
         console.error("게시글 저장 실패:", error);
       }
     };
