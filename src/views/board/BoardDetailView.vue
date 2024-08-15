@@ -311,22 +311,34 @@ export default {
     const submitComment = async function () {
       // 1. 서버로 날아감
       console.log(postDetail.value.postId)
-      axios({
-        method: "post",
-        url: `${API_URL}/comment`,
-        data: { postId: postDetail.value.postId, commentContent: commentContent.value },
-      });
+      console.log(newCommentContent.value)
 
       // 2. 데이터 불러오기
+
       try {
-        newCommentContent.value = "";
+        console.log(newCommentContent.value)
         console.log("댓글 추가 성공");
+
+        // const data = {
+        //   postId: postDetail.value.postId,
+        //   commentContent: newCommentContent.value
+        // }
+        // console.log(data)
+        const data = {
+          postId: postDetail.value.postId,
+          commentContent: newCommentContent.value
+
+        }
+
+        console.log(data)
+        const response = await axios.post(`${API_URL}/comment`, data);
+        console.log(response)
+
       } catch (error) {
         console.error("댓글 추가 실패:", error);
-        console.log(postDetail.value.comments);
+        console.log(newCommentContent.value);
         postDetail.value.comments.push(commentContent.value);
       }
-      commentContent.value = "";
     };
 
     // 게시글/댓글 신고 - 확인
