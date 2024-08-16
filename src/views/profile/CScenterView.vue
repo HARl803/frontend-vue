@@ -1,9 +1,8 @@
 <template>
   <div class="inquiry-page">
+    <!-- 1. 상단 안내문 -->
     <section class="notice">
-      <h2 style="font-weight: bold">
-        1:1 문의사항 서비스에 대해 알려드릴게요!
-      </h2>
+      <h2>1:1 문의사항 서비스에 대해 알려드릴게요!</h2>
       <p>
         서비스를 이용하시면서 문의하고 싶은 내용들에 대해 자유롭게
         문의해주세요!<br />
@@ -13,13 +12,14 @@
       </p>
     </section>
 
-    <!-- 1. 나의 문의 내역 -->
-    <!-- <section class="inquiry-list">
-      <h3 style="font-weight: bold;">나의 문의내역</h3>
+    <!-- 2. 문의 내역 영역 -->
+    <section class="inquiry-list">
+      <h3>나의 문의내역</h3>
       <table>
         <thead>
           <tr>
             <th>번호</th>
+            <th>문의 유형</th>
             <th>문의 제목</th>
             <th>문의 날짜</th>
             <th>상태</th>
@@ -31,15 +31,15 @@
           </tr>
           <tr v-else v-for="(inquiry, index) in inquiries" :key="index">
             <td>{{ index + 1 }}</td>
+            <td>{{ inquiry.type }}</td>
             <td>{{ inquiry.title }}</td>
             <td>{{ inquiry.date }}</td>
             <td>{{ inquiry.status }}</td>
           </tr>
         </tbody>
       </table>
-    </section> -->
+    </section>
 
-    <!-- 2. 문의하기 버튼 or 문의창 닫기 -->
     <div class="button-wrapper">
       <button @click="showForm = !showForm">
         {{ showForm ? "문의창 닫기" : "문의하기" }}
@@ -47,16 +47,35 @@
     </div>
 
     <!-- 3. 문의하기 작성 폼 -->
-    <!-- <section v-if="showForm" class="inquiry-form">
-      <h3 style="font-weight: bold;">문의하기</h3>
+    <section v-if="showForm" class="inquiry-form">
+      <h3>문의하기</h3>
       <form @submit.prevent="submitInquiry">
         <div class="form-group">
+          <label for="type">문의 유형</label>
+          <select v-model="newInquiry.type" id="type" required>
+            <option value="">선택하세요</option>
+            <option value="기술지원">신고</option>
+            <option value="계정문의">기타</option>
+          </select>
+        </div>
+        <div class="form-group">
           <label for="title">제목</label>
-          <input type="text" v-model="newInquiry.title" id="title" required placeholder="제목을 입력하세요..." />
+          <input
+            type="text"
+            v-model="newInquiry.title"
+            id="title"
+            required
+            placeholder="제목을 입력하세요..."
+          />
         </div>
         <div class="form-group">
           <label for="content">문의 내용</label>
-          <textarea v-model="newInquiry.content" id="content" required placeholder="글을 입력하세요..."></textarea>
+          <textarea
+            v-model="newInquiry.content"
+            id="content"
+            required
+            placeholder="글을 입력하세요..."
+          ></textarea>
         </div>
         <div class="form-group">
           <label for="image">이미지 첨부</label>
@@ -64,91 +83,73 @@
         </div>
         <button type="submit">올리기</button>
       </form>
-    </section> -->
+    </section>
   </div>
 </template>
 
 <script>
-import { useCsCenterStore } from "@/stores/csCenter";
 import axios from "axios";
-import { ref, computed, onMounted } from "vue";
-import { useRoute, useRouter } from "vue-router";
 
 export default {
-  name: "CScenterView",
-  setup() {
-    const csCenterStore = useCsCenterStore();
-    const router = useRouter();
-    const csList = computed(() => csCenterStore.csList);
-
+  data() {
     return {
-      csCenterStore,
+      showForm: false,
+      inquiries: [],
+      newInquiry: {
+        type: "",
+        title: "",
+        content: "",
+        images: [],
+      },
     };
   },
+  methods: {
+    async fetchInquiries() {
+      try {
+        const response = await axios.get(`${API_URL}/inquiries`);
+        this.inquiries = response.data;
+      } catch (error) {
+        console.error("문의 내역을 불러오는데 실패했습니다.", error);
+      }
+    },
+    async submitInquiry() {
+      try {
+        const formData = new FormData();
+        formData.append("type", this.newInquiry.type);
+        formData.append("title", this.newInquiry.title);
+        formData.append("content", this.newInquiry.content);
+        this.newInquiry.images.forEach((file, index) => {
+          formData.append(`images[${index}]`, file);
+        });
+
+        const API_URL = "/api/v1";
+        const response = await axios.post(`${API_URL}/inquiries`, formData, {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        });
+
+        this.inquiries.push(response.data);
+
+        this.newInquiry = {
+          type: "",
+          title: "",
+          content: "",
+          images: [],
+        };
+        this.showForm = false;
+      } catch (error) {
+        console.error("문의사항을 제출하는데 실패했습니다.", error);
+      }
+    },
+    handleFileUpload(event) {
+      this.newInquiry.images = Array.from(event.target.files);
+    },
+  },
+  created() {
+    this.fetchInquiries();
+  },
 };
-
-// export default {
-//   data() {
-//     return {
-//       showForm: false,
-//       inquiries: [], // 사용자의 문의 내역을 저장
-//       newInquiry: {
-//         type: '',
-//         title: '',
-//         content: '',
-//         images: []
-//       }
-//     };
-//   },
-//   methods: {
-//     async fetchInquiries() {
-//       try {
-//         const response = await axios.get('/api/inquiries');
-//         this.inquiries = response.data;
-//       } catch (error) {
-//         console.error('문의 내역을 불러오는데 실패했습니다.', error);
-//       }
-//     },
-//     async submitInquiry() {
-//       try {
-//         const formData = new FormData();
-//         formData.append('type', this.newInquiry.type);
-//         formData.append('title', this.newInquiry.title);
-//         formData.append('content', this.newInquiry.content);
-//         this.newInquiry.images.forEach((file, index) => {
-//           formData.append(`images[${index}]`, file);
-//         });
-
-//         const response = await axios.post('/api/inquiries', formData, {
-//           headers: {
-//             'Content-Type': 'multipart/form-data'
-//           }
-//         });
-
-//         // 서버로부터 받은 새로운 문의 내역을 목록에 추가
-//         this.inquiries.push(response.data);
-
-//         // 폼 초기화
-//         this.newInquiry = {
-//           type: '',
-//           title: '',
-//           content: '',
-//           images: []
-//         };
-//         this.showForm = false;
-//       } catch (error) {
-//         console.error('문의사항을 제출하는데 실패했습니다.', error);
-//       }
-//     },
-//     handleFileUpload(event) {
-//       // 파일 업로드 처리 로직
-//       this.newInquiry.images = Array.from(event.target.files);
-//     }
-//   },
-//   created() {
-//     this.fetchInquiries(); // 페이지 로드 시 문의 내역을 가져옴
-//   }
-// };
 </script>
 
 <style scoped>
@@ -213,7 +214,7 @@ table td {
 }
 
 button {
-  background-color: #464645;
+  background-color: #f5a623;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -224,7 +225,7 @@ button {
 }
 
 button:hover {
-  background-color: #5c5c5b;
+  background-color: #d48821;
 }
 
 .inquiry-form {
@@ -275,7 +276,7 @@ textarea {
 button[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: #5c5b5b;
+  background-color: #f5a623;
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -285,6 +286,6 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #5c5b5b;
+  background-color: #d48821;
 }
 </style>
